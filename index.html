@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelo Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons (opcional, para iconos) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<!-- NAVEGADOR -->
+<nav class="navbar navbar-expand-lg sticky-top topbar py-3">
+  <div class="container">
+<!-- LOGO_NAS -->
+    <a class="navbar-brand d-flex align-items-center" title="nas" href="#">
+      <img src="img/LOGO_NAS.png" alt="Logo">
+    </a>
+<!-- BOTON DE HAMBURGUESA PARA MOVIL -->
+    <button class="navbar-toggler text-dark border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<!-- NOMBRE DE LOS LINKS DE NAVEGACION -->
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+    <ul class="navbar-nav align-items-lg-center gap-lg-3 fw-bold fs-5">
+      <li class="nav-item dropdown">
+        <a class="nav-link " href="#" role="button">
+          Modo de empleo
+        </a>
+        <!-- <div class="dropdown-menu dropdown-mega mt-3">
+          <div class="row g-0">
+            <div class="col-md-7 mega-left text-body-primary">
+              <h6>Pain Relief Products</h6>
+              <a href="#">Producto 1</a>
+              <a href="#">Producto 2</a>
+              <a href="#">Producto 3</a>
+              <a href="#">Producto 4</a>
+              <a href="#">Producto 5</a>
+              <a href="#">Producto 6</a>
+              <a href="#">Producto 7</a>
+              <a href="#">Producto 8</a>
+            </div>
+            <div class="col-md-5 mega-right">
+              <img src="https://via.placeholder.com/420x260?text=Imagen+Menu" alt="Imagen menú">
+            </div>
+          </div>
+        </div> -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Nas Adulto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Nas Pediatrico
+        </a>
+      </li>
+    </ul>
+    </div>
+  </div>
+</nav>
+<!-- INTRODUCCION -->
+<section class="hero-section">
+  <div class="container">
+    <div class="hero-content d-flex align-items-center">
+      <div class="row">
+        <div class="col-lg-6 " >
+        <div class="hero-texto">
+            <h1 class="texto-nas-azul ">Alivio instantáneo para la congestión nasal</span></h1>
+            <p class="texto-nas-azul">Fórmula natural que te ayuda a respirar mejor. Libre de efectos secundarios y con resultados desde el primer uso.</p>
+            <div class="d-flex gap-3">
+              <button class="btn btn-danger btn-pill btn-lg px-4 py-3">Información</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="image-container">
+    <img src="img/congestion-nasal.jpg" alt="Producto para congestión nasal">
+  </div>
+</section>
+<!-- <header class="hero">
+  <div class="container">
+    <div class="row align-items-center hero-inner">
+      <div class="col-lg-6 py-5">
+        <h1>El aliado perfecto para congestión nasal</h1>
+        <p class="mb-4">
+          Alivio rápido y efectivo para la congestión nasal, ayudando a respirar mejor y sentirte mejor. Ideal para adultos y niños.
+        </p>
+        <a class="btn btn-light btn-pill" href="#">
+          Learn more
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-figure">
+    <img src="img/congestion-nasal.jpg" alt="Imagen persona">
+  </div>
+</header> -->
+<!-- CAROUSEL -->
+<section class="carousel-wrap">
+  <div class="container">
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <!-- <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-5 text-center">
+              <img class="img-fluid" src="img/NAS_ADULDO.jpg" alt="Producto">
+            </div>
+            <div class="col-lg-7">
+              <h2 class="fw-bold display-6 mb-2">Nas 0,1% Solución Nasal <br> Adulto 15 mL</h2>
+              <p class="mb-4" style="max-width:560px; opacity:.95;">
+                El aliado pefecto para la congestión nasal. Alivio rápido y efectivo para adultos, ayudando a respirar mejor y sentirte mejor. Ideal para uso diario.
+              </p>
+              <div class="row text-center g-3">
+                <div class="col-6 col-md-4">
+                  <div class="feature-icon"><i class="bi bi-droplet"></i></div>
+                  <div class="fw-bold">Gotas</div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="feature-icon"><i class="bi bi-lungs"></i></div>
+                  <div class="fw-bold">Descongestionante</div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="feature-icon"><i class="bi bi-clock-history"></i></div>
+                  <div class="fw-bold">Rápida acción</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-5 text-center">
+              <img class="img-fluid rounded-4 shadow" src="img/NAS_PEDIATRA.jpg" alt="Producto">
+            </div>
+            <div class="col-lg-7">
+              <h2 class="fw-bold display-6 mb-2">Nas 0,05% Solución Nasal <br> Pediátrico 15 mL</h2>
+              <p class="mb-4" style="max-width:560px; opacity:.95;">
+                Para los niños, el aliado perfecto para la congestión nasal. Alivio rápido y efectivo para niños, ayudando a respirar mejor y sentirte mejor. Ideal para uso diario.
+              </p>
+              <div class="row text-center g-3">
+                <div class="col-6 col-md-4">
+                  <div class="feature-icon"><i class="bi bi-droplet"></i></div>
+                  <div class="fw-bold">Gotas</div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="feature-icon"><i class="bi bi-lungs"></i></div>
+                  <div class="fw-bold">Descongestionante</div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="feature-icon"><i class="bi bi-clock-history"></i></div>
+                  <div class="fw-bold">Rápida acción</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <!-- <div class="carousel-item">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-5 text-center">
+              <img class="img-fluid rounded-4 shadow" src="https://via.placeholder.com/420x420?text=Producto+3" alt="Producto">
+            </div>
+            <div class="col-lg-7">
+              <h2 class="fw-bold display-6 mb-2">Producto Night<br/>For Rest</h2>
+              <p class="mb-4" style="max-width:560px; opacity:.95;">
+                Tercer texto descriptivo. Aquí puedes hablar de uso nocturno, descanso, etc.
+              </p>
+              <div class="row text-center g-3">
+                <div class="col-6 col-md-4">
+                  <div class="feature-icon"><i class="bi bi-moon-stars"></i></div>
+                  <div class="fw-bold">Night</div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="feature-icon"><i class="bi bi-zzz"></i></div>
+                  <div class="fw-bold">Sleep</div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="feature-icon"><i class="bi bi-emoji-smile"></i></div>
+                  <div class="fw-bold">Comfort</div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+      </div>
+
+      <!-- Controles (flechas grandes como en tu imagen) -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <span class="big-nav-btn" aria-hidden="true">
+          <i class="bi bi-chevron-left fs-1 text-white"></i>
+        </span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="big-nav-btn" aria-hidden="true">
+          <i class="bi bi-chevron-right fs-1 text-white"></i>
+        </span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </div>
+</section>
+<!-- TARJETAS DE PRODUCTOS -->
+<section class="py-5 bg-white">
+  <div class="container py-3">
+    <div class="text-center mb-4">
+      <p class="section-sub mb-1">Meet the products that help people get back to doing what they love.</p>
+      <h2 class="section-title">Our Products</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div class="img-wrap">
+            <div class="blob red"></div>
+            <img src="https://via.placeholder.com/380x380?text=Pack+1" alt="Pack 1">
+          </div>
+          <div class="card-body text-center p-4">
+            <h5 class="fw-bold" style="color:#163d72;">Producto Extra Advance</h5>
+            <div class="pill-icon"><i class="bi bi-capsule"></i></div>
+            <div class="mt-2 fw-semibold" style="color:#163d72;">Tablets &nbsp;›</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div class="img-wrap">
+            <div class="blob red"></div>
+            <img src="https://via.placeholder.com/380x380?text=Pack+2" alt="Pack 2">
+          </div>
+          <div class="card-body text-center p-4">
+            <h5 class="fw-bold" style="color:#163d72;">Producto Extra Soluble</h5>
+            <div class="pill-icon"><i class="bi bi-droplet"></i></div>
+            <div class="mt-2 fw-semibold" style="color:#163d72;">Soluble &nbsp;›</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div class="img-wrap">
+            <div class="blob blue"></div>
+            <img src="https://via.placeholder.com/380x380?text=Pack+3" alt="Pack 3">
+          </div>
+          <div class="card-body text-center p-4">
+            <h5 class="fw-bold" style="color:#163d72;">Producto Advance</h5>
+            <div class="pill-icon"><i class="bi bi-capsule-pill"></i></div>
+            <div class="mt-2 fw-semibold" style="color:#163d72;">Tablets &nbsp;›</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE GRID (4 cards como en tu captura final) -->
+<section class="py-5" style="background:#f7fbff;">
+  <div class="container py-3">
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card article-card">
+          <img src="https://via.placeholder.com/800x520?text=Foto+1" alt="Artículo 1">
+          <div class="card-body p-4 text-center">
+            <div class="kicker">Adult Symptoms</div>
+            <div class="article-title">Period Pain and Period Cramps</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card article-card">
+          <img src="https://via.placeholder.com/800x520?text=Foto+2" alt="Artículo 2">
+          <div class="card-body p-4 text-center">
+            <div class="kicker">Adult Symptoms</div>
+            <div class="article-title">The Common Cold</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card article-card">
+          <img src="https://via.placeholder.com/800x520?text=Foto+3" alt="Artículo 3">
+          <div class="card-body p-4 text-center">
+            <div class="kicker">Adult Symptoms</div>
+            <div class="article-title">Sore Throat</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card article-card">
+          <img src="https://via.placeholder.com/800x520?text=Pack+Night" alt="Artículo 4">
+          <div class="card-body p-4 text-center">
+            <div class="kicker">Adult Products</div>
+            <div class="article-title">Night Pain</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-3 align-items-start">
+      <div class="col-lg-7">
+        <div class="d-flex flex-wrap gap-3 gap-md-4 mb-3">
+          <a href="#">Contact us</a>
+          <a href="#">Where to buy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Notice</a>
+          <a href="#">Product Leaflets</a>
+          <a href="#">Sitemap</a>
+        </div>
+        <div class="fineprint">
+          Texto legal / descargo. Puedes poner aquí información de la empresa, notas, etc.
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="fineprint">
+          <strong>Información adicional</strong><br/>
+          Lista corta / copy que necesites.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="javacript.js"></script>
+</body>
+</html>
