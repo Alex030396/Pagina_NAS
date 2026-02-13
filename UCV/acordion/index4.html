@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap 5 Toast Corregido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <nav aria-label="Navegacion">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#"><</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link active" href="#">3</a></li>
+        <li class="page-item"><a class="page-link disabled" href="#">></a></li>
+      </ul>
+    </nav>
+  </div>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-primary text-white">
+                <strong class="me-auto">About Wisdom Pet Medicine</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body bg-light">
+                We strive to be your pet's medical experts from youth through the senior years. We build preventative health care plans.
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content" id="mission" style="margin-top: 80px;">
+            <h2>Our Mission</h2>
+            <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis.</p>
+            
+            <button id="showToast" class="btn btn-primary d-flex align-items-center mx-auto">
+                <span id="mySpinner" class="spinner-border spinner-border-sm text-light d-none me-2" role="status" aria-hidden="true"></span>
+                <span id="buttonText">About</span>
+            </button>
+        </div>
+    </div>
+    <br><br><hr><br>
+
+    <div class="container">
+
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Our Mission</h2>
+          <p class="card-text">Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum ipsum quod quas quo odio, quam maiores tempora quibusdam libero tempore a, sunt iure reprehenderit doloribus minus expedita dolorem deleniti?</p>
+          <a href="#" class="btn btn-primary stretched-link">Learn More</a>          
+        </div>
+      </div>
+
+  <div class="ratio ratio-16x9 mt-4">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/riwDA-k90Og" title="Drake & Josh: La Casa del Árbol" allowfullscreen>
+    </iframe>
+  </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const btn = document.getElementById('showToast');
+            const spinner = document.getElementById('mySpinner');
+            // Corregido: el ID ahora coincide con el HTML
+            const toastEl = document.getElementById('liveToast'); 
+            
+            if (btn && toastEl) {
+                const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastEl);
+
+                // El spinner aparece cuando el toast empieza a mostrarse
+                toastEl.addEventListener('show.bs.toast', function () {
+                    spinner.classList.remove('d-none');
+                });
+
+                // El spinner se oculta cuando el toast se cierra completamente
+                toastEl.addEventListener('hidden.bs.toast', function () {
+                    spinner.classList.add('d-none');
+                });
+
+                btn.addEventListener('click', function () {
+                    toastBootstrap.show();
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

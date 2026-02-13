@@ -1,0 +1,186 @@
+<!-- <!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vamos Con Bootstraps Bills</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <section class="content" id="mission">
+            <h1>Our Commitment <small>to you</small></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolorem iusto earum fugiat dolores, harum saepe repellat velit praesentium numquam tenetur pariatur blanditiis debitis corporis officiis ab <a class="" href="#" data-toggle="tooltip" data-placement="top" title="Exams. ultrasound and more.">repellendus</a> at explicabo! asdjsah aslkdfjasasljh lkasdfhlkas lskfjha aslkdjhf.asdasd asdf asdf asdf asdf s gfdh df e r sdfgsdfgsd adsadf.asdfas asdfasdfa asdfhgfdh asd.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta provident odit laboriosam possimus nisi fuga consectetur, ipsum odio nobis fugit, voluptatum ab accusamus libero inventore similique sit, sunt excepturi deserunt.</p>
+
+            <button type="button" class="btn btn-info" data-bs-toggle="popover" data-bs-title="Standard Checkups" data-bs-content="Our Standard offers ultrasound, x-rays and dental cleanings.">
+                Check Info
+            </button>
+        </section>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+</body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vamos Con Bootstraps Bills</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <section class="content" id="mission">
+            <h1>Our Commitment <small>to you</small></h1>
+            <p>Lorem ipsum... <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Exams, ultrasound and more.">repellendus</a></p>
+            <p>Lorem ipsum...</p>
+
+            <button type="button" class="btn btn-info" data-bs-toggle="popover" 
+                    data-bs-title="Standard Checkups" 
+                    data-bs-content="Our Standard offers ultrasound, x-rays and dental cleanings.">
+                Check Info
+            </button>
+        </section>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <div class="alert alert-info">
+            <div class="d-flex justify-content-between ">
+                <h4 class="alert-heading">Standard Checkups</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex molestiae </p>
+            <a class="alert-link" href="#">More Info</a>
+        </div>
+    </div>
+
+    <div class="container">
+    <div class=" btn-group dropdown">
+        <button class="btn btn-primary">Servicios</button>
+        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" id="dropdownMenuButtom" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButtom">
+            <div class="dropdown-header" href="#">services</div>
+            <a class="dropdown-item" href="#">Inicio</a>
+            <a class="dropdown-item" href="#">Servicios</a>
+            <a class="dropdown-item" href="#">Productos</a>
+            <a class="dropdown-item" href="#">Contacto</a>
+            <a class="dropdown-item" href="#">Sobre Nosotros</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Otros</a>
+        </div>
+    </div>
+    </div>
+    <br><br><br><br><hr>
+    <br><br><br><br><hr>
+    
+  <div class="container">
+    <div class="row">
+      <section class="col-12">
+    
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#servicesmodal">More Info</button>
+        <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#servicesmodal">More Info</a> -->
+        
+    <div class="modal fade" id="servicesmodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-between">
+            <h4 class="modal-title">Pest Control</h4>
+            <button type="button" class="close border-0 bg-transparent" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites.</p>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">back</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </section>
+    </div>
+  </div>
+    
+    <br><br><br><br><hr>
+
+<div class="container">
+  <div class="row">
+    <section class="col-12">
+
+  <div class="carousel slide carousel-fade" id="factured" data-bs-ride="carousel">
+    <ol class="carousel-indicators ">
+      <li data-bs-target="#factured" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#factured" data-bs-slide-to="1" class="active"></li>
+      <li data-bs-target="#factured" data-bs-slide-to="2" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+      
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="/Tarjetas/hero.jpg" alt="Lifestyle Photo">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/Tarjetas/lineaOftalmi.webp" alt="Mission">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Pete, owner of McAllister</h3>
+          <p>Wisdom Pet Medicine is the only clinic around that will even book pet fish for appointments.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/Tarjetas/portadas.jpg" alt="Vaccinations">
+      </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#factured" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true">
+        <span class="visually-hidden">Previous</span>
+      </span>
+    </a>
+    <a class="carousel-control-next" href="#factured" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true">
+        <span class="visually-hidden">Next</span>
+      </span>
+    </a>
+  </div>
+  
+  <h2>Our Mission</h2>
+  <p> Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of companion animals including dogs, cats.</p>
+  <p> We strive to be your pet's medical experts from youth through the senior years. We build preventative health care plans for each and every one of our patients. </p>
+
+    </section>
+  </div><!-- row -->
+</div><!-- content container -->
+
+
+    <br><br><br><br><hr>
+
+
+
+
+
+    <!-- SOLO UN SCRIPT DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Inicialización CORRECTA en Bootstrap 5 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tooltip
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+            
+            // Popover
+            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+            const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+        });
+    </script>
+</body>
+</html>
