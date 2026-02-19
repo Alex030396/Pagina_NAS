@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cargar desde TXT</title>
+</head>
+<body>
+    <div id="contenido">
+        <p id="mi-parrafo">Cargando contenido...</p>
+        <p id="alex">asdasda</p>
+    </div>
+
+    <script>
+        // Función para cargar archivo TXT
+        async function cargarTXT() {
+            try {
+                const respuesta = await fetch('mi-archivo.txt');
+                const texto = await respuesta.text();
+                document.getElementById('mi-parrafo').textContent = texto;
+            } catch (error) {
+                console.error('Error al cargar el archivo:', error);
+                document.getElementById('mi-parrafo').textContent = 'Error al cargar el contenido';
+            }
+        }
+        
+        // Cargar el contenido cuando la página se abre
+        cargarTXT();
+    </script>
+    <script>
+        // Función para cargar archivo TXT
+        async function cargarTXT() {
+            try {
+                const respuesta = await fetch('alex.txt');
+                const texto = await respuesta.text();
+                document.getElementById('alex').textContent = texto;
+            } catch (error) {
+                console.error('Error al cargar el archivo:', error);
+                document.getElementById('alex').textContent = 'Error al cargar el contenido';
+            }
+        }
+
+        // Cargar el contenido cuando la página se abre
+        cargarTXT();
+    </script>
+</body>
+</html>
