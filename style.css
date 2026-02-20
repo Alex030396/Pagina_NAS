@@ -405,7 +405,7 @@ object-position: left center;
 
 .hero-section {
   min-height: auto;
-  padding: 60px 0;
+  /* padding: 60px 0; */
 }
 
 .hero-text h1 {
@@ -423,9 +423,17 @@ object-position: left center;
 }
 
 
+
+
+
+
 /* NUEVO */
-.product-detail {
+.product-detail .producto-amarillo, .info-amarillo {
   background:var(--amarillo_nas);
+}
+
+.product-detail .producto-blanco, .info-blanco {
+  background:var(--text-white);
 }
 
 /* Imagen del producto */
@@ -533,23 +541,26 @@ object-position: left center;
 
 .nav-tabs .nav-link.active {
   color: var(--azul_nas);
-  background-color: var(--amarillo_nas);
+  background-color: transparent;
   border: none;
   border-bottom:5px solid black;
   font-weight: 900;
 }  
 .nav-tabs .nav-link.active:hover {
   color: var(--azul_nas);
-  background-color: var(--amarillo_nas);
+  background-color: transparent;
   border: none;
   border-bottom:5px solid black;
+  font-size: 16px;
 }  
 
 .nav-tabs .nav-link:hover {
   border: none;
   transition: none;
   text-decoration: none;
-  background-color: rgba(237, 50, 55,0.3);
+  /* background-color: rgba(237, 50, 55,0.3); */
+  font-size: 19px;
+  color: black;
 }
 .nav-tabs .nav-link {
   border: none;
@@ -614,7 +625,7 @@ object-position: left center;
   color: #2b4f7e;
   font-size: 1rem;
   line-height: 1.6;
-  max-width: 950px;
+  /* max-width: 950px; */
 }
 
 /* Botón subir arriba (derecha) */
@@ -657,4 +668,33 @@ object-position: left center;
 .imagen-bfs{
   height: 150px; 
   max-width: 100%;
+}
+
+.hero-split {
+  min-height: 100vh;
+  /* background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%), url('img/IMAGEN_ADULTO_1920X1080_HORIZONTAL.png'); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .hero-split {
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%), url('img/IMAGEN_ADULTO_1920X1080_HORIZONTAL.png');
+  }
+  .hero-texto h1{
+    color: white;
+
+  }
+  .hero-texto p{
+    color: white;
+  }
+}
+@media (max-width: 768px) {
+  .hero-split {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/IMAGEN_ADULTO_1080X1920_VERTICAL.png');
+    text-align: center;
+  }
 }

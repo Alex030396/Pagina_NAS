@@ -65,15 +65,30 @@
   </div>
 </nav>
 <!-- INTRODUCCION -->
-<section class="hero-blanco hero-section">
+<!-- <section class="hero-section d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 col-sm-12 content-box">
+        <h1 class="display-4 fw-bold">Alivio instantáneo para la congestión nasal</h1>
+        <p>Fórmula natural que te ayuda a respirar mejor...</p>
+        <a href="#" class="btn btn-danger btn-lg">Información</a>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<section class="hero-blanco hero-section ">
+<div class="hero-split">
   <div class="container">
     <div class="hero-content d-flex align-items-center">
       <div class="row">
         <div class="col-lg-6 " >
         <div class="hero-texto">
-            <h1 class="texto-nas-azul ">Alivio instantáneo para la congestión nasal</span></h1>
+            <h1 class="texto-nas-azul display-4 fw-bold">Alivio instantáneo para la congestión nasal</span></h1>
             <p class="texto-nas-azul">Fórmula natural que te ayuda a respirar mejor. Libre de efectos secundarios y con resultados desde el primer uso.</p>
-            <div class="d-flex gap-3">
+            <div class="d-flex justify-content-center gap-3 pt-4">
               <button class="btn btn-danger btn-pill btn-lg px-4 py-3">Información</button>
             </div>
           </div>
@@ -81,10 +96,12 @@
       </div>
     </div>
   </div>
-  <div class="image-container">
-    <img src="img/IMAGEN_ADULTO.png" alt="Producto para congestión nasal">
+  <div class="image-container d-none d-lg-block">
+    <img class="img-fluid" src="img/IMAGEN_ADULTO.png" alt="Producto para congestión nasal">
   </div>
+</div>
 </section>
+
 <!-- <header class="hero">
   <div class="container">
     <div class="row align-items-center hero-inner">
@@ -319,8 +336,8 @@
   </div>
 </section>
 
-<section class="product-detail py-1 carusel-amarillo" >
-  <div class="container">
+<section class="product-detail producto-amarillo py-1 carusel-amarillo " >
+  <div class="container mt-5">
     <div class="row align-items-start g-4">
       <!-- IZQUIERDA: Carrusel -->
       <div class="col-lg-5">
@@ -375,7 +392,7 @@
 
 
 <!-- SECCIÓN TABS + CONTENIDO -->
-<section class="info-tabs py-4 carusel-amarillo">
+<section class="info-tabs info-amarillo py-4 ">
   <div class="container-fluid p-0" >
     <!-- TABS -->
     <ul class="nav nav-tabs justify-content-center info-tabs-nav" id="infoTabs" role="tablist">
@@ -385,6 +402,12 @@
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="ing-tab" data-bs-toggle="tab" data-bs-target="#ing" type="button" role="tab" aria-controls="ing" aria-selected="false"> Ingredientes </button>
       </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="adv-tab" data-bs-toggle="tab" data-bs-target="#adv" type="button" role="tab" aria-controls="adv" aria-selected="false"> Advertencias </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contraind-tab" data-bs-toggle="tab" data-bs-target="#contraind" type="button" role="tab" aria-controls="contraind" aria-selected="false"> Contraindicaciones </button>
+      </li>
     </ul>
     <!-- CONTENIDO -->
     <div class="tab-content info-tabs-content container" id="infoTabsContent">
@@ -392,23 +415,153 @@
       <div class="tab-pane fade show active" id="how" role="tabpanel" aria-labelledby="how-tab">
         <h2 class="info-title mt-4 text-center"> Como abrir frasco BFS:</h2>
         <div class="row">
-          <!-- <div class="col-1"></div> -->
           <div class="col-7  justify-content-end d-flex align-items-center ">
             <p class="m-0 ms-md-5 ps-md-5" ><strong>(1)</strong> El frasco esta totalmente sellado, <strong>(sin orificio)</strong>. Cuando utilice el frasco por primera vez, enrosque la tapa del frasco en el sentido de la flecha <strong>(sentido de las agujas del reloj)</strong>, a fin de perforar la punta del frasco de forma aséptica.</p>
           </div>
-          <!-- <div class="col-1"></div> -->
           <div class="col-5  justify-content-md-start justify-content-center d-flex align-items-center">
             <img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_1_180X180.png" alt="BFS1" >
           </div>
-          <!-- <div class="col-1"></div> -->
+        </div>
+        <div class="row mt-5 d-flex">
+          <div class="col-7 justify-content-end d-flex align-items-center ">
+            <p class="m-0 ms-md-5 ps-md-5" ><strong>(2)</strong> La tapa puede entoces retirarse desenroscándola del frasco en el sentido de la flecha<strong>(sentido contrario a las agujas del reloj)</strong>, para abrir el frasco y aplicar el producto.</p>
+          </div>
+          <div class="col-5 justify-content-md-start justify-content-center d-flex align-items-center">
+            <img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_2_180X180.png" alt="BFS2" >
+          </div>
         </div>
       </div>
       <!-- TAB 2 -->
       <div class="tab-pane fade" id="ing" role="tabpanel" aria-labelledby="ing-tab">
-        <h2 class="info-title mt-4">Ingredientes</h2>
-        <p class="info-text">
-          Active ingredients: each tablet contains paracetamol (500mg) and caffeine (65mg).
+        <h2 class="info-title mt-4 text-center">Ingredientes</h2>
+        <p class="info-text px-3"> <strong>Cada mL contiene:</strong> Nafazolina Nitrato 0.50mg. Cloruro de Sodio, Fostato de sodio Monobásico, Fsofato de Sodio Dibásico, Edetato de Sodio, Cloruruo de Benzalconio, Agua Destilda c.s. </p>
+      </div>
+      <!-- TAB 3 -->
+      <div class="tab-pane fade" id="adv" role="tabpanel" aria-labelledby="adv-tab">
+        <h2 class="info-title mt-4 text-center">Advertencias</h2>
+        <p class="info-text px-3"> Si los síntomas persisten y no observa mejoría después de 2 a 3 días con el uso de este medicamento suspéndase y consulte al médico. La administración prolongada de este producto puede causar nerviosismo, intranquilidad e insomnio. Manténgase fuera del alcance de los niños. No exceda la dosis recomendada. </p>
+      </div>
+      <!-- TAB 4 -->
+      <div class="tab-pane fade" id="contraind" role="tabpanel" aria-labelledby="contraind-tab">
+        <h2 class="info-title mt-4 text-center">Contraindicaciones</h2>
+        <p class="info-text px-3"> Alergia a los componentes de la fórmula. En pacientes bajo tratamiento con inhibidores de la monoamionooxidasa (MAO), betabloqueantes y glaucoma. </p>
+        <p class="info-text px-3"> <strong>Precauciones:</strong> En pacientes hipertensos, cardicacos, diabéticos y enfermedades tiroideas. </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="product-detail producto-blanco py-1" >
+  <div class="container mt-5">
+    <div class="row align-items-start g-4">
+      <!-- IZQUIERDA: Carrusel -->
+      <div class="col-lg-5">
+        <div id="nasCarousel1" class="carousel slide" data-bs-ride="carousel">
+          <!-- INDICADORES (dots) -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#nasCarousel1" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#nasCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <!-- IMÁGENES -->
+          <div class="carousel-inner text-center">
+            <div class="carousel-item  active">
+              <img src="img/NAS_ADULDO.jpg" class="pd-image shadow" alt="Producto 1">
+            </div>
+            <div class="carousel-item ">
+              <img src="img/NAS_ADULTO_DERECHO_1080X1080.png" class="pd-image shadow" alt="Producto 2">
+            </div>
+          </div>
+          <!-- FLECHA IZQUIERDA -->
+          <button class="carousel-control-prev pd-control" type="button" data-bs-target="#nasCarousel1" data-bs-slide="prev">
+            <span class="pd-arrow-icon" aria-hidden="true">‹</span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <!-- FLECHA DERECHA -->
+          <button class="carousel-control-next pd-control" type="button" data-bs-target="#nasCarousel1" data-bs-slide="next">
+            <span class="pd-arrow-icon" aria-hidden="true">›</span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+      <!-- DERECHA: Texto -->
+      <div class="col-lg-7">
+        <h2 class="pd-title">
+          Nas  Solución Nasal <br> Pediátrico
+        </h2>
+        <div class="pd-meta d-flex align-items-center gap-3 my-3">
+          <div class="pd-iconbox">
+            <img src="img/LOGO_NAS.png" alt="Icono" class="pd-icon">
+          </div>
+          <div class="pd-dose">0,05% Nafazolina Nitrato - 15 mL Solucion</div>
+        </div>
+        <p class="pd-text">
+         Nas de laboratorios Oftalmi es un descongestionante nasal (a base de nafazolina) diseñado para el alivio temporal de la congestión por resfriados, sinusitis o rinitis. Actúa como vasoconstrictor, disminuyendo el flujo sanguíneo nasal y facilitando la respiración.
         </p>
+        <p class="pd-text">
+          Posología: 2 a 3 gotas en cada fosa nasal cada 8 a 12 horas.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECCIÓN TABS + CONTENIDO -->
+<section class="info-tabs info-blanco py-4 ">
+  <div class="container-fluid p-0" >
+    <!-- TABS -->
+    <ul class="nav nav-tabs justify-content-center info-tabs-nav" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="how-tab1" data-bs-toggle="tab" data-bs-target="#how1" type="button" role="tab" aria-controls="how1" aria-selected="true"> Modo de uso </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="ing-tab1" data-bs-toggle="tab" data-bs-target="#ing1" type="button" role="tab" aria-controls="ing1" aria-selected="false"> Ingredientes </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="adv-tab1" data-bs-toggle="tab" data-bs-target="#adv1" type="button" role="tab" aria-controls="adv1" aria-selected="false"> Advertencias </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contraind-tab1" data-bs-toggle="tab" data-bs-target="#contraind1" type="button" role="tab" aria-controls="contraind1" aria-selected="false"> Contraindicaciones </button>
+      </li>
+    </ul>
+    <!-- CONTENIDO -->
+    <div class="tab-content info-tabs-content container" id="infoTabsContent">
+      <!-- TAB 1 -->
+      <div class="tab-pane fade show active" id="how1" role="tabpanel" aria-labelledby="how-tab1">
+        <h2 class="info-title mt-4 text-center"> Como abrir frasco BFS:</h2>
+        <div class="row">
+          <div class="col-7  justify-content-end d-flex align-items-center ">
+            <p class="m-0 ms-md-5 ps-md-5" ><strong>(1)</strong> El frasco esta totalmente sellado, <strong>(sin orificio)</strong>. Cuando utilice el frasco por primera vez, enrosque la tapa del frasco en el sentido de la flecha <strong>(sentido de las agujas del reloj)</strong>, a fin de perforar la punta del frasco de forma aséptica.</p>
+          </div>
+          <div class="col-5  justify-content-md-start justify-content-center d-flex align-items-center">
+            <img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_1_180X180.png" alt="BFS1" >
+          </div>
+        </div>
+        <div class="row mt-5 d-flex">
+          <div class="col-7 justify-content-end d-flex align-items-center ">
+            <p class="m-0 ms-md-5 ps-md-5" ><strong>(2)</strong> La tapa puede entoces retirarse desenroscándola del frasco en el sentido de la flecha<strong>(sentido contrario a las agujas del reloj)</strong>, para abrir el frasco y aplicar el producto.</p>
+          </div>
+          <div class="col-5 justify-content-md-start justify-content-center d-flex align-items-center">
+            <img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_2_180X180.png" alt="BFS2" >
+          </div>
+        </div>
+      </div>
+      <!-- TAB 2 -->
+      <div class="tab-pane fade" id="ing1" role="tabpanel" aria-labelledby="ing-tab1">
+        <h2 class="info-title mt-4 text-center">Ingredientes</h2>
+        <p class="info-text px-3"> <strong>Cada mL contiene:</strong> Nafazolina Nitrato 0.50mg. Cloruro de Sodio, Fostato de sodio Monobásico, Fsofato de Sodio Dibásico, Edetato de Sodio, Cloruruo de Benzalconio, Agua Destilda c.s. </p>
+      </div>
+      <!-- TAB 3 -->
+      <div class="tab-pane fade" id="adv1" role="tabpanel" aria-labelledby="adv-tab1">
+        <h2 class="info-title mt-4 text-center">Advertencias</h2>
+        <p class="info-text px-3"> Si los síntomas persisten y no observa mejoría después de 2 a 3 días con el uso de este medicamento suspéndase y consulte al médico. La administración prolongada de este producto puede causar nerviosismo, intranquilidad e insomnio. Manténgase fuera del alcance de los niños. No exceda la dosis recomendada. </p>
+      </div>
+      <!-- TAB 4 -->
+      <div class="tab-pane fade" id="contraind1" role="tabpanel" aria-labelledby="contraind-tab1">
+        <h2 class="info-title mt-4 text-center">Contraindicaciones</h2>
+        <p class="info-text px-3"> Alergia a los componentes de la fórmula. En pacientes bajo tratamiento con inhibidores de la monoamionooxidasa (MAO), betabloqueantes y glaucoma. </p>
+        <p class="info-text px-3"> <strong>Precauciones:</strong> En pacientes hipertensos, cardicacos, diabéticos y enfermedades tiroideas. </p>
       </div>
     </div>
   </div>
