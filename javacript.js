@@ -1,34 +1,16 @@
-// ====== MEGA MENU: abrir con hover en desktop (y click en móvil)
-// Bootstrap por defecto abre con click. Este JS lo mejora para escritorio.
-(function(){
-    const mq = window.matchMedia("(min-width: 992px)");
-    const dropdowns = document.querySelectorAll(".navbar .dropdown");
+// FLECHA PARA SUBIR AL INICIO DE LA PAGINAS
+const backToTop = document.getElementById("backToTop");
 
-    function enableHover(){
-    dropdowns.forEach(dd => {
-        const toggle = dd.querySelector('[data-bs-toggle="dropdown"]');
-        const menu = dd.querySelector(".dropdown-menu");
-
-        dd.addEventListener("mouseenter", () => {
-        if (!mq.matches) return;
-        const instance = bootstrap.Dropdown.getOrCreateInstance(toggle);
-        instance.show();
-        });
-
-        dd.addEventListener("mouseleave", () => {
-        if (!mq.matches) return;
-        const instance = bootstrap.Dropdown.getOrCreateInstance(toggle);
-        instance.hide();
-        });
-
-        // Evita que el hover cierre instantáneo al pasar el mouse por encima del menú
-        menu.addEventListener("mouseenter", () => {
-        if (!mq.matches) return;
-        const instance = bootstrap.Dropdown.getOrCreateInstance(toggle);
-        instance.show();
-        });
-    });
+  // Mostrar/ocultar cuando haces scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 250) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
     }
+  });
 
-    enableHover();
-})();
+  // Subir al inicio
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });

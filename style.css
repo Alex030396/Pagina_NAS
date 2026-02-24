@@ -294,13 +294,13 @@ object-position: left center;
   background-color: transparent;
   border: none;
   border-bottom:5px solid black;
-  font-size: 16px;
+  font-size: 19px;
 }  
 .nav-tabs .nav-link:hover {
   border: none;
   transition: none;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 21px;
   color: black;
 }
 .nav-tabs .nav-link {
@@ -352,19 +352,20 @@ object-position: left center;
 }
 /* BOTON PARA SUBIR AL INICIO DE LA PAGINA */
 .back-to-top{
+  border-radius: 50%;      
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
   position: fixed;
   right: 10px;
   top: 590px;           
   width: 34px;
   height: 34px;
-  border-radius: 999px;
   border: 2px solid var(--azul_nas);
-  background: #fff;
   display: grid;
   place-items: center;
   cursor: pointer;
   z-index: 2000;
-  box-shadow: 0 14px 40px rgba(0,0,0,.12);
   opacity: 0;
   transform: translateY(-6px);
   pointer-events: none;
@@ -375,11 +376,11 @@ object-position: left center;
   transform: translateY(0);
   pointer-events: auto;
 }
+/* TRIANGULO FLECHA DE SUBIR AL INICIO DE LA PAGINA */
 .back-to-top-icon{
-  color: #173f74;
-  font-size: 28px;
-  font-weight: 900;
-  line-height: 1;
+  border-left: 7.5px solid transparent;  
+  border-right: 7.5px solid transparent;
+  border-bottom: 15px solid var(--azul_nas); 
 }
 /* ===== FOOTER ===== */
 footer{
