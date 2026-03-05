@@ -76,7 +76,7 @@ html {
   position: relative;
 }
 .hero-split {
-  min-height: 100vh;
+  min-height: 70vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -135,15 +135,6 @@ object-position: left center;
   justify-content:center;
   font-size: 2rem;
   margin: 0 auto 12px auto;
-}
-/* FLECHAS DEL CARRUSEL ADELANTE Y ATRAS */
-.carousel-control-prev, .carousel-control-next{
-  width: 90px;
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon{
-  filter: invert(1);
-  transform: scale(1.4);
 }
 /* CONFIGURACION DE LAS FLECHAS DEL CARRUSEL */
 .big-nav-btn{
@@ -325,6 +316,9 @@ object-position: left center;
   height: 150px; 
   max-width: 100%;
 }
+.tab-content{
+  height: 60vh;
+}
 /* TARJETAS DE ARTICULOS (BLOG) */
 .article-card{
   border: 0;
@@ -477,6 +471,5 @@ footer a:hover{
 }
 @media (max-width: 576px){
   .navbar-brand img{ height: 50px; }
-  .carousel-control-prev, .carousel-control-next{ width: 64px; }
   .big-nav-btn{ width: 68px; height: 68px; border-radius: 18px; }
 }
