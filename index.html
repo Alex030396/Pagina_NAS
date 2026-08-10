@@ -10,65 +10,225 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
   <!-- LOGITO DE PAGINA -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/nas_blanco/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/nas_blanco/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/nas_blanco/favicon-16x16.png">
-  <link rel="manifest" href="img/nas_blanco/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-site" data-bs-offset="75">
+
 <!-- NAVEGADOR -->
 <nav class="navbar navbar-expand-lg sticky-top nav-rojo py-3" id="navbar-site">
   <div class="container">
-<!-- LOGO_NAS -->
-    <a class="navbar-brand navbar-brand-centered d-flex align-items-center order-2 order-lg-0 " title="NAS Nafazolina Nitrato" href="index.html">
+    <!-- LOGO_NAS -->
+    <a class="navbar-brand navbar-brand-centered d-flex align-items-center order-2 order-lg-0" title="NAS Nafazolina Nitrato" href="#">
       <img src="img/LOGO_NAS_BLANCO1.png" alt="Logo de nas nafazolina nitrato">
     </a>
-<!-- BOTON DE HAMBURGUESA PARA MOVIL -->
+    <!-- BOTON DE HAMBURGUESA PARA MOVIL -->
     <button class="navbar-toggler text-dark border-0 order-1 order-lg-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
       <span class="navbar-toggler-icon icon-blanco"></span>
     </button>
-<!-- NOMBRE DE LOS LINKS DE NAVEGACION -->
-    <div class="fondo-rojo collapse navbar-collapse justify-content-end order-3 " id="mainNav">
-    <ul class="navbar-nav align-items-lg-center gap-lg-3 fw-bold fs-5">
-      <li class="nav-item dropdown">
-        <a class="nav-link texto-amarillo" href="#nuestro" role="button">Nuestros Productos</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link texto-blanco" href="#adulto">Nas Adulto</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link texto-amarillo" href="#pediatrico">Nas Pediatrico</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link texto-blanco" href="#modo">Modo de Uso</a>
-      </li>
-    </ul>
+    <!-- NOMBRE DE LOS LINKS DE NAVEGACION -->
+    <div class="fondo-rojo collapse navbar-collapse justify-content-end order-3" id="mainNav">
+      <ul class="navbar-nav align-items-lg-center gap-lg-3 fw-bold fs-5">
+        <li class="nav-item"><a class="nav-link texto-amarillo" href="#nuestro">Nuestros Productos</a></li>
+        <li class="nav-item"><a class="nav-link texto-blanco" href="#adulto">Nas Adulto</a></li>
+        <li class="nav-item"><a class="nav-link texto-amarillo" href="#pediatrico">Nas Pediatrico</a></li>
+        <li class="nav-item"><a class="nav-link texto-blanco" href="#modo">Modo de Uso</a></li>
+      </ul>
     </div>
+    
   </div>
 </nav>
+
 <!-- INTRODUCCION -->
-<section class=" hero-section ">
-<div class="hero-split fondo-blanco">
-  <div class="container">
-    <div class="hero-content d-flex align-items-center">
-      <div class="row">
-        <div class="col-lg-6 " >
-        <div class="hero-texto">
-            <h1 class="texto-azul display-4 fw-bold">Alivio instantáneo para la congestión nasal</span></h1>
-            <p class="texto-azul">Fórmula natural que te ayuda a respirar mejor. Libre de efectos secundarios y con resultados desde el primer uso.</p>
-            <div class="d-flex justify-content-center gap-3 pt-4">
-              <!-- <button class="btn btn-danger btn-pill btn-lg px-4 py-3">Información</button> -->
+<section class="hero-section">
+  <div class="hero-split">
+    <div class="container">
+      <div class="hero-content d-flex align-items-center">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="hero-texto">
+              <h1 class="texto-azul display-4 fw-bold">
+                QUE LA CONGESTIÓN NO TE DETENGA
+              </h1>
+              <p class="texto-azul">
+                Alivio temporal de la congestión nasal.
+              </p>
+              <a class="btn btn-danger fw-bold mt-3" href="#">Encuentra tu NAS</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="image-container d-none d-lg-block">
-    <img class="img-fluid" src="img/IMAGEN_PEDIATRICO.png" alt="Producto para congestión nasal">
-  </div>
-</div>
 </section>
+
+
+<!-- CAROUSEL ¿QUE NECESITAS ALIVIAR? -->
+<section class="relief-carousel py-5">
+  <div class="container">
+    <!-- TITULO -->
+    <div class="text-center mb-5">
+      <h2>¿Qué necesitas aliviar?</h2>
+    </div>
+    <!-- CAROUSEL BOOTSTRAP -->
+    <div id="reliefCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-wrap="true" >
+      <div class="carousel-inner">
+        <!-- SLIDE 1 - PRIMERAS 3 TARJETAS -->
+        <div class="carousel-item active">
+          <div class="row g-4 px-md-5">
+            <!-- TARJETA 1 -->
+            <div class="col-12 col-md-4">
+              <div class="relief-card">
+                <div class="relief-img">
+                  <img src="img/card1.jpg" class="img-fluid" alt="Congestión nasal" >
+                </div>
+                <div class="relief-card-body">
+                  <span>Congestión nasal</span>
+                  <a href="#" class="relief-link" aria-label="Ver congestión nasal">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- TARJETA 2 -->
+            <div class="col-12 col-md-4">
+              <div class="relief-card">
+                <div class="relief-img">
+                  <img src="img/card2.jpg" class="img-fluid" alt="Nariz tapada" >
+                </div>
+                <div class="relief-card-body">
+                  <span>Nariz tapada</span>
+                  <a href="#" class="relief-link" aria-label="Ver nariz tapada">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- TARJETA 3 -->
+            <div class="col-12 col-md-4">
+              <div class="relief-card">
+                <div class="relief-img">
+                  <img src="img/card3.jpg" class="img-fluid" alt="Dificultad para respirar" >
+                </div>
+                <div class="relief-card-body">
+                  <span>Dificultad para respirar</span>
+                  <a href="#" class="relief-link" aria-label="Ver dificultad para respirar">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SLIDE 2 - SIGUIENTES 3 TARJETAS -->
+        <div class="carousel-item">
+          <div class="row g-4 px-md-5">
+            <!-- TARJETA 4 -->
+            <div class="col-12 col-md-4">
+              <div class="relief-card">
+                <div class="relief-img">
+                  <img src="img/card1.jpg" class="img-fluid" alt="Molestia nasal" >
+                </div>
+                <div class="relief-card-body">
+                  <span>Molestia nasal</span>
+                  <a href="#" class="relief-link" aria-label="Ver molestia nasal">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+           <!-- TARJETA 5 -->
+            <div class="col-12 col-md-4">
+              <div class="relief-card">
+                <div class="relief-img">
+                  <img src="img/card2.jpg" class="img-fluid" alt="Inflamación nasal" >
+                </div>
+                <div class="relief-card-body">
+                  <span>Inflamación nasal</span>
+                  <a href="#" class="relief-link" aria-label="Ver inflamación nasal">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+           <!-- TARJETA 6 -->
+            <div class="col-12 col-md-4">
+              <div class="relief-card">
+                <div class="relief-img">
+                  <img src="img/card3.jpg" class="img-fluid" alt="Respirar mejor" >
+                </div>
+                <div class="relief-card-body">
+                  <span>Respirar mejor</span>
+                  <a href="#" class="relief-link" aria-label="Ver respirar mejor">
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FLECHA IZQUIERDA BOOTSTRAP -->
+      <button class="carousel-control-prev relief-control-prev" type="button" data-bs-target="#reliefCarousel" data-bs-slide="prev" aria-label="Anterior" >
+        <span class="relief-carousel-arrow">
+          <i class="bi bi-chevron-left"></i>
+        </span>
+      </button>
+      <!-- FLECHA DERECHA BOOTSTRAP -->
+      <button class="carousel-control-next relief-control-next" type="button" data-bs-target="#reliefCarousel" data-bs-slide="next" aria-label="Siguiente" >
+        <span class="relief-carousel-arrow">
+          <i class="bi bi-chevron-right"></i>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- TARJETAS DE PRODUCTOS -->
+
+<section class="py-5 nav-rojo">
+  <div class="container py-3" id="nuestro">
+    <!-- TITULO DE LA SECCION -->
+    <div class="text-center mb-4">
+      <h2 class="texto-blanco fs-1 fw-bold">Nuestros Productos </h2>
+    </div>
+    <div class="row g-4">
+      <!-- TARJETA 1 -->
+      <div class="col-12 col-md-6">
+        <div class="card product-card relief-card-1">
+          <div class="card-body product-card-content">
+            <!-- TITULO -->
+            <h3 class="product-card-title">TITULO</h3>
+            <!-- CONTENIDO INFERIOR -->
+            <div class="product-card-bottom">
+              <p class="product-card-text"> Aquí puedes agregar un texto corto relacionado con este producto.</p>
+              <a class="btn btn-danger fw-bold" href="#" > Encuentra tu NAS </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TARJETA 2 -->
+      <div class="col-12 col-md-6">
+        <div class="card product-card relief-card-2">
+          <div class="card-body product-card-content">
+            <!-- TITULO -->
+            <h3 class="product-card-title">
+              TITULO
+            </h3>
+            <!-- CONTENIDO INFERIOR -->
+            <div class="product-card-bottom">
+              <p class="product-card-text">Aquí puedes agregar otro texto corto relacionado con este producto.</p>
+              <a class="btn btn-danger fw-bold"href="#"> Encuentra tu NAS </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CAROUSEL -->
 <section class="carousel-wrap carusel-amarillo">
   <div class="container">
@@ -86,22 +246,11 @@
             </div>
             <div class="col-lg-7">
               <h2 class="fw-bold display-6 mb-2">Nas 0,1% Solución Nasal <br> Adulto 15 mL</h2>
-              <p class="mb-4" style="max-width:560px; opacity:.95;">
-                El aliado pefecto para la congestión nasal. Alivio rápido y efectivo para adultos, ayudando a respirar mejor y sentirte mejor. Ideal para uso diario.
-              </p>
+              <p class="mb-4" style="max-width:560px; opacity:.95;">El aliado pefecto para la congestión nasal. Alivio rápido y efectivo para adultos, ayudando a respirar mejor y sentirte mejor. Ideal para uso diario.</p>
               <div class="row text-center g-3">
-                <div class="col-12 col-md-4">
-                  <div class="feature-icon"><i class="bi bi-droplet"></i></div>
-                  <div class="fw-bold">Gotas</div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="feature-icon"><i class="bi bi-lungs"></i></div>
-                  <div class="fw-bold">Descongestionante</div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="feature-icon"><i class="bi bi-clock-history"></i></div>
-                  <div class="fw-bold">Rápida acción</div>
-                </div>
+                <div class="col-12 col-md-4"><div class="feature-icon"><i class="bi bi-droplet"></i></div><div class="fw-bold">Gotas</div></div>
+                <div class="col-12 col-md-4"><div class="feature-icon"><i class="bi bi-lungs"></i></div><div class="fw-bold">Descongestionante</div></div>
+                <div class="col-12 col-md-4"><div class="feature-icon"><i class="bi bi-clock-history"></i></div><div class="fw-bold">Rápida acción</div></div>
               </div>
             </div>
           </div>
@@ -114,360 +263,145 @@
             </div>
             <div class="col-lg-7">
               <h2 class="fw-bold display-6 mb-2">Nas 0,05% Solución Nasal <br> Pediátrico 15 mL</h2>
-              <p class="mb-4" style="max-width:560px; opacity:.95;">
-                Para los niños, el aliado perfecto para la congestión nasal. Alivio rápido y efectivo para niños, ayudando a respirar mejor y sentirte mejor. Ideal para uso diario.
-              </p>
+              <p class="mb-4" style="max-width:560px; opacity:.95;">Para los niños, el aliado perfecto para la congestión nasal. Alivio rápido y efectivo para niños, ayudando a respirar mejor y sentirte mejor. Ideal para uso diario.</p>
               <div class="row text-center g-3">
-                <div class="col-12 col-md-4">
-                  <div class="feature-icon"><i class="bi bi-droplet"></i></div>
-                  <div class="fw-bold">Gotas</div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="feature-icon"><i class="bi bi-lungs"></i></div>
-                  <div class="fw-bold">Descongestionante</div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="feature-icon"><i class="bi bi-clock-history"></i></div>
-                  <div class="fw-bold">Rápida acción</div>
-                </div>
+                <div class="col-12 col-md-4"><div class="feature-icon"><i class="bi bi-droplet"></i></div><div class="fw-bold">Gotas</div></div>
+                <div class="col-12 col-md-4"><div class="feature-icon"><i class="bi bi-lungs"></i></div><div class="fw-bold">Descongestionante</div></div>
+                <div class="col-12 col-md-4"><div class="feature-icon"><i class="bi bi-clock-history"></i></div><div class="fw-bold">Rápida acción</div></div>
               </div>
             </div>
           </div>
         </div>
-        </div>
       </div>
       <!-- Controles (flechas grandes como en tu imagen) -->
       <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-        <span class="big-nav-btn" aria-hidden="true">
-          <i class="bi bi-chevron-left fs-1 text-white"></i>
-        </span>
-        <span class="visually-hidden">Previous</span>
+        <span class="big-nav-btn"><i class="bi bi-chevron-left fs-1 text-white"></i></span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-        <span class="big-nav-btn" aria-hidden="true">
-          <i class="bi bi-chevron-right fs-1 text-white"></i>
-        </span>
-        <span class="visually-hidden">Next</span>
+        <span class="big-nav-btn"><i class="bi bi-chevron-right fs-1 text-white"></i></span>
       </button>
-    </div>
-  </div>
-</section>
-<!-- TARJETAS DE PRODUCTOS -->
-<section class="py-5 nav-rojo">
-  <div class="container py-3" id="nuestro">
-    <div class="text-center mb-4">
-      <h2 class="texto-blanco fs-1 fw-bold">Nuestros Productos</h2>
-      <p class=" texto-blanco mb-1 fs-5">Conoce nuestras dos presentaciones. NAS Nafazolina Nitrato. Alivio rápido y eficaz para la congestión nasal.</p>
-    </div>
-    <div class="row g-4">
-      <div class="col-1"></div>
-      <div class="col-md-4">
-        <div class="card product-card">
-          <div class="img-wrap">
-            <div class="blob red"></div>
-            <img src="img/NAS_PEDIATRICO_DERECHO.png" alt="Pack 2">
-          </div>
-          <div class="card-body text-center p-4">
-            <h5 class="fw-bold texto-azul" >Para niños</h5>
-            <div class="pill-icon"><a class="link-underline-opacity-0" href="#pediatrico"><i class="bi bi-droplet"></i></a></div>
-            <div class="mt-2 fw-semibold texto-azul" >  <a style="text-decoration: none;" class="texto-azul" href="#pediatrico">Gotas &nbsp;›</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-2"></div>
-      <div class="col-md-4">
-        <div class="card product-card">
-          <div class="img-wrap">
-            <div class="blob blue"></div>
-            <img src="img/NAS_ADULTO_DERECHO.png" alt="Pack 3">
-          </div>
-          <div class="card-body text-center p-4">
-            <h5 class="fw-bold texto-azul" >Para adultos</h5>
-            <div class="pill-icon"><a class="link-underline-opacity-0" href="#adulto"><i class="bi bi-droplet"></i></a></div>
-            <div class="mt-2 fw-semibold texto-azul" ><a style="text-decoration: none;" class="texto-azul" href="#adulto">Gotas &nbsp;›</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-1"></div>
     </div>
   </div>
 </section>
 
-<!-- SECCIÓN TABS + CONTENIDO PEDIATRICO-->
-<!-- <section class="info-tabs info-blanco pb-4 ">
-  <div class="container-fluid p-0" > -->
-    <!-- TABS -->
-    <!-- <ul class="nav nav-tabs justify-content-center info-tabs-nav" id="infoTabs" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="how-tab1" data-bs-toggle="tab" data-bs-target="#how1" type="button" role="tab" aria-controls="how1" aria-selected="true"> Modo de uso </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="ing-tab1" data-bs-toggle="tab" data-bs-target="#ing1" type="button" role="tab" aria-controls="ing1" aria-selected="false"> Ingredientes </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="adv-tab1" data-bs-toggle="tab" data-bs-target="#adv1" type="button" role="tab" aria-controls="adv1" aria-selected="false"> Advertencias </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="contraind-tab1" data-bs-toggle="tab" data-bs-target="#contraind1" type="button" role="tab" aria-controls="contraind1" aria-selected="false"> Contraindicaciones </button>
-      </li>
-    </ul> -->
-    <!-- CONTENIDO -->
-    <!-- <div class="tab-content info-tabs-content container" id="infoTabsContent"> -->
-      <!-- TAB 1 -->
-      <!-- <div class="tab-pane fade show active" id="how1" role="tabpanel" aria-labelledby="how-tab1">
-        <h2 class="info-title mt-4 text-center"> Como abrir frasco BFS:</h2>
-        <div class="row">
-          <div class="col-7  justify-content-end d-flex align-items-center ">
-            <p class="m-0 ms-md-5 ps-md-5 info-text" ><strong>(1)</strong> El frasco esta totalmente sellado, <strong>(sin orificio)</strong>. Cuando utilice el frasco por primera vez, enrosque la tapa del frasco en el sentido de la flecha <strong>(sentido de las agujas del reloj)</strong>, a fin de perforar la punta del frasco de forma aséptica.</p>
-          </div>
-          <div class="col-5  justify-content-md-start justify-content-center d-flex align-items-center">
-            <img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_1_180X180.png" alt="BFS1" >
-          </div>
-        </div>
-        <div class="row mt-5 d-flex">
-          <div class="col-7 justify-content-end d-flex align-items-center ">
-            <p class="m-0 ms-md-5 ps-md-5 info-text" ><strong>(2)</strong> La tapa puede entoces retirarse desenroscándola del frasco en el sentido de la flecha<strong>(sentido contrario a las agujas del reloj)</strong>, para abrir el frasco y aplicar el producto.</p>
-          </div>
-          <div class="col-5 justify-content-md-start justify-content-center d-flex align-items-center">
-            <img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_2_180X180.png" alt="BFS2" >
-          </div>
-        </div>
-      </div> -->
-      <!-- TAB 2 -->
-      <!-- <div class="tab-pane fade" id="ing1" role="tabpanel" aria-labelledby="ing-tab1">
-        <h2 class="info-title mt-4 text-center">Ingredientes</h2>
-        <p class="info-text px-3"> <strong>Cada mL contiene:</strong> Nafazolina Nitrato 0.50mg. Cloruro de Sodio, Fostato de sodio Monobásico, Fsofato de Sodio Dibásico, Edetato de Sodio, Cloruruo de Benzalconio, Agua Destilda c.s. </p>
-      </div> -->
-      <!-- TAB 3 -->
-      <!-- <div class="tab-pane fade" id="adv1" role="tabpanel" aria-labelledby="adv-tab1">
-        <h2 class="info-title mt-4 text-center">Advertencias</h2>
-        <p class="info-text px-3"> Si los síntomas persisten y no observa mejoría después de 2 a 3 días con el uso de este medicamento suspéndase y consulte al médico. La administración prolongada de este producto puede causar nerviosismo, intranquilidad e insomnio. Manténgase fuera del alcance de los niños. No exceda la dosis recomendada. </p>
-      </div> -->
-      <!-- TAB 4 -->
-      <!-- <div class="tab-pane fade" id="contraind1" role="tabpanel" aria-labelledby="contraind-tab1">
-        <h2 class="info-title mt-4 text-center">Contraindicaciones</h2>
-        <p class="info-text px-3"> Alergia a los componentes de la fórmula. En pacientes bajo tratamiento con inhibidores de la monoamionooxidasa (MAO), betabloqueantes y glaucoma. </p>
-        <p class="info-text px-3"> <strong>Precauciones:</strong> En pacientes hipertensos, cardicacos, diabéticos y enfermedades tiroideas. </p>
-      </div> -->
-    </div>
-  </div>
-</section>
+
+
 <!-- PRODUCTO DE ADULTO -->
-<section class="product-detail producto-amarillo carusel-amarillo py-5 " >
+<section class="product-detail producto-amarillo carusel-amarillo py-5">
   <div class="container mt-5" id="adulto">
     <div class="row align-items-start g-4">
       <!-- IZQUIERDA: Carrusel -->
       <div class="col-lg-5">
         <div id="nasCarousel" class="carousel slide" data-bs-ride="carousel">
-          <!-- INDICADORES (dots) -->
+          <!-- INDICADORES -->
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#nasCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#nasCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#nasCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#nasCarousel" data-bs-slide-to="1"></button>
           </div>
           <!-- IMÁGENES -->
           <div class="carousel-inner text-center">
-            <div class="carousel-item active">
-              <img src="img/NAS_ADULDO.jpg" class="pd-image" alt="Producto 1">
-            </div>
-            <div class="carousel-item">
-              <img src="img/NAS_ADULTO_DERECHO_1080X1080.png" class="pd-image" alt="Producto 2">
-            </div>
+            <div class="carousel-item active"><img src="img/NAS_ADULDO.jpg" class="pd-image" alt="Producto 1"></div>
+            <div class="carousel-item"><img src="img/NAS_ADULTO_DERECHO_1080X1080.png" class="pd-image" alt="Producto 2"></div>
           </div>
           <!-- FLECHA IZQUIERDA -->
-          <button class="carousel-control-prev pd-control" type="button" data-bs-target="#nasCarousel" data-bs-slide="prev">
-            <span class="pd-arrow-icon" aria-hidden="true">‹</span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
+          <button class="carousel-control-prev pd-control" type="button" data-bs-target="#nasCarousel" data-bs-slide="prev"><span class="pd-arrow-icon">‹</span></button>
           <!-- FLECHA DERECHA -->
-          <button class="carousel-control-next pd-control" type="button" data-bs-target="#nasCarousel" data-bs-slide="next">
-            <span class="pd-arrow-icon" aria-hidden="true">›</span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
+          <button class="carousel-control-next pd-control" type="button" data-bs-target="#nasCarousel" data-bs-slide="next"><span class="pd-arrow-icon">›</span></button>
         </div>
       </div>
       <!-- DERECHA: Texto -->
       <div class="col-lg-7">
-        <h2 class="pd-title">
-          Nas  Solución Nasal <br> Adulto 
-        </h2>
+        <h2 class="pd-title">Nas Solución Nasal <br> Adulto</h2>
         <div class="pd-meta d-flex align-items-center gap-3 my-3">
-          <div class="pd-iconbox">
-            <img src="img/LOGO_NAS.png" alt="Icono" class="pd-icon">
-          </div>
+          <div class="pd-iconbox"><img src="img/LOGO_NAS-scaled.png" alt="Icono" class="pd-icon"></div>
           <div class="pd-dose">0,1% Nafazolina Nitrato - 15 mL Solucion</div>
         </div>
-        <p class="pd-text">
-         <strong>NAS 0.1% Solución Nasal</strong> de Laboratorio OFTALMI es un descongestionante nasal para uso en adultos, formulado con Nafazolina Nitrato, indicado para el alivio temporal de la congestión nasal. Su acción vasoconstrictora ayuda a desinflamar la mucosa nasal y mejorar la respiración.
-        </p>
-        <p class="pd-text">
-          <strong>Posología:</strong> 2 a 3 gotas en cada fosa nasal cada 8 a 12 horas.
-        </p>
+        <p class="pd-text"><strong>NAS 0.1% Solución Nasal</strong> de Laboratorio OFTALMI es un descongestionante nasal para uso en adultos, formulado con Nafazolina Nitrato, indicado para el alivio temporal de la congestión nasal. Su acción vasoconstrictora ayuda a desinflamar la mucosa nasal y mejorar la respiración.</p>
+        <p class="pd-text"><strong>Posología:</strong> 2 a 3 gotas en cada fosa nasal cada 8 a 12 hours.</p>
       </div>
     </div>
   </div>
 </section>
+
 <!-- PRODUCTO DE PEDIATRICO -->
-<section class="product-detail producto-blanco py-5 my-5" >
+<section class="product-detail producto-blanco py-5 my-5">
   <div class="container mt-5" id="pediatrico">
     <div class="row align-items-start g-4">
       <!-- IZQUIERDA: Carrusel -->
       <div class="col-lg-5">
         <div id="nasCarousel1" class="carousel slide" data-bs-ride="carousel">
-          <!-- INDICADORES (dots) -->
+          <!-- INDICADORES -->
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#nasCarousel1" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#nasCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#nasCarousel1" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#nasCarousel1" data-bs-slide-to="1"></button>
           </div>
           <!-- IMÁGENES -->
           <div class="carousel-inner text-center">
-            <div class="carousel-item  active">
-              <img src="img/NAS_PEDIATRA.jpg" class="pd-image shadow" alt="Producto 1">
-            </div>
-            <div class="carousel-item ">
-              <img src="img/NAS_PEDIATRICO_IZQUIERDO_1080X1080.png" class="pd-image " alt="Producto 2">
-            </div>
+            <div class="carousel-item active"><img src="img/NAS_PEDIATRA.jpg" class="pd-image shadow" alt="Producto 1"></div>
+            <div class="carousel-item"><img src="img/NAS_PEDIATRICO_IZQUIERDO_1080X1080.png" class="pd-image" alt="Producto 2"></div>
           </div>
           <!-- FLECHA IZQUIERDA -->
-          <button class="carousel-control-prev pd-control" type="button" data-bs-target="#nasCarousel1" data-bs-slide="prev">
-            <span class="pd-arrow-icon" aria-hidden="true">‹</span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
+          <button class="carousel-control-prev pd-control" type="button" data-bs-target="#nasCarousel1" data-bs-slide="prev"><span class="pd-arrow-icon">‹</span></button>
           <!-- FLECHA DERECHA -->
-          <button class="carousel-control-next pd-control" type="button" data-bs-target="#nasCarousel1" data-bs-slide="next">
-            <span class="pd-arrow-icon" aria-hidden="true">›</span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
+          <button class="carousel-control-next pd-control" type="button" data-bs-target="#nasCarousel1" data-bs-slide="next"><span class="pd-arrow-icon">›</span></button>
         </div>
       </div>
       <!-- DERECHA: Texto -->
       <div class="col-lg-7">
-        <h2 class="pd-title">
-          Nas  Solución Nasal <br> Pediátrico
-        </h2>
+        <h2 class="pd-title">Nas Solución Nasal <br> Pediátrico</h2>
         <div class="pd-meta d-flex align-items-center gap-3 my-3">
-          <div class="pd-iconbox">
-            <img src="img/LOGO_NAS.png" alt="Icono" class="pd-icon">
-          </div>
+          <div class="pd-iconbox"><img src="img/LOGO_NAS-scaled.png" alt="Icono" class="pd-icon"></div>
           <div class="pd-dose">0,05% Nafazolina Nitrato - 15 mL Solucion</div>
         </div>
-        <p class="pd-text"> <strong>NAS 0.05% Solución Nasal (Gotas) </strong>es un descongestionante nasal de uso pediátrico, indicado en niños de 6 a 12 años. Actúa como vasoconstrictor tópico, ayudando a reducir la inflamación de la mucosa nasal y brindando alivio temporal de la congestión, facilitando la respiración. Es un producto de uso delicado que debe administrarse bajo vigilancia médica y siguiendo estrictamente la posología indicada por el facultativo, no recomendándose su uso por más de 3 días consecutivos. </p>
-        <p class="pd-text">
-          <strong>Posología:</strong> 2 a 3 gotas en cada fosa nasal cada 8 a 12 horas.
-        </p>
+        <p class="pd-text"><strong>NAS 0.05% Solución Nasal (Gotas) </strong>es un descongestionante nasal de uso pediátrico, indicado en niños de 6 a 12 años. Actúa como vasoconstrictor tópico, ayudando a reducir la inflamación de la mucosa nasal y brindando alivio temporal de la congestión, facilitando la respiración. Es un producto de uso delicado que debe administrarse bajo vigilancia médica y siguiendo estrictamente la posología indicada por el facultativo, no recomendándose su uso por más de 3 días consecutivos. </p>
+        <p class="pd-text"><strong>Posología:</strong> 2 a 3 gotas en cada fosa nasal cada 8 a 12 horas.</p>
       </div>
     </div>
   </div>
 </section>
+
 <!-- SECCIÓN TABS + CONTENIDO ADULTO -->
 <section class="info-tabs">
-  <div class="container-fluid p-0 pb-4 pt-5" id="modo">
+  <div class="container-fluid p-0 pb-4 pt-5 pb-5 mb-5" id="modo">
     <!-- TABS -->
     <ul class="nav nav-tabs justify-content-center info-tabs-nav" id="infoTabs" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="how-tab" data-bs-toggle="tab" data-bs-target="#how" type="button" role="tab" aria-controls="how" aria-selected="true"> Modo de uso </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="comp-tab" data-bs-toggle="tab" data-bs-target="#comp" type="button" role="tab" aria-controls="comp" aria-selected="false"> Composición </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="adv-tab" data-bs-toggle="tab" data-bs-target="#adv" type="button" role="tab" aria-controls="adv" aria-selected="false"> Advertencias </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="contraind-tab" data-bs-toggle="tab" data-bs-target="#contraind" type="button" role="tab" aria-controls="contraind" aria-selected="false"> Contraindicaciones </button>
-      </li>
+      <li class="nav-item"><button class="nav-link active" id="how-tab" data-bs-toggle="tab" data-bs-target="#how" type="button" role="tab">Modo de uso</button></li>
+      <li class="nav-item"><button class="nav-link" id="comp-tab" data-bs-toggle="tab" data-bs-target="#comp" type="button" role="tab">Composición</button></li>
+      <li class="nav-item"><button class="nav-link" id="adv-tab" data-bs-toggle="tab" data-bs-target="#adv" type="button" role="tab">Advertencias</button></li>
+      <li class="nav-item"><button class="nav-link" id="contraind-tab" data-bs-toggle="tab" data-bs-target="#contraind" type="button" role="tab">Contraindicaciones</button></li>
     </ul>
     <!-- CONTENIDO -->
     <div class="tab-content info-tabs-content container" id="infoTabsContent">
       <!-- TAB 1 -->
-      <div class="tab-pane fade show active" id="how" role="tabpanel" aria-labelledby="how-tab">
-        <h2 class="info-title mt-4 text-center"> Como abrir frasco BFS:</h2>
+      <div class="tab-pane fade show active" id="how" role="tabpanel">
+        <h2 class="info-title mt-4 text-center">Como abrir frasco BFS:</h2>
         <div class="row">
-          <div class="col-7  justify-content-end d-flex align-items-center ">
-            <p class="info-text m-0 ms-md-5 ps-md-5" ><strong>(1)</strong> El frasco esta totalmente sellado, <strong>(sin orificio)</strong>. Cuando utilice el frasco por primera vez, enrosque la tapa del frasco en el sentido de la flecha <strong>(sentido de las agujas del reloj)</strong>, a fin de perforar la punta del frasco de forma aséptica.</p>
-          </div>
-          <div class="col-5  justify-content-md-start justify-content-center d-flex align-items-center">
-            <img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_1_180X180.png" alt="BFS1" >
-          </div>
+          <div class="col-7 d-flex align-items-center"><p class="info-text m-0 ms-md-5 ps-md-5"><strong>(1)</strong> El frasco esta totalmente sellado, <strong>(sin orificio)</strong>. Cuando utilice el frasco por primera vez, enrosque la tapa del frasco en el sentido de la flecha <strong>(sentido de las agujas del reloj)</strong>, a fin de perforar la punta del frasco de forma aséptica.</p></div>
+          <div class="col-5 d-flex align-items-center"><img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_1_180X180.png" alt="BFS1"></div>
         </div>
         <div class="row mt-5 d-flex">
-          <div class="col-7 justify-content-end d-flex align-items-center ">
-            <p class="info-text m-0 ms-md-5 ps-md-5" ><strong>(2)</strong> La tapa puede entoces retirarse desenroscándola del frasco en el sentido de la flecha<strong>(sentido contrario a las agujas del reloj)</strong>, para abrir el frasco y aplicar el producto.</p>
-          </div>
-          <div class="col-5 justify-content-md-start justify-content-center d-flex align-items-center">
-            <img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_2_180X180.png" alt="BFS2" >
-          </div>
+          <div class="col-7 justify-content-end d-flex align-items-center "><p class="info-text m-0 ms-md-5 ps-md-5" ><strong>(2)</strong> La tapa puede entoces retirarse desenroscándola del frasco en el sentido de la flecha<strong>(sentido contrario a las agujas del reloj)</strong>, para abrir el frasco y aplicar el producto.</p></div>
+          <div class="col-5 justify-content-md-start justify-content-center d-flex align-items-center"><img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_2_180X180.png" alt="BFS2"></div>
         </div>
       </div>
       <!-- TAB 2 -->
-      <div class="tab-pane fade" id="comp" role="tabpanel" aria-labelledby="comp-tab">
+      <div class="tab-pane fade" id="comp" role="tabpanel">
         <h2 class="info-title mt-4 text-center">Composición</h2>
-        <p class="info-text px-3"> <strong>Cada mL (20 gotas)  contiene:</strong> Nafazolina Nitrato 0.50mg. Cloruro de Sodio, Fostato de sodio Monobásico, Fsofato de Sodio Dibásico, Edetato de Sodio, Cloruruo de Benzalconio, Agua Destilda c.s. </p>
+        <p class="info-text px-3"><strong>Cada mL (20 gotas) contiene:</strong> Nafazolina Nitrato 0.50mg. Cloruro de Sodio, Fostato de sodio Monobásico, Fsofato de Sodio Dibásico, Edetato de Sodio, Cloruruo de Benzalconio, Agua Destilda c.s.</p>
       </div>
       <!-- TAB 3 -->
-      <div class="tab-pane fade" id="adv" role="tabpanel" aria-labelledby="adv-tab">
+      <div class="tab-pane fade" id="adv" role="tabpanel">
         <h2 class="info-title mt-4 text-center">Advertencias</h2>
-        <p class="info-text px-3"> Si los síntomas persisten y no observa mejoría después de 2 a 3 días con el uso de este medicamento suspéndase y consulte al médico. La administración prolongada de este producto puede causar nerviosismo, intranquilidad e insomnio. Manténgase fuera del alcance de los niños. No exceda la dosis recomendada. La sobredosis en niños pequeños puede ser una emergencia que requiera rápido tratamiento. En caso de persistir la congestión nasal luego de 3 días de administrado, el fármaco deberá discontinuarse y consultar con el médico. Luego de usarse, debe lavarse el frasco gotero con agua caliente. </p>
+        <p class="info-text px-3">Si los síntomas persisten y no observa mejoría después de 2 a 3 días con el uso de este medicamento suspéndase y consulte al médico. La administración prolongada de este producto puede causar nerviosismo, intranquilidad e insomnio. Manténgase fuera del alcance de los niños. No exceda la dosis recomendada. La sobredosis en niños pequeños puede ser una emergencia que requiera rápido tratamiento. En caso de persistir la congestión nasal luego de 3 días de administrado, el fármaco deberá discontinuarse y consultar con el médico. Luego de usarse, debe lavarse el frasco gotero con agua caliente.</p>
       </div>
       <!-- TAB 4 -->
-      <div class="tab-pane fade" id="contraind" role="tabpanel" aria-labelledby="contraind-tab">
+      <div class="tab-pane fade" id="contraind" role="tabpanel">
         <h2 class="info-title mt-4 text-center">Contraindicaciones</h2>
-        <p class="info-text px-3"> Alergia a los componentes de la fórmula. En pacientes bajo tratamiento con inhibidores de la monoamionooxidasa (MAO), betabloqueantes y glaucoma. </p>
-        <p class="info-text px-3"> <strong>Precauciones:</strong> En pacientes hipertensos, cardicacos, diabéticos y enfermedades tiroideas. </p>
+        <p class="info-text px-3">Alergia a los componentes de la fórmula. En pacientes bajo tratamiento con inhibidores de la monoamionooxidasa (MAO), betabloqueantes y glaucoma. </p> <p class="info-text px-3"> <strong>Precauciones:</strong> En pacientes hipertensos, cardicacos, diabéticos y enfermedades tiroideas. </p>
       </div>
     </div>
   </div>
 </section>
-<!-- ARTICULOS RELACIONADOS -->
-<!-- <section class="py-5" style="background:#f7fbff;">
-  <div class="container py-3">
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-3">
-        <div class="card article-card">
-          <img src="img/IMAGEN_PEDIATRICO.png" alt="Artículo 1">
-          <div class="card-body p-4 text-center">
-            <div class="kicker">Adult Symptoms</div>
-            <div class="article-title">Period Pain and Period Cramps</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="card article-card">
-          <img src="img/IMAGEN_ADULTO.png" alt="Artículo 2">
-          <div class="card-body p-4 text-center">
-            <div class="kicker">Adult Symptoms</div>
-            <div class="article-title">The Common Cold</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="card article-card">
-          <img src="img/IMAGEN_PEDIATRICO.png" alt="Artículo 3">
-          <div class="card-body p-4 text-center">
-            <div class="kicker">Pediatric Symptoms</div>
-            <div class="article-title">Sore Throat</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="card article-card">
-          <img src="img/IMAGEN_ADULTO.png" alt="Artículo 4">
-          <div class="card-body p-4 text-center">
-            <div class="kicker">Adult Products</div>
-            <div class="article-title">Night Pain</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- BOTÓN SUBIR ARRIBA -->
-<button id="backToTop" class="back-to-top" type="button" aria-label="Subir al inicio">
-  <span class="back-to-top-icon"></span>
-</button>
-
-<div class="circle-container">
-  <div class="arrow-up"></div>
-</div>
 
 <!-- FOOTER -->
 <footer class="fondo-rojo">
@@ -478,25 +412,23 @@
           <a href="#">Producto</a>
           <a href="#">Marca</a>
           <a href="#">Modo de empleo</a>
-          <a href="#">Teminos legales</a>
-          
+          <a href="#">Términos legales</a>
         </div>
-        <div class="fineprint">
-          Texto legal / descargo. Puedes poner aquí información de la empresa, notas, etc.
-        </div>
+        <div class="fineprint">Texto legal / descargo. Información de la empresa, notas, etc.</div>
       </div>
-
       <div class="col-lg-5">
-        <div class="fineprint">
-          <strong>Información adicional</strong><br/>
-          Lista corta / copy que necesites.
-        </div>
+        <div class="fineprint"><strong>Información adicional</strong><br/>Lista corta / copy.</div>
       </div>
     </div>
   </div>
 </footer>
+<!-- BOTON SUBIR ARRIBA -->
+<a href="javascript:void(0)" id="backToTop" class="back-to-top" aria-label="Subir al inicio">
+  <span class="back-to-top-icon"></span>
+</a>
 <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="javacript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JAVASCRIPT PERSONALIZADO -->
+  <script src="javacript.js"></script>
 </body>
 </html>

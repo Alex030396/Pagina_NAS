@@ -72,19 +72,24 @@ html {
 /* HERO PRESENTACION DE NAVEGACION */
 .hero-section {
   background-color:var(--amarillo_nas);
-  min-height: 60vh;
+  min-height: 70vh;
   position: relative;
 }
 .hero-split {
   min-height: 70vh;
+  background-image: url(img/Portada.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   color: white;
+  position: relative;
 }
 .hero-content {
-  min-height: 60vh;
+  min-height: 70vh;
+  position: relative;
+  z-index: 2;
 }
 .hero-texto h1{
   font-weight: 800;
@@ -112,6 +117,88 @@ object-position: left center;
   border-radius: 999px;
   padding: 12px 22px;
   font-weight: 700;
+}
+
+/* ========================================
+   CAROUSEL - ¿QUE NECESITAS ALIVIAR?
+======================================== */
+.relief-carousel {
+  width: 100%;
+}
+/* =====================
+   TARJETAS
+===================== */
+.relief-card {
+  width: 100%;
+}
+/* IMAGEN CUADRADA */
+.relief-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+/* IMAGEN */
+.relief-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* =====================
+   TEXTO DE LA TARJETA
+===================== */
+.relief-card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 5px;
+}
+.relief-card-body span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+/* =====================
+   LINK DE LA TARJETA
+===================== */
+.relief-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+.relief-link:hover {
+  transform: translateX(5px);
+}
+/* =====================
+   FLECHAS DEL CAROUSEL
+===================== */
+.relief-control-prev,
+.relief-control-next {
+  width: 45px;
+  opacity: 1;
+}
+/* FLECHA */
+.relief-carousel-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: black;
+}
+/* POSICION IZQUIERDA */
+.relief-control-prev {
+  left: -15px;
+}
+/* POSICION DERECHA */
+.relief-control-next {
+  right: -15px;
+}
+/* EFECTO HOVER */
+.relief-carousel-arrow:hover {
+  opacity: 0.6;
 }
 /* ===== CAROUSEL SECTION ===== */
 .carousel-wrap{
@@ -149,11 +236,49 @@ object-position: left center;
   margin: 0 auto;
 }
 /* TARJETAS DE PRODUCTOS */
-.product-card{
+/* .product-card {
+    border: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    height: 516px;
+    width: 624px;
+} */
+.product-card {
   border: 0;
   border-radius: 18px;
-  overflow:hidden;
+  overflow: hidden;
+  width: 100%;
+  height: 516px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product-card-content {
+  position: relative;
+  z-index: 2;
   height: 100%;
+  padding: 25px 45px 40px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.product-card-title {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.product-card-bottom {
+  width: 65%;
+}
+.product-card-text {
+  margin-bottom: 18px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.product-card-bottom .btn {
+  display: inline-block;
 }
 .product-card .img-wrap{
   background: #fff;
@@ -268,6 +393,48 @@ object-position: left center;
   line-height: 1.6;
   max-width: 560px;
 }
+
+
+/* ========================================
+   TARJETAS CON IMAGEN DE FONDO
+/* IMAGEN TARJETA 1 */
+  .relief-card-1 {
+    background-image: url("img/targe1.jpg");
+  }
+  /* IMAGEN TARJETA 2 */
+  .relief-card-2 {
+    background-image: url("img/targe2.jpg");
+}
+/* ========================================
+   CONTENIDO ENCIMA DE LA IMAGEN
+======================================== */
+.relief-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 30px;
+}
+/* TEXTO OPCIONAL */
+.relief-title {
+  margin-bottom: 15px;
+}
+/* BOTÓN */
+.relief-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+
+
+
+
 /* TABS DE PRODUCTO DESTACADO */
 .info-tabs-nav {
   border-bottom: 1px solid #111;
@@ -402,7 +569,9 @@ footer a:hover{
     margin-top: 30px;
   }
   .hero-split {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%), url('img/IMAGEN_ADULTO_1920X1080_HORIZONTAL.png');
+    background-image: url("img/Portada.jpg");
+    background-size: cover;
+    background-position: center;
   }
   .hero-texto h1{
     color: white;
@@ -465,7 +634,9 @@ footer a:hover{
 }
 @media (max-width: 768px) {
   .hero-split {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/IMAGEN_ADULTO_1080X1920_VERTICAL.png');
+    background-image: url("img/Portada.jpg");
+    background-size: cover;
+    background-position: center;
     text-align: center;
   }
 }
@@ -473,3 +644,4 @@ footer a:hover{
   .navbar-brand img{ height: 50px; }
   .big-nav-btn{ width: 68px; height: 68px; border-radius: 18px; }
 }
+
