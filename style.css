@@ -4,6 +4,7 @@
   --rojo_nas: rgba(237, 50, 55,1);
   --amarillo_nas: rgba(255, 242, 0);
   --azul_nas: rgba(0, 56, 147);
+  --gris: #DDE5F0;
 }
 /* CUERPO DEL ESTILO DE CSS PARA NAS */
 body{
@@ -29,6 +30,9 @@ html {
 /* COLORES DE FONDOS */
 .fondo-blanco {
   background-color: var(--blanco-nas);
+}
+.fondo-gris {
+  background-color: var(--gris);
 }
 .fondo-azul {
   background-color: var(--azul_nas);
@@ -70,24 +74,20 @@ html {
   text-underline-offset: .6rem;
 }
 /* HERO PRESENTACION DE NAVEGACION */
-.hero-section {
+/* .hero-section {
   background-color:var(--amarillo_nas);
-  min-height: 70vh;
+  min-height: 100vh;
   position: relative;
-}
-.hero-split {
-  min-height: 70vh;
-  background-image: url(img/Portada.jpg);
+} */
+/* .hero-split {
+  min-height: 100vh;
+  background-image: url(img/Elementos_Nas/banner_1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  color: white;
-  position: relative;
 }
 .hero-content {
-  min-height: 70vh;
+  min-height: 100vh;
   position: relative;
   z-index: 2;
 }
@@ -97,7 +97,44 @@ html {
 }
 .hero-texto p{
   font-size: clamp(1rem, 1.3vw, 1.35rem);
+} */
+
+.hero-split {
+  min-height: 90vh;
+  background-image: url("img/Elementos_Nas/banner_1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+.hero-content {
+  min-height: 90vh;
+  position: relative;
+  z-index: 2;
+}
+/* TITULO SUPERIOR */
+.hero-title {
+  max-width: 1000px;
+  font-weight: 800;
+  font-size: clamp(2.0rem, 4.0vw, 3rem);
+  line-height: 1.1;
+  margin: 0;
+}
+/* TEXTO Y BOTON INFERIOR */
+.hero-bottom-content {
+  position: absolute;
+  bottom: 8%;
+  width: 100%;
+}
+.hero-description {
+  font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+  line-height: 1.25;
+  max-width: 520px;
+  margin-bottom: 0;
+}
+
+
+
+
 .image-container {
 position: absolute;
 top: 0;
@@ -124,53 +161,6 @@ object-position: left center;
 ======================================== */
 .relief-carousel {
   width: 100%;
-}
-/* =====================
-   TARJETAS
-===================== */
-.relief-card {
-  width: 100%;
-}
-/* IMAGEN CUADRADA */
-.relief-img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-}
-/* IMAGEN */
-.relief-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-/* =====================
-   TEXTO DE LA TARJETA
-===================== */
-.relief-card-body {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 5px;
-}
-.relief-card-body span {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-/* =====================
-   LINK DE LA TARJETA
-===================== */
-.relief-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: inherit;
-  font-size: 1.5rem;
-  text-decoration: none;
-  transition: transform 0.2s ease;
-}
-.relief-link:hover {
-  transform: translateX(5px);
 }
 /* =====================
    FLECHAS DEL CAROUSEL
@@ -247,11 +237,11 @@ object-position: left center;
   border: 0;
   border-radius: 18px;
   overflow: hidden;
-  width: 100%;
-  height: 516px;
+  max-width: 100%;
+  height: 590px;
   position: relative;
   background-size: cover;
-  background-position: center;
+  
   background-repeat: no-repeat;
 }
 .product-card-content {
@@ -261,8 +251,8 @@ object-position: left center;
   padding: 25px 45px 40px 45px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .product-card-title {
   margin: 0;
@@ -270,7 +260,7 @@ object-position: left center;
   font-weight: 800;
 }
 .product-card-bottom {
-  width: 65%;
+  width: 50%;
 }
 .product-card-text {
   margin-bottom: 18px;
@@ -399,12 +389,12 @@ object-position: left center;
    TARJETAS CON IMAGEN DE FONDO
 /* IMAGEN TARJETA 1 */
   .relief-card-1 {
-    background-image: url("img/targe1.jpg");
+    background-image: url("img/Elementos_nas/Tarjeta-1.png");
   }
   /* IMAGEN TARJETA 2 */
   .relief-card-2 {
-    background-image: url("img/targe2.jpg");
-}
+    background-image: url("img/Elementos_nas/Tarjeta-2.png");
+  }
 /* ========================================
    CONTENIDO ENCIMA DE LA IMAGEN
 ======================================== */
@@ -560,6 +550,60 @@ footer a:hover{
   font-size: .84rem;
   opacity: .9;
 }
+
+
+/* MODO DE USO */
+
+.modo-paso {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+/* IMAGEN CIRCULAR */
+.modo-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+/* NUMERO DEL PASO */
+.modo-numero {
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: var(--amarillo_nas);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #000;
+}
+/* RESPONSIVE */
+@media (max-width: 767.98px) {
+  .modo-paso {
+    width: 120px;
+    height: 120px;
+  }
+  .modo-img {
+    width: 120px;
+    height: 120px;
+  }
+  .modo-numero {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
 /* ===== RESPOSIVE ===== */
 @media (max-width: 992px) {
   .image-container {
@@ -568,18 +612,18 @@ footer a:hover{
     height: 400px;
     margin-top: 30px;
   }
-  .hero-split {
-    background-image: url("img/Portada.jpg");
+  /* .hero-split {
+    background-image: url("img/Elementos_Nas/banner_1.png");
     background-size: cover;
     background-position: center;
-  }
-  .hero-texto h1{
+  } */
+  /* .hero-texto h1{
     color: white;
     
   }
   .hero-texto p{
     color: white;
-  }
+  } */
   #navbar-site .navbar-brand{
     position: static;
     transform: none;
@@ -632,14 +676,19 @@ footer a:hover{
     align-items: flex-start !important;
   }
 }
+
+
+
+
+
 @media (max-width: 768px) {
-  .hero-split {
-    background-image: url("img/Portada.jpg");
+  /* .hero-split {
+    background-image: url("img/Elementos_Nas/banner_1.png");
     background-size: cover;
     background-position: center;
-    text-align: center;
+    text-align: center; */
   }
-}
+/* } */
 @media (max-width: 576px){
   .navbar-brand img{ height: 50px; }
   .big-nav-btn{ width: 68px; height: 68px; border-radius: 18px; }
