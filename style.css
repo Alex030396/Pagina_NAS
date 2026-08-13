@@ -389,11 +389,11 @@ object-position: left center;
    TARJETAS CON IMAGEN DE FONDO
 /* IMAGEN TARJETA 1 */
   .relief-card-1 {
-    background-image: url("img/Elementos_nas/Tarjeta-1.png");
+    background-image: url("img/Elementos_Nas/Tarjeta-1.png");
   }
   /* IMAGEN TARJETA 2 */
   .relief-card-2 {
-    background-image: url("img/Elementos_nas/Tarjeta-2.png");
+    background-image: url("img/Elementos_Nas/Tarjeta-2.png");
   }
 /* ========================================
    CONTENIDO ENCIMA DE LA IMAGEN
