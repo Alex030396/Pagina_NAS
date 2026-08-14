@@ -683,11 +683,6 @@ footer a:hover{
     align-items: flex-start !important;
   }
 }
-
-
-
-
-
 @media (max-width: 768px) {
   /* .hero-split {
     background-image: url("img/Elementos_Nas/banner_1.png");
@@ -700,4 +695,3 @@ footer a:hover{
   .navbar-brand img{ height: 50px; }
   .big-nav-btn{ width: 68px; height: 68px; border-radius: 18px; }
 }
-
