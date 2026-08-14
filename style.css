@@ -1,10 +1,11 @@
 /* ESTILO DE CSS PARA NAS */
 :root{
   --blanco-nas:#ffffff;
-  --rojo_nas: rgba(237, 50, 55,1);
-  --amarillo_nas: rgba(255, 242, 0);
+  --rojo_nas: #ed3237;
+  --amarillo_nas: #ffd318;
   --azul_nas: rgba(0, 56, 147);
-  --gris: #fafafa;
+  --gris: #dee6f1;
+  --blanco: #fafafa;
 }
 /* CUERPO DEL ESTILO DE CSS PARA NAS */
 body{
@@ -31,6 +32,9 @@ html {
 .fondo-blanco {
   background-color: var(--blanco-nas);
 }
+.fondo-blanco1 {
+  background-color: var(--blanco-nas);
+}
 .fondo-gris {
   background-color: var(--gris);
 }
@@ -47,6 +51,9 @@ html {
 /* COLOR DE FONDO DE LA BARRA DE NAVEGACION */
 .nav-rojo{
   background: var(--rojo_nas);
+}
+.nav-gris {
+  background: var(--gris);
 }
 /* HAMBURGER ICON */
 .icon-rojo {
@@ -110,6 +117,11 @@ html {
 .hero-principal {
   background: linear-gradient(to right,#F4F4F6 0%,#F4F4F6 50%, #FFBD00 50%, #FFBD00 100%);
 }
+.hero-principal img{
+  min-height: 80vh;
+  position: relative;
+  z-index: 2;
+}
 /* BOTON ENCIMA DE LA IMAGEN */
 .hero-btn {
   position: absolute;
@@ -118,9 +130,12 @@ html {
   z-index: 2;
 }
 
-
-
-
+.card-btn {
+  position: absolute;
+  left: 48%;
+  bottom: 8%;
+  z-index: 2;
+}
 
 .image-container {
 position: absolute;
@@ -212,60 +227,25 @@ object-position: left center;
   justify-content:center;
   margin: 0 auto;
 }
-/* TARJETAS DE PRODUCTOS */
-/* .product-card {
-    border: 0;
-    border-radius: 18px;
-    overflow: hidden;
-    height: 516px;
-    width: 624px;
-} */
-.product-card {
-  border: 0;
-  border-radius: 18px;
-  overflow: hidden;
-  max-width: 100%;
-  height: 590px;
-  position: relative;
-  background-size: cover;
-  
-  background-repeat: no-repeat;
-}
-.product-card-content {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  padding: 25px 45px 40px 45px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
+
+
 .product-card-title {
   margin: 0;
   font-size: 1.6rem;
   font-weight: 800;
 }
-.product-card-bottom {
+/* .product-card-bottom {
   width: 50%;
-}
+} */
 .product-card-text {
   margin-bottom: 18px;
   font-size: 1rem;
   line-height: 1.4;
 }
-.product-card-bottom .btn {
+/* .product-card-bottom .btn {
   display: inline-block;
-}
-.product-card .img-wrap{
-  background: #fff;
-  padding: 24px 24px 0 24px;
-  position: relative;
-  min-height: 270px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
+} */
+
 /* FORMA DE FONDO DE LAS TARJETAS DE PRODUCTOS */
 .blob{
   position:absolute;
@@ -279,12 +259,7 @@ object-position: left center;
 .blob.blue{ background:#0a79b8; left: 90px; top: 80px; right:auto; transform: rotate(75deg);}
 .blob.purple{ background:#6a1bd5; left: 22px; top: 22px; right:auto; }
 /* FORMA DE LAS IMAGENES DE LAS TARJETAS DE PRODUCTOS */
-.product-card img{
-  width: min(240px, 70%);
-  height: auto;
-  z-index: 2;
-  position: relative;
-}
+
 /*ICONOS DE LAS TARJETAS DE PRODUCTOS */
 .pill-icon{
   width: 64px;
@@ -369,19 +344,12 @@ object-position: left center;
   font-size: 1rem;
   line-height: 1.6;
   max-width: 560px;
+  text-align: justify;
 }
 
-
-/* ========================================
-   TARJETAS CON IMAGEN DE FONDO
-/* IMAGEN TARJETA 1 */
-  .relief-card-1 {
-    background-image: url("img/Elementos_Nas/Tarjeta-1.png");
-  }
-  /* IMAGEN TARJETA 2 */
-  .relief-card-2 {
-    background-image: url("img/Elementos_Nas/Tarjeta-2.png");
-  }
+.texto-v{
+  text-align: justify;
+}
 /* ========================================
    CONTENIDO ENCIMA DE LA IMAGEN
 ======================================== */
@@ -683,5 +651,7 @@ footer a:hover{
 @media (max-width: 576px){
   .navbar-brand img{ height: 50px; }
   .big-nav-btn{ width: 68px; height: 68px; border-radius: 18px; }
+  .hero-principal img{ min-height: auto; }
+  .hero-btn { left: 50%; bottom: 8%;  }
 }
 
