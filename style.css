@@ -99,41 +99,27 @@ html {
   font-size: clamp(1rem, 1.3vw, 1.35rem);
 } */
 
-.hero-split {
+/* .hero-split {
   min-height: 90vh;
   background-image: url("img/Elementos_Nas/banner_1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-.hero-content {
-  min-height: 90vh;
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-/* TITULO SUPERIOR */
-.hero-title {
-  max-width: 1000px;
-  font-weight: 800;
-  font-size: clamp(2.0rem, 4.0vw, 3rem);
-  line-height: 1.1;
-  margin: 0;
-}
-/* TEXTO Y BOTON INFERIOR */
-/* .hero-bottom-content {
-  position: absolute;
-  bottom: 8%;
-  width: 100%;
-}
-.hero-description {
-  font-size: clamp(1.2rem, 1.8vw, 1.5rem);
-  line-height: 1.25;
-  max-width: 520px;
-  margin-bottom: 0;
 } */
+
+.hero-principal {
+  /* background: linear-gradient( to right, #ffffff 0%, #ffffff 50%, #ffd318 50%, #ffd318 100%   ); */
+  /* background: radial-gradient(circle at 70% 50%, #FFC107 0%, #FFB300 50%, #E69500 100%); */
+  background: linear-gradient(to right,#F4F4F6 0%,#F4F4F6 50%, #FFBD00 50%, #FFBD00 100%);
+}
+/* BOTON ENCIMA DE LA IMAGEN */
+.hero-btn {
+  position: absolute;
+  left: 8%;
+  bottom: 8%;
+  z-index: 2;
+}
+
 
 
 
@@ -683,6 +669,11 @@ footer a:hover{
     align-items: flex-start !important;
   }
 }
+
+
+
+
+
 @media (max-width: 768px) {
   /* .hero-split {
     background-image: url("img/Elementos_Nas/banner_1.png");
@@ -695,3 +686,4 @@ footer a:hover{
   .navbar-brand img{ height: 50px; }
   .big-nav-btn{ width: 68px; height: 68px; border-radius: 18px; }
 }
+
