@@ -33,7 +33,7 @@ html {
   background-color: var(--blanco-nas);
 }
 .fondo-blanco1 {
-  background-color: var(--blanco-nas);
+  background-color: var(--blanco);
 }
 .fondo-gris {
   background-color: var(--gris);
@@ -128,12 +128,13 @@ html {
   left: 8%;
   bottom: 8%;
   z-index: 2;
+  font-size: 1.4rem;
 }
 
 .card-btn {
   position: absolute;
   left: 48%;
-  bottom: 8%;
+  bottom: 5%;
   z-index: 2;
 }
 
@@ -510,7 +511,9 @@ footer a:hover{
   width: 100%;
   height: auto;
 }
-
+.text-min {
+  font-size: 12px;
+}
 /* MODO DE USO */
 
 .modo-paso {
@@ -635,8 +638,12 @@ footer a:hover{
     align-items: flex-start !important;
   }
 }
-
-
+p-img {
+  width: 40% ;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
 
 
 
@@ -647,11 +654,12 @@ footer a:hover{
     background-position: center;
     text-align: center; */
   }
-/* } */
-@media (max-width: 576px){
-  .navbar-brand img{ height: 50px; }
-  .big-nav-btn{ width: 68px; height: 68px; border-radius: 18px; }
-  .hero-principal img{ min-height: auto; }
-  .hero-btn { left: 50%; bottom: 8%;  }
+  /* } */
+  @media (max-width: 576px){
+    .navbar-brand img{ height: 50px; }
+    .big-nav-btn{ width: 68px; height: 68px; border-radius: 18px; }
+    .hero-principal img{ min-height: auto; }
+    .hero-btn { left: 40%; bottom: 8%; font-size: .8rem  }
+    .p-img{width: 75%}
 }
 
