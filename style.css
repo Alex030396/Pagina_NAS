@@ -4,7 +4,7 @@
   --rojo_nas: rgba(237, 50, 55,1);
   --amarillo_nas: rgba(255, 242, 0);
   --azul_nas: rgba(0, 56, 147);
-  --gris: #DDE5F0;
+  --gris: #fafafa;
 }
 /* CUERPO DEL ESTILO DE CSS PARA NAS */
 body{
@@ -110,6 +110,9 @@ html {
   min-height: 90vh;
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 /* TITULO SUPERIOR */
 .hero-title {
@@ -120,7 +123,7 @@ html {
   margin: 0;
 }
 /* TEXTO Y BOTON INFERIOR */
-.hero-bottom-content {
+/* .hero-bottom-content {
   position: absolute;
   bottom: 8%;
   width: 100%;
@@ -130,7 +133,7 @@ html {
   line-height: 1.25;
   max-width: 520px;
   margin-bottom: 0;
-}
+} */
 
 
 
@@ -384,16 +387,16 @@ object-position: left center;
   max-width: 560px;
 }
 
-/* ALEX */
+
 /* ========================================
    TARJETAS CON IMAGEN DE FONDO
 /* IMAGEN TARJETA 1 */
   .relief-card-1 {
-    background-image: url("img/Elementos_Nas/Tarjeta-1.png");
+    background-image: url("img/Elementos_nas/Tarjeta-1.png");
   }
   /* IMAGEN TARJETA 2 */
   .relief-card-2 {
-    background-image: url("img/Elementos_Nas/Tarjeta-2.png");
+    background-image: url("img/Elementos_nas/Tarjeta-2.png");
   }
 /* ========================================
    CONTENIDO ENCIMA DE LA IMAGEN
@@ -551,6 +554,10 @@ footer a:hover{
   opacity: .9;
 }
 
+.bfs-2{
+  width: 100%;
+  height: auto;
+}
 
 /* MODO DE USO */
 
