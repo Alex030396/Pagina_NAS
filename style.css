@@ -423,6 +423,9 @@ object-position: left center;
   height: 230px;
   object-fit: cover;
 }
+.oculto {
+  display: none;
+}
 .kicker{
   font-size: .9rem;
   color:#3a6aa5;
@@ -466,6 +469,63 @@ object-position: left center;
   border-right: 7.5px solid transparent;
   border-bottom: 15px solid var(--azul_nas); 
 }
+
+/* ==========================================
+   BOTON PARA OCULTAR SECCION
+========================================== */
+.section-close-wrap {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+/* LINEA HORIZONTAL */
+.section-close-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--azul_nas);
+}
+/* BOTON CIRCULAR */
+.section-close-btn {
+  position: relative;
+  z-index: 2;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  border: 3px solid var(--azul_nas);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+/* FLECHA */
+.section-close-btn i {
+  font-size: 2.3rem;
+  color: var(--azul_nas);
+  line-height: 1;
+}
+/* HOVER */
+.section-close-btn:hover {
+  background-color: #f5f5f5;
+}
+/* NAVBAR SIEMPRE POR ENCIMA */
+#navbar-site {
+  z-index: 2000;
+}
+
+
+/* SIDEBAR POR DEBAJO DEL NAVBAR */
+.noticia-sidebar {
+  top: 100px;
+  z-index: 10;
+}
+
 /* ===== FOOTER ===== */
 footer{
   color:#fff;

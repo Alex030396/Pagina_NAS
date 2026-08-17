@@ -62,3 +62,81 @@ function initBackToTop() {
     });
   }
 }
+
+
+  // Mostrar una sección y ocultar las demás
+  function mostrarnoticia(idSeccion) {
+    // Lista de secciones desplegables
+    const secciones = document.querySelectorAll(
+      '#section1, #section2'
+    );
+    // Ocultar todas
+    secciones.forEach(seccion => {
+      seccion.classList.add('oculto');
+    });
+    // Mostrar solamente la seleccionada
+    const seccionSeleccionada =
+      document.getElementById(idSeccion);
+    seccionSeleccionada.classList.remove('oculto');
+    // Llevar la pantalla hacia la sección seleccionada
+    seccionSeleccionada.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+  // Ocultar sección y volver a las tarjetas
+  function ocultarSeccion(idSeccion) {
+    const seccion =
+      document.getElementById(idSeccion);
+    const destino =
+      document.getElementById('nuestro');
+    // Ocultar inmediatamente
+    seccion.classList.add('oculto');
+    // Volver a las tarjetas
+    destino.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+  
+  
+  
+
+
+
+
+    // Mostrar una sección y ocultar las demás
+    function mostrarnoticia(idnoticia) {
+      // Lista de secciones desplegables
+      const secciones = document.querySelectorAll(
+        '#noticia1, #noticia2, #noticia3, #noticia4, #noticia5, #noticia6, #noticia7, #noticia8'
+      );
+      // Ocultar todas
+      secciones.forEach(seccion => {
+        seccion.classList.add('oculto');
+      });
+      // Mostrar solamente la seleccionada
+      const seccionSeleccionada =
+        document.getElementById(idnoticia);
+      seccionSeleccionada.classList.remove('oculto');
+      // Llevar la pantalla hacia la sección seleccionada
+      seccionSeleccionada.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    // Ocultar sección y volver a las tarjetas
+    function ocultarnoticia(idnoticia) {
+      const seccion =
+        document.getElementById(idnoticia);
+      const destino =
+        document.getElementById('noticias');
+      // Ocultar inmediatamente
+      seccion.classList.add('oculto');
+      // Volver a las tarjetas
+      destino.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  
