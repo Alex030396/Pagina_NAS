@@ -36,7 +36,7 @@ html {
   background-color: var(--blanco);
 }
 .fondo-gris {
-  background-color: var(--gris);
+  background-color: var(--gris) !important;
 }
 .fondo-azul {
   background-color: var(--azul_nas);
@@ -80,53 +80,32 @@ html {
   text-decoration: none;
   text-underline-offset: .6rem;
 }
-/* HERO PRESENTACION DE NAVEGACION */
-/* .hero-section {
-  background-color:var(--amarillo_nas);
-  min-height: 100vh;
-  position: relative;
-} */
-/* .hero-split {
-  min-height: 100vh;
-  background-image: url(img/Elementos_Nas/banner_1.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.hero-content {
-  min-height: 100vh;
-  position: relative;
-  z-index: 2;
-}
-.hero-texto h1{
-  font-weight: 800;
-  font-size: clamp(2.4rem, 4.2vw, 5rem);
-}
-.hero-texto p{
-  font-size: clamp(1rem, 1.3vw, 1.35rem);
-} */
 
-/* .hero-split {
-  min-height: 90vh;
-  background-image: url("img/Elementos_Nas/banner_1.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
+.p-img{
+  max-width: 75% !important;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+.p-img1{
+  max-width: 73% !important;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
 
-.hero-principal {
-  background: linear-gradient(to right,#F4F4F6 0%,#F4F4F6 50%, #FFBD00 50%, #FFBD00 100%);
+.derecha{
+  max-width: 1356px;
 }
-.hero-principal img{
-  min-height: 80vh;
-  position: relative;
-  z-index: 2;
+.izquierda{
+  max-width: 1204px;
 }
+
 /* BOTON ENCIMA DE LA IMAGEN */
 .hero-btn {
   position: absolute;
-  left: 8%;
-  bottom: 8%;
+  left: 4%;
+  bottom: 33%;
   z-index: 2;
   font-size: 1.4rem;
 }
@@ -311,6 +290,13 @@ object-position: left center;
 .carousel-indicators .active {
   background-color: var(--azul_nas);
 }
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
 /* TITULO DE PRODUCTO DESTACADO */
 .pd-title {
   color: var(--azul_nas);
@@ -373,14 +359,6 @@ object-position: left center;
   align-items: center;
   gap: 10px;
 }
-
-
-
-
-
-
-
-
 /* TABS DE PRODUCTO DESTACADO */
 .info-tabs-nav {
   border-bottom: 1px solid #111;
@@ -546,6 +524,22 @@ footer a:hover{
   color: #000;
 }
 /* RESPONSIVE */
+
+
+/* ===== RESPOSIVE ===== */
+
+@media (max-width: 576px){
+  .navbar-brand img{ height: 50px; }
+  .big-nav-btn{ width: 68px; height: 68px; border-radius: 18px; }
+  .hero-btn {
+  left: 7%;
+  bottom: 30.5%;
+  font-size: .8rem;
+}
+  /* .p-img{width: 75%} */
+  .banner-img{width: 100%; height: 12rem;}
+}
+
 @media (max-width: 767.98px) {
   .modo-paso {
     width: 120px;
@@ -561,12 +555,49 @@ footer a:hover{
     font-size: 1.5rem;
   }
 }
+@media (max-width: 768px) {
+  .hero-btn {
+  left: 7%;
+  bottom: 32%;
+  font-size: 1.2rem;
+  }
+}
 
 
-
-
-
-/* ===== RESPOSIVE ===== */
+@media (max-width: 991.98px) {
+  /* NO tocar #navbar-site (sticky-top depende de position: sticky) */
+  #navbar-site .container{
+    position: relative;
+  }
+  /* Logo centrado en la barra superior (NO se mueve al abrir el menú) */
+  #navbar-site .navbar-brand{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 2;
+  }
+  /* Hamburguesa a la izquierda y encima de todo */
+  #navbar-site .navbar-toggler{
+    z-index: 3;
+  }
+  /* El menú desplegable sale debajo sin empujar el navbar */
+  #navbar-site .navbar-collapse{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;                 /* fondo rojo de borde a borde */
+    background: var(--rojo-nas);   /* tu rojo */
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  /* (Opcional) que los links queden alineados a la izquierda en móvil */
+  #navbar-site .navbar-nav{
+    align-items: flex-start !important;
+  }
+}
 @media (max-width: 992px) {
   .image-container {
     position: relative;
@@ -574,18 +605,6 @@ footer a:hover{
     height: 400px;
     margin-top: 30px;
   }
-  /* .hero-split {
-    background-image: url("img/Elementos_Nas/banner_1.png");
-    background-size: cover;
-    background-position: center;
-  } */
-  /* .hero-texto h1{
-    color: white;
-    
-  }
-  .hero-texto p{
-    color: white;
-  } */
   #navbar-site .navbar-brand{
     position: static;
     transform: none;
@@ -598,68 +617,9 @@ footer a:hover{
     background: transparent;
   }
 }
-/* SOLO MOBILE / TABLET */
-@media (max-width: 991.98px) {
-
-  /* NO tocar #navbar-site (sticky-top depende de position: sticky) */
-  #navbar-site .container{
-    position: relative;
-  }
-
-  /* Logo centrado en la barra superior (NO se mueve al abrir el menú) */
-  #navbar-site .navbar-brand{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    z-index: 2;
-  }
-
-  /* Hamburguesa a la izquierda y encima de todo */
-  #navbar-site .navbar-toggler{
-    z-index: 3;
-  }
-
-  /* El menú desplegable sale debajo sin empujar el navbar */
-  #navbar-site .navbar-collapse{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;                 /* fondo rojo de borde a borde */
-    background: var(--rojo-nas);   /* tu rojo */
-    padding: 12px 16px;
-    z-index: 1;
-  }
-
-  /* (Opcional) que los links queden alineados a la izquierda en móvil */
-  #navbar-site .navbar-nav{
-    align-items: flex-start !important;
-  }
+@media (max-width: 1024px) {
+  .hero-btn {
+  left: 7%;
+  bottom: 30.5%;
 }
-p-img {
-  width: 40% ;
-  height: auto;
-  margin: 0 auto;
-  display: block;
 }
-
-
-
-@media (max-width: 768px) {
-  /* .hero-split {
-    background-image: url("img/Elementos_Nas/banner_1.png");
-    background-size: cover;
-    background-position: center;
-    text-align: center; */
-  }
-  /* } */
-  @media (max-width: 576px){
-    .navbar-brand img{ height: 50px; }
-    .big-nav-btn{ width: 68px; height: 68px; border-radius: 18px; }
-    .hero-principal img{ min-height: auto; }
-    .hero-btn { left: 40%; bottom: 8%; font-size: .8rem  }
-    .p-img{width: 75%}
-}
-

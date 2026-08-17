@@ -26,12 +26,12 @@
     </a>
     <!-- BOTON DE HAMBURGUESA PARA MOVIL -->
     <button class="navbar-toggler text-dark border-0 order-1 order-lg-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon icon-blanco"></span>
+      <span class="navbar-toggler-icon icon-rojo"></span>
     </button>
     <!-- NOMBRE DE LOS LINKS DE NAVEGACION -->
     <div class="fondo-gris collapse navbar-collapse justify-content-end order-3" id="mainNav">
       <ul class="navbar-nav align-items-lg-center gap-lg-3 fw-bold fs-5">
-        <li class="nav-item"><a class="nav-link "  href="#nuestro">Nuestros Productos</a></li>
+        <li class="nav-item"><a class="nav-link"  href="#nuestro">Nuestros Productos</a></li>
         <li class="nav-item"><a class="nav-link" href="#adulto">Nas Adulto</a></li>
         <li class="nav-item"><a class="nav-link "  href="#pediatrico">Nas Pediatrico</a></li>
         <li class="nav-item"><a class="nav-link" href="#modo">Modo de Uso</a></li>
@@ -42,12 +42,18 @@
 </nav>
 
 <!-- INTRODUCCION -->
-<section class="hero-principal">
-  <div class="container-fluid position-relative">
-    <img src="img/Elementos_Nas/banner_1.webp" class="img-fluid w-100 d-block" alt="Banner principal" >
-    <a class="btn btn-danger fw-bold hero-btn" href="#" > Encuentra tu NAS </a>
+<section>
+  <div class="container-fluid position-relative p-0">
+    <picture class="w-100 d-block">
+      <source media="(min-width: 1200px)" srcset="img/Elementos_Nas/banner_1.webp">
+      <source media="(min-width: 576px)" srcset="img/Elementos_Nas/banner-1d.webp">
+      <img src="img/Elementos_Nas/banner-1d.webp" class="img-fluid w-100 d-block" alt="Banner principal NAS">
+    </picture>
+    <a class="btn btn-danger fw-bold hero-btn" href="#">Encuentra tu NAS</a>
   </div>
 </section>
+
+
 
 <!-- CAROUSEL ¿QUE NECESITAS ALIVIAR? -->
 <section class="relief-carousel py-5 fondo-gris">
@@ -63,7 +69,7 @@
         <div class="carousel-item active">
           <div class="row g-4 px-md-5">
             <!-- TARJETA 1 -->
-            <div class="col-12 col-md-4">
+            <div class="col-6 col-md-3">
               <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
                     <img src="img/Elementos_Nas/noticia-1.webp" class="card-img-top" alt="Congestión nasal">
                     <div class="card-body d-flex justify-content-between align-items-center">
@@ -73,7 +79,7 @@
                 </div>
             </div>
             <!-- TARJETA 2 -->
-            <div class="col-12 col-md-4">
+            <div class="col-6 col-md-3">
               <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
                     <img src="img/Elementos_Nas/Noticia-2.webp" class="card-img-top" alt="Congestión nasal">
                     <div class="card-body d-flex justify-content-between align-items-center">
@@ -83,9 +89,19 @@
                 </div>
             </div>
             <!-- TARJETA 3 -->
-            <div class="col-12 col-md-4">
+            <div class="col-6 col-md-3">
               <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
                     <img src="img/Elementos_Nas/Noticia-3.webp" class="card-img-top" alt="Congestión nasal">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">Cuando usar más tiempo puede tapar más la nariz</span>
+                        <a href="#" class="text-dark text-decoration-none fs-4" aria-label="Ver congestión nasal" ><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- TARJETA 3 -->
+            <div class="col-6 col-md-3">
+              <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
+                    <img src="img/Elementos_Nas/Noticia-4.webp" class="card-img-top" alt="Congestión nasal">
                     <div class="card-body d-flex justify-content-between align-items-center">
                         <span class="fw-bold">Cuando usar más tiempo puede tapar más la nariz</span>
                         <a href="#" class="text-dark text-decoration-none fs-4" aria-label="Ver congestión nasal" ><i class="bi bi-arrow-right"></i></a>
@@ -98,7 +114,7 @@
         <div class="carousel-item">
           <div class="row g-4 px-md-5">
             <!-- TARJETA 4 -->
-            <div class="col-12 col-md-4">
+            <div class="col-6 col-md-3">
               <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
                     <img src="img/Elementos_Nas/Noticia-4.webp" class="card-img-top" alt="Congestión nasal">
                     <div class="card-body d-flex justify-content-between align-items-center">
@@ -108,7 +124,7 @@
                 </div>
             </div>
            <!-- TARJETA 5 -->
-            <div class="col-12 col-md-4">
+            <div class="col-6 col-md-3">
               <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
                     <img src="img/Elementos_Nas/Noticia-5.webp" class="card-img-top" alt="Congestión nasal">
                     <div class="card-body d-flex justify-content-between align-items-center">
@@ -118,14 +134,24 @@
                 </div>
             </div>
            <!-- TARJETA 6 -->
-            <div class="col-12 col-md-4">
-                <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
+            <div class="col-6 col-md-3">
+                <!-- <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
                     <img src="img/Elementos_Nas/noticia-1.webp" class="card-img-top" alt="Congestión nasal">
                     <div class="card-body d-flex justify-content-between align-items-center">
                         <span class="fw-bold">Congestión nasal</span>
                         <a href="#" class="text-dark text-decoration-none fs-4" aria-label="Ver congestión nasal" ><i class="bi bi-arrow-right"></i></a>
                     </div>
-                </div>
+                </div> -->
+            </div>
+           <!-- TARJETA 6 -->
+            <div class="col-6 col-md-3">
+                <!-- <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
+                    <img src="img/Elementos_Nas/noticia-1.webp" class="card-img-top" alt="Congestión nasal">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">Congestión nasal</span>
+                        <a href="#" class="text-dark text-decoration-none fs-4" aria-label="Ver congestión nasal" ><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div> -->
             </div>
           </div>
         </div>
@@ -182,22 +208,21 @@
 <section class="fondo-amarillo py-5">
   <div class="container">
           <div class="row align-items-center g-4">
-            <div class="col-md-2 col-6 text-center order-md-1 order-2">
-              <img class="img-fluid p-img" src="img/Elementos_Nas/Bfs-2.webp" alt="Producto">
-                <!-- <div class="feature-icon"><i class="bi bi-arrow-repeat"></i></div> -->
+            <div class="col-md-3 col-6 text-center order-md-1 order-2">
+              <img class="p-img1" src="img/Elementos_Nas/Bfs-2.webp" alt="Producto">
             </div>
-            <div class="col-md-7 col-12 order-md-2 order-1">
-              <h2 class="fw-bold display-6 mb-2">Tecnología BFS </h2>
-              <p class="mb-4 fw-bold">Formado, llenado y sellado en un proceso continuo.</p>
-              <p class="mb-4" style="max-width:560px; opacity:.95;">El frasco NAS se forma, se llena y se sella mediante un proceso automatizado. Permanece totalmente sellado hasta su primera apertura.</p>
+            <div class="col-md-6 col-12 order-md-2 order-1">
+              <h2 class="fw-bold display-6 mb-2 ms-5">Tecnología BFS </h2>
+              <p class="mb-4 fw-bold ms-5">Formado, llenado y sellado en un proceso continuo.</p>
+              <p class="mb-4 ms-5" style="max-width:560px; opacity:.95;">El frasco NAS se forma, se llena y se sella mediante un proceso automatizado. Permanece totalmente sellado hasta su primera apertura.</p>
               <div class="row text-center g-3">
                 <div class="col-4"><div class="feature-icon"><i class="bi bi-droplet"></i></div><p class="text-min fw-bold">Gotas</p></div>
                 <div class="col-4"><div class="feature-icon"><i class="bi bi-lungs"></i></div><p class="text-min fw-bold">Descongestionante</p></div>
                 <div class="col-4"><div class="feature-icon"><i class="bi bi-clock-history"></i></div><p class="text-min fw-bold">Rápida acción</p></div>
               </div>
             </div>
-            <div class="col-md-3 col-6 align-items-center text-center order-md-3 order-3">
-                <img class="img-fluid p-img" src="img/Elementos_Nas/BFS-1.webp" alt="Producto">
+            <div class="col-md-3 col-6 align-items-center text-center order-md-3 order-3 ">
+                <img class="p-img" src="img/Elementos_Nas/BFS-1.webp" alt="Producto">
             </div>
           </div>
   </div>
@@ -206,7 +231,11 @@
 <!-- IMAGEN DIVISORA -->
 <section class="fondo-blanco1">
   <div class="container p-0">
-    <img src="img/Elementos_Nas/banner_2.webp" class="img-fluid w-100" alt="Imagen divisora">
+    <picture class="w-100 d-block">
+      <source media="(min-width: 1200px)" srcset="img/Elementos_Nas/banner_2.webp">
+      <source media="(min-width: 576px)" srcset="img/Elementos_Nas/banner-2d.webp">
+      <img src="img/Elementos_Nas/banner-2d.webp" class="img-fluid w-100 d-block" alt="Banner principal NAS">
+    </picture>
   </div>
 </section>
 
@@ -264,9 +293,9 @@
 
 
 <!-- FAMACOVIGILANCIA -->
-<section>
-  <div class="container">
-    <div class="row py-5 align-items-center g-4">
+<section class="fondo-blanco py-4">
+  <div class="container py-0">
+    <div class="row py-0 align-items-center g-4">
       <div class="col-md-7 col-12">
         <h2 class="fw-bold display-6">Farmaco Vigilancia</h2>
         <p class="texto-v">lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt pariatur aliquam quasi qui, error accusantium delectus quam est harum, laudantium sunt esse molestias natus facere quas illo veritatis amet magnam?
@@ -287,7 +316,7 @@
 <!-- MAPA MUNDI -->
 <section class="fondo-amarillo">
   <div class="container">
-    <div class="row py-5 align-items-center g-4">
+    <div class="row py-3 align-items-center g-4">
       <div class="col-md-6 col-12">
         <h2 class="fw-bold display-6">Nuestros aliados</h2>
         <p class="texto-v">lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt pariatur aliquam quasi qui, error accusantium delectus quam est harum, laudantium sunt esse molestias natus facere quas illo veritatis amet magnam?
