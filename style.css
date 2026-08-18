@@ -49,9 +49,6 @@ html {
 }
 /* ===== NAVBAR ===== */
 /* COLOR DE FONDO DE LA BARRA DE NAVEGACION */
-.nav-rojo{
-  background: var(--rojo_nas);
-}
 .nav-gris {
   background: var(--gris);
 }
@@ -67,7 +64,11 @@ html {
   height: 62px;
   width: auto;
 }
-/* LOS LINKS DE NAVEGACION */
+/* NAVBAR SIEMPRE POR ENCIMA */
+#navbar-site {
+  z-index: 2000;
+}
+/* ------------------------------------LOS LINKS DE NAVEGACION-------------------------------- */
 .nav-item{
   font-size: 19px;
 }
@@ -80,73 +81,24 @@ html {
   text-decoration: none;
   text-underline-offset: .6rem;
 }
-
-.p-img{
-  max-width: 75% !important;
-  height: auto;
-  margin: 0 auto;
-  display: block;
+/* ------------------------------------------INTRODUCCION-------------------------------------------- */
+.hero-banner {
+  height: 650px;
+  overflow: hidden;
 }
-.p-img1{
-  max-width: 73% !important;
-  height: auto;
-  margin: 0 auto;
-  display: block;
+.hero-banner-img {
+  object-fit: cover;
+  object-position: center;
 }
-
-.derecha{
-  max-width: 1356px;
-}
-.izquierda{
-  max-width: 1204px;
-}
-
 /* BOTON ENCIMA DE LA IMAGEN */
 .hero-btn {
   position: absolute;
   left: 4%;
-  bottom: 33%;
+  bottom: 30%;
   z-index: 2;
   font-size: 1.4rem;
 }
-
-.card-btn {
-  position: absolute;
-  left: 48%;
-  bottom: 5%;
-  z-index: 2;
-}
-
-.image-container {
-position: absolute;
-top: 0;
-right: 0;
-width: 50%;
-height: 100%;
-overflow: hidden;
-}
-.image-container img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-object-position: left center;
-}
-/* BOTON DE INFORMACION COMO CAPSULA */
-.btn-pill{
-  border-radius: 999px;
-  padding: 12px 22px;
-  font-weight: 700;
-}
-
-/* ========================================
-   CAROUSEL - ¿QUE NECESITAS ALIVIAR?
-======================================== */
-.relief-carousel {
-  width: 100%;
-}
-/* =====================
-   FLECHAS DEL CAROUSEL
-===================== */
+/*-------------------------- CAROUSEL ¿QUE NECESITAS ALIVIAR? NOTICIAS ----------------------------------------*/
 .relief-control-prev,
 .relief-control-next {
   width: 45px;
@@ -172,307 +124,55 @@ object-position: left center;
 .relief-carousel-arrow:hover {
   opacity: 0.6;
 }
-/* ===== CAROUSEL SECTION ===== */
-.carousel-wrap{
-  color:#fff;
-  position: relative;
-  padding: 56px 0;
+/*------------------------------------------- NOTICIAS ---------------------------------------------*/
+.noticia-editorial p {
+  font-size: 1.08rem;
+  line-height: 1.8;
 }
-/* FONDO CARRUSEL Y COLOR DE LETRAS */
-.carusel-amarillo{
-  background: var(--amarillo_nas);
-  color:#163d72;
+.noticia-editorial h1 {
+  line-height: 1.1;
 }
-/* CONFIGURACION DE LOS ICONOS */
-.feature-icon{
-  width: 86px;
-  height: 86px;
-  border-radius: 20px;
-  border: 2px solid var(--rojo_nas);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size: 2rem;
-  margin: 0 auto 12px auto;
+.noticia-editorial h2 {
+  line-height: 1.25;
 }
-/* CONFIGURACION DE LAS FLECHAS DEL CARRUSEL */
-.big-nav-btn{
-  width: 86px;
-  height: 86px;
-  border-radius: 22px;
-  border: 2px solid rgba(255,255,255,.8);
-  background: rgba(255,255,255,.48);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin: 0 auto;
+.noticia-moderna p {
+  font-size: 1.08rem;
+  line-height: 1.8;
 }
-
-
-.product-card-title {
-  margin: 0;
-  font-size: 1.6rem;
-  font-weight: 800;
+.noticia-moderna h1 {
+  line-height: 1.05;
 }
-/* .product-card-bottom {
-  width: 50%;
-} */
-.product-card-text {
-  margin-bottom: 18px;
-  font-size: 1rem;
-  line-height: 1.4;
+.noticia-moderna h2 {
+  margin-top: 1rem;
 }
-/* .product-card-bottom .btn {
-  display: inline-block;
-} */
-
-/* FORMA DE FONDO DE LAS TARJETAS DE PRODUCTOS */
-.blob{
-  position:absolute;
-  inset: 24px 24px auto auto;
-  width: 140px;
-  height: 80px;
-  border-radius: 50px;
-  opacity: .18;
+.noticia-sidebar {
+  top: 110px;
 }
-.blob.red{ background:#d51b1b; left: 70px; top: 75px; right:auto; transform: rotate(45deg);}
-.blob.blue{ background:#0a79b8; left: 90px; top: 80px; right:auto; transform: rotate(75deg);}
-.blob.purple{ background:#6a1bd5; left: 22px; top: 22px; right:auto; }
-/* FORMA DE LAS IMAGENES DE LAS TARJETAS DE PRODUCTOS */
-
-/*ICONOS DE LAS TARJETAS DE PRODUCTOS */
-.pill-icon{
-  width: 64px;
-  height: 64px;
-  border-radius: 18px;
-  border: 2px solid rgba(10,121,184,.35);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin: 14px auto 0 auto;
-  color:#0a79b8;
-  font-size: 1.6rem;
+.noticia-nas h1 {
+  line-height: 1.1;
 }
-/* PRODUCTO DESTACADO */
-.pd-image {
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  margin: auto;
-  display: block;
+.noticia-nas p {
+  font-size: 1.05rem;
+  line-height: 1.8;
 }
-/* FLECHA DE CARRUSEL DE PRODUCTO DESTACADO */
-.pd-control {
-  width: 60px;
+/* TARJETAS DE CONTENIDO */
+.noticia-nas .card {
+  transition: transform 0.2s ease;
 }
-.pd-arrow-icon {
-  font-size: 60px;
-  font-weight: 300;
-  color: #173f74;
-  line-height: 1;
-  background: transparent;
+/* SOLO PARA LOS LINKS DE FUENTES */
+.noticia-nas a.card {
+  color: inherit;
 }
-.pd-control:hover .pd-arrow-icon {
-  opacity: 0.7;
+.noticia-nas a.card:hover {
+  transform: translateY(-3px);
 }
-.carousel-indicators {
-  position: relative;
-  margin-top: 20px;
+/* SIDEBAR POR DEBAJO DEL NAVBAR */
+.noticia-sidebar {
+  top: 100px;
+  z-index: 10;
 }
-.carousel-indicators [data-bs-target] {
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  background-color: transparent;
-  border: 2px solid var(--azul_nas);
-  opacity: 1;
-}
-.carousel-indicators .active {
-  background-color: var(--azul_nas);
-}
-
-.banner-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-/* TITULO DE PRODUCTO DESTACADO */
-.pd-title {
-  color: var(--azul_nas);
-  font-weight: 800;
-  font-size: clamp(1.6rem, 2.2vw, 2.6rem);
-  line-height: 1.12;
-  margin: 0 0 10px 0;
-}
-/* ICONO DE PRODUCTO DESTACADO */
-.pd-iconbox {
-  width: 66px;
-  height: 66px;
-  border-radius: 16px;
-  border: 2px solid rgba(23, 63, 116, 0.35);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pd-icon {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
-}
-
-.pd-dose {
-  color: var(--azul_nas);
-  font-weight: 700;
-}
-
-.pd-text {
-  color: var(--azul_nas);
-  font-size: 1rem;
-  line-height: 1.6;
-  max-width: 560px;
-  text-align: justify;
-}
-
-.texto-v{
-  text-align: justify;
-}
-/* ========================================
-   CONTENIDO ENCIMA DE LA IMAGEN
-======================================== */
-.relief-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 30px;
-}
-/* TEXTO OPCIONAL */
-.relief-title {
-  margin-bottom: 15px;
-}
-/* BOTÓN */
-.relief-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-/* TABS DE PRODUCTO DESTACADO */
-.info-tabs-nav {
-  border-bottom: 1px solid #111;
-}
-.nav-tabs .nav-link.active {
-  color: var(--azul_nas);
-  background-color: transparent;
-  border: none;
-  border-bottom:5px solid black;
-  font-weight: 900;
-}  
-.nav-tabs .nav-link.active:hover {
-  color: var(--azul_nas);
-  background-color: transparent;
-  border: none;
-  border-bottom:5px solid black;
-  font-size: 19px;
-}  
-.nav-tabs .nav-link:hover {
-  border: none;
-  transition: none;
-  text-decoration: none;
-  font-size: 21px;
-  color: black;
-}
-.nav-tabs .nav-link {
-  border: none;
-  transition: none;
-  text-decoration: none;
-}
-/* CONTENIDO DE LOS TABS DE PRODUCTOS DESCATADOS */
-.info-title{
-  color: var(--azul_nas);
-  font-weight: 800;
-  font-size: clamp(1.4rem, 2vw, 2.0rem);
-  line-height: 1.2;
-}
-.info-text{
-  color: var(--azul_nas);
-  font-size: 1rem;
-  line-height: 1.6;
-  /* max-width: 950px; */
-}
-/*IMAGEN DE LOS TABS DE PRODUCTOS DESTACADOS */
-.imagen-bfs{
-  height: 150px; 
-  max-width: 100%;
-}
-.tab-content{
-  height: 60vh;
-}
-/* TARJETAS DE ARTICULOS (BLOG) */
-.article-card{
-  border: 0;
-  border-radius: 18px;
-  overflow:hidden;
-  box-shadow: 0 18px 40px rgba(0,0,0,.08);
-  height: 100%;
-}
-.article-card img{
-  width:100%;
-  height: 230px;
-  object-fit: cover;
-}
-.oculto {
-  display: none;
-}
-.kicker{
-  font-size: .9rem;
-  color:#3a6aa5;
-  text-transform: none;
-  margin-bottom: 6px;
-}
-.article-title{
-  font-weight: 800;
-  color:#163d72;
-  line-height:1.15;
-}
-/* BOTON PARA SUBIR AL INICIO DE LA PAGINA */
-.back-to-top{
-  border-radius: 50%;      
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
-  position: fixed;
-  right: 10px;
-  top: 590px;           
-  width: 34px;
-  height: 34px;
-  border: 2px solid var(--azul_nas);
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  z-index: 2000;
-  opacity: 0;
-  transform: translateY(-6px);
-  pointer-events: none;
-  transition: all .2s ease;
-}
-.back-to-top.show{
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-/* TRIANGULO FLECHA DE SUBIR AL INICIO DE LA PAGINA */
-.back-to-top-icon{
-  border-left: 7.5px solid transparent;  
-  border-right: 7.5px solid transparent;
-  border-bottom: 15px solid var(--azul_nas); 
-}
-
-/* ==========================================
-   BOTON PARA OCULTAR SECCION
-========================================== */
+/*------------------------------------ SECTION DE OCULTACION Y MUESTRA --------------------------------------*/
+/* BOTON PARA OCULTAR SECCION*/
 .section-close-wrap {
   width: 100%;
   position: relative;
@@ -514,46 +214,170 @@ object-position: left center;
 .section-close-btn:hover {
   background-color: #f5f5f5;
 }
-/* NAVBAR SIEMPRE POR ENCIMA */
-#navbar-site {
-  z-index: 2000;
+.oculto {
+  display: none;
 }
-
-
-/* SIDEBAR POR DEBAJO DEL NAVBAR */
-.noticia-sidebar {
-  top: 100px;
-  z-index: 10;
+/*----------------------------------- TAJETAS DE PRODUCTOS -------------------------------------*/
+.card-btn {
+  position: absolute;
+  left: 51%;
+  bottom: 5%;
+  z-index: 2;
 }
-
-/* ===== FOOTER ===== */
-footer{
-  color:#fff;
-  padding: 34px 0;
+/*--------------------------------- PRODUCTOS ADULTOS Y PEDIATRICOS ----------------------------------------*/
+/* FONDO CARRUSEL Y COLOR DE LETRAS */
+.carusel-amarillo{
+  background: var(--amarillo_nas);
+  color:#163d72;
 }
-footer a{
-  color:#fff;
-  text-decoration:none;
-  font-weight:600;
-}
-footer a:hover{
-  text-decoration: underline;
-  text-underline-offset: .25rem;
-}
-.fineprint{
-  font-size: .84rem;
-  opacity: .9;
-}
-
-.bfs-2{
+/* PRODUCTO DESTACADO */
+.pd-image {
   width: 100%;
+  max-width: 420px;
   height: auto;
+  margin: auto;
+  display: block;
 }
-.text-min {
-  font-size: 12px;
+/* FLECHA DE CARRUSEL DE PRODUCTO DESTACADO */
+.pd-control {
+  width: 60px;
 }
-/* MODO DE USO */
-
+.pd-arrow-icon {
+  font-size: 60px;
+  font-weight: 300;
+  color: #173f74;
+  line-height: 1;
+  background: transparent;
+}
+.pd-control:hover .pd-arrow-icon {
+  opacity: 0.7;
+}
+.carousel-indicators {
+  position: relative;
+  margin-top: 20px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background-color: transparent;
+  border: 2px solid var(--azul_nas);
+  opacity: 1;
+}
+.carousel-indicators .active {
+  background-color: var(--azul_nas);
+}
+/* TITULO DE PRODUCTO DESTACADO */
+.pd-title {
+  color: var(--azul_nas);
+  font-weight: 800;
+  font-size: clamp(1.6rem, 2.2vw, 2.6rem);
+  line-height: 1.12;
+  margin: 0 0 10px 0;
+}
+/* ICONO DE PRODUCTO DESTACADO */
+.pd-iconbox {
+  width: 66px;
+  height: 66px;
+  border-radius: 16px;
+  border: 2px solid rgba(23, 63, 116, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pd-icon {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+.pd-dose {
+  color: var(--azul_nas);
+  font-weight: 700;
+}
+.pd-text {
+  color: var(--azul_nas);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 560px;
+  text-align: justify;
+}
+/*--------------------------------------TAB DE ADULTO Y PEDIATRICO-----------------------------------------------*/
+/* TABS DE PRODUCTO DESTACADO */
+.info-tabs-nav {
+  border-bottom: 1px solid #111;
+}
+.nav-tabs .nav-link.active {
+  color: var(--azul_nas);
+  background-color: transparent;
+  border: none;
+  border-bottom:5px solid black;
+  font-weight: 900;
+}  
+.nav-tabs .nav-link.active:hover {
+  color: var(--azul_nas);
+  background-color: transparent;
+  border: none;
+  border-bottom:5px solid black;
+  font-size: 19px;
+}  
+.nav-tabs .nav-link:hover {
+  border: none;
+  transition: none;
+  text-decoration: none;
+  font-size: 21px;
+  color: black;
+}
+.nav-tabs .nav-link {
+  border: none;
+  transition: none;
+  text-decoration: none;
+}
+/* CONTENIDO DE LOS TABS DE PRODUCTOS DESCATADOS */
+.info-title{
+  color: var(--azul_nas);
+  font-weight: 800;
+  font-size: clamp(1.4rem, 2vw, 2.0rem);
+  line-height: 1.2;
+}
+.info-text{
+  color: var(--azul_nas);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.tab-content{
+  height: 60vh;
+}
+/*IMAGEN DE LOS TABS DE PRODUCTOS DESTACADOS */
+.imagen-bfs{
+  height: 150px; 
+  max-width: 100%;
+}
+/* -------------------------------------TECNOLOGIA BFS-------------------------------- */
+.p-img{
+  max-width: 75% !important;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+.p-img1{
+  max-width: 73% !important;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+/* CONFIGURACION DE LOS ICONOS */
+.feature-icon{
+  width: 86px;
+  height: 86px;
+  border-radius: 20px;
+  border: 2px solid var(--rojo_nas);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size: 2rem;
+  margin: 0 auto 12px auto;
+}
+/*--------------------------------------------- MODO DE USO ----------------------------------------------------*/
 .modo-paso {
   position: relative;
   width: 150px;
@@ -583,46 +407,80 @@ footer a:hover{
   font-weight: 800;
   color: #000;
 }
-/* RESPONSIVE */
-
-
-/* ===== RESPOSIVE ===== */
-
-@media (max-width: 576px){
-  .navbar-brand img{ height: 50px; }
-  .big-nav-btn{ width: 68px; height: 68px; border-radius: 18px; }
+/*---------------------------------------------- MAPA MUNDI -------------------------------------------*/
+.texto-ajustado{
+  text-align: justify;
+}
+/* ---------------------------------------------- FOOTER ----------------------------------------------------- */
+footer{
+  color:#fff;
+  padding: 34px 0;
+}
+footer a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+footer a:hover{
+  text-decoration: underline;
+  text-underline-offset: .25rem;
+}
+.fineprint{
+  font-size: .84rem;
+  opacity: .9;
+}
+/*--------------------------------- BOTON PARA SUBIR AL INICIO DE LA PAGINA ------------------------------*/
+.back-to-top{
+  border-radius: 50%;      
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  position: fixed;
+  right: 10px;
+  top: 590px;           
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--azul_nas);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 2000;
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: all .2s ease;
+}
+.back-to-top.show{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+/* TRIANGULO FLECHA DE SUBIR AL INICIO DE LA PAGINA */
+.back-to-top-icon{
+  border-left: 7.5px solid transparent;  
+  border-right: 7.5px solid transparent;
+  border-bottom: 15px solid var(--azul_nas); 
+}
+/*--------------------------------------------- RESPONSIVE ----------------------------------------------*/
+@media (max-width: 1024px) {
   .hero-btn {
-  left: 7%;
-  bottom: 30.5%;
-  font-size: .8rem;
+  left: 7.5%;
+  bottom: 23%;
 }
-  /* .p-img{width: 75%} */
-  .banner-img{width: 100%; height: 12rem;}
 }
-
-@media (max-width: 767.98px) {
-  .modo-paso {
-    width: 120px;
-    height: 120px;
+@media (max-width: 992px) {
+  #navbar-site .navbar-brand{
+    position: static;
+    transform: none;
   }
-  .modo-img {
-    width: 120px;
-    height: 120px;
-  }
-  .modo-numero {
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
+  #navbar-site .navbar-collapse{
+    position: static;
+    width: auto;
+    transform: none;
+    padding: 0;
+    background: transparent;
   }
 }
-@media (max-width: 768px) {
-  .hero-btn {
-  left: 7%;
-  bottom: 32%;
-  font-size: 1.2rem;
-  }
-}
-
 
 @media (max-width: 991.98px) {
   /* NO tocar #navbar-site (sticky-top depende de position: sticky) */
@@ -658,28 +516,42 @@ footer a:hover{
     align-items: flex-start !important;
   }
 }
-@media (max-width: 992px) {
-  .image-container {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    margin-top: 30px;
+@media (max-width: 768px) {
+  .hero-btn {
+  left: 7%;
+  bottom: 32%;
+  font-size: 1.2rem;
   }
-  #navbar-site .navbar-brand{
-    position: static;
-    transform: none;
+   .hero-banner {
+    height: auto;
+    overflow: visible;
   }
-  #navbar-site .navbar-collapse{
-    position: static;
-    width: auto;
-    transform: none;
-    padding: 0;
-    background: transparent;
+  .hero-banner-img {
+    height: auto !important;
+    object-fit: initial;
+    object-position: initial;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 767.98px) {
+  .modo-paso {
+    width: 120px;
+    height: 120px;
+  }
+  .modo-img {
+    width: 120px;
+    height: 120px;
+  }
+  .modo-numero {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 576px){
+  .navbar-brand img{ height: 50px; }
   .hero-btn {
   left: 7%;
   bottom: 30.5%;
+  font-size: .8rem;
 }
 }

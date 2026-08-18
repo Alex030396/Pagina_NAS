@@ -16,7 +16,7 @@
   <link rel="manifest" href="img/site.webmanifest">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-site" data-bs-offset="75">
-<!-- NAVEGADOR -->
+<!------------------------------------------------------ NAVEGADOR -------------------------------------->
 <nav class="navbar navbar-expand-lg sticky-top nav-gris py-2" id="navbar-site">
   <div class="container">
     <!-- LOGO_NAS -->
@@ -38,71 +38,71 @@
     </div>
   </div>
 </nav>
-<!-- INTRODUCCION -->
+<!------------------------------------------ INTRODUCCION ------------------------------------------------>
 <section>
-  <div class="container-fluid position-relative p-0">
-    <picture class="w-100 d-block">
-      <source media="(min-width: 1200px)" srcset="img/Elementos_Nas/banner_1.webp">
-      <source media="(min-width: 576px)" srcset="img/Elementos_Nas/banner-1d.webp">
-      <img src="img/Elementos_Nas/banner-1d.webp" class="img-fluid w-100 d-block" alt="Banner principal NAS">
+  <div class="container-fluid position-relative p-0 hero-banner">
+    <picture class="w-100 d-block h-100">
+      <source media="(min-width: 1200px)" srcset="img/Banner_Portada.webp">
+      <source media="(min-width: 576px)" srcset="img/Banner_Portada_Nas.webp">
+      <img src="img/Banner_Portada_Nas.webp" class="img-fluid w-100 h-100 d-block hero-banner-img" alt="Banner principal NAS">
     </picture>
     <a class="btn btn-danger fw-bold hero-btn" href="#nuestro">Encuentra tu NAS</a>
   </div>
 </section>
-<!-- CAROUSEL ¿QUE NECESITAS ALIVIAR? -->
-<section class="relief-carousel py-5 fondo-gris">
+<!-------------------------------- CAROUSEL ¿QUE NECESITAS ALIVIAR? NOTICIAS ------------------------------->
+<section class="py-5 fondo-gris">
   <div class="container" id="noticias">
     <!-- TITULO -->
     <div class="text-center mb-5">
       <h2>¿Qué necesitas aliviar?</h2>
     </div>
     <!-- CAROUSEL BOOTSTRAP -->
-    <div id="reliefCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-wrap="true" >
+    <div id="reliefCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-wrap="true" >
       <div class="carousel-inner">
         <!-- SLIDE 1 - PRIMERAS 3 TARJETAS -->
         <div class="carousel-item active">
           <div class="row g-4 px-md-5">
             <!-- TARJETA 1 -->
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-lg-3">
               <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
-                    <img src="img/Elementos_Nas/noticia-1.webp" class="card-img-top" alt="Congestión nasal">
-                    <button onclick="mostrarnoticia('noticia1')"> 
+                    <img src="img/Noticia-1.webp" class="card-img-top" alt="Noticia 1">
+                    <button onclick="mostrarnoticia('noticia1')" class="btn"> 
                     <div class="card-body d-flex justify-content-between align-items-center">
-                        <span class="fw-bold">¿Qué puede estar detrás de tu congestión nasal?</span>
+                        <span class="fw-bold text-center">Identificar el contexto antes de buscar alivio</span>
                         <i class="bi bi-arrow-right"></i>
                       </div>
                     </button>
                 </div>
             </div>
             <!-- TARJETA 2 -->
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-lg-3">
               <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
-                    <img src="img/Elementos_Nas/Noticia-2.webp" class="card-img-top" alt="Congestión nasal">
-                    <button onclick="mostrarnoticia('noticia2')"> 
+                    <img src="img/Noticia-2.webp" class="card-img-top" alt="Noticia 2">
+                    <button onclick="mostrarnoticia('noticia2')" class="btn"> 
                     <div class="card-body d-flex justify-content-between align-items-center">
-                        <span class="fw-bold">¿Cómo usar gotas nasales correctamente?</span>
+                        <span class="fw-bold text-center">Una técnica sencilla para usarlas con higiene y precisión</span>
                         <i class="bi bi-arrow-right"></i>
                       </div>
                 </div>
             </div>
             <!-- TARJETA 3 -->
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-lg-3">
               <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
-                    <img src="img/Elementos_Nas/Noticia-3.webp" class="card-img-top" alt="Congestión nasal">
-                    <button onclick="mostrarnoticia('noticia3')"> 
+                    <img src="img/Noticia-3.webp" class="card-img-top" alt="Noticia 3">
+                    <button onclick="mostrarnoticia('noticia3')" class="btn"> 
                     <div class="card-body d-flex justify-content-between align-items-center">
-                        <span class="fw-bold">Cuando usar más tiempo puede tapar más la nariz</span>
+                        <span class="fw-bold text-center">Por qué prolongar un descongestionante puede empeorar el problema</span>
                         <i class="bi bi-arrow-right"></i>
                       </div>
                 </div>
             </div>
             <!-- TARJETA 4 -->
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-lg-3">
               <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
-                    <img src="img/Elementos_Nas/Noticia-4.webp" class="card-img-top" alt="Congestión nasal">
-                    <button onclick="mostrarnoticia('noticia4')"> 
+                    <img src="img/Noticia-4.webp" class="card-img-top" alt="Noticia 4">
+                    <button onclick="mostrarnoticia('noticia4')" class="btn"> 
                     <div class="card-body d-flex justify-content-between align-items-center">
-                        <span class="fw-bold">Cuando usar más tiempo puede tapar más la nariz</span>
+                        <span class="fw-bold text-center">Condiciones y medicamentos que conviene mencionar</span>
                         <i class="bi bi-arrow-right"></i>
                       </div>
                 </div>
@@ -113,45 +113,45 @@
         <div class="carousel-item">
           <div class="row g-4 px-md-5">
             <!-- TARJETA 5 -->
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-lg-3">
               <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
-                    <img src="img/Elementos_Nas/Noticia-4.webp" class="card-img-top" alt="Congestión nasal">
-                      <button onclick="mostrarnoticia('noticia5')"> 
+                    <img src="img/Noticia-4.webp" class="card-img-top" alt="Noticia 5">
+                      <button onclick="mostrarnoticia('noticia5')" class="btn"> 
                     <div class="card-body d-flex justify-content-between align-items-center">
-                        <span class="fw-bold">Congestión nasal tapar más la nariz</span>
+                        <span class="fw-bold text-center">La edad y la presentación importan</span>
                         <i class="bi bi-arrow-right"></i>
                       </div>
                 </div>
             </div>
            <!-- TARJETA 6 -->
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-lg-3">
               <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
-                    <img src="img/Elementos_Nas/Noticia-5.webp" class="card-img-top" alt="Congestión nasal">
-                    <button onclick="mostrarnoticia('noticia6')"> 
+                    <img src="img/Noticia-5.webp" class="card-img-top" alt="Noticia 6">
+                    <button onclick="mostrarnoticia('noticia6')" class="btn"> 
                     <div class="card-body d-flex justify-content-between align-items-center">
-                        <span class="fw-bold">Cada vez que tengas el malestar de congestión</span>
+                        <span class="fw-bold text-center">Cinco verificaciones antes de orientar NAS en el mostrador</span>
                         <i class="bi bi-arrow-right"></i>
                       </div>
                 </div>
             </div>
            <!-- TARJETA 7 -->
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-lg-3">
                 <!-- <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
-                    <img src="img/Elementos_Nas/noticia-1.webp" class="card-img-top" alt="Congestión nasal">
-                    <button onclick="mostrarnoticia('noticia7')"> 
+                    <img src="img/Noticia-1.webp" class="card-img-top" alt="Noticia 7">
+                    <button onclick="mostrarnoticia('noticia7')" class="btn"> 
                     <div class="card-body d-flex justify-content-between align-items-center">
-                        <span class="fw-bold">Cada vez que tengas el malestar de congestión</span>
+                        <span class="fw-bold text-center">Cada vez que tengas el malestar de congestión</span>
                         <i class="bi bi-arrow-right"></i>
                       </div>
                 </div> -->
             </div>
            <!-- TARJETA 8 -->
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-lg-3">
                 <!-- <div class="card h-100 border border-dark border-1 rounded-4 overflow-hidden">
-                    <img src="img/Elementos_Nas/noticia-1.webp" class="card-img-top" alt="Congestión nasal">
-                    <button onclick="mostrarnoticia('noticia7')"> 
+                    <img src="img/Noticia-1.webp" class="card-img-top" alt="Noticia 8">
+                    <button onclick="mostrarnoticia('noticia8')" class="btn"> 
                     <div class="card-body d-flex justify-content-between align-items-center">
-                        <span class="fw-bold">Cada vez que tengas el malestar de congestión</span>
+                        <span class="fw-bold text-center">Cada vez que tengas el malestar de congestión</span>
                         <i class="bi bi-arrow-right"></i>
                       </div>
                 </div> -->
@@ -174,29 +174,19 @@
     </div>
   </div>
 </section>
+<!------------------------------------------- NOTICIAS ------------------------------------------------------>
 <!-- NOTICIAS 1-->
-<section class="oculto seccion-animada" id="noticia1">
-  <!-- =========================================
-     NOTICIA - MODELO 1
-     EDITORIAL CLASICO
-========================================= -->
+<section class="oculto" id="noticia1">
 <section class="noticia-editorial py-5">
   <div class="container">
     <!-- ENCABEZADO -->
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         <div class="mb-3">
-          <span class="badge rounded-pill text-bg-danger px-3 py-2">
-            Adultos y público general
-          </span>
+          <span class="badge rounded-pill text-bg-danger px-3 py-2"> Adultos y público general </span>
         </div>
-        <h1 class="display-4 fw-bold mb-4">
-          Congestión nasal en adultos: identificar el contexto antes de buscar alivio
-        </h1>
-        <p class="lead fs-4 mb-5">
-          Resfriado, alergia e irritantes pueden sentirse parecidos,
-          pero no siempre se manejan de la misma manera.
-        </p>
+        <h1 class="display-4 fw-bold mb-4"> Congestión nasal en adultos: identificar el contexto antes de buscar alivio </h1>
+        <p class="lead fs-4 mb-5"> Resfriado, alergia e irritantes pueden sentirse parecidos, pero no siempre se manejan de la misma manera.</p>
         <hr class="mb-5">
       </div>
     </div>
@@ -205,125 +195,52 @@
       <div class="col-12 col-lg-8">
         <!-- BLOQUE 1 -->
         <article class="mb-5">
-          <h2 class="fw-bold mb-3">
-            Una nariz tapada no explica por sí sola la causa
-          </h2>
-          <p>
-            La congestión nasal aparece cuando los tejidos y vasos de la nariz
-            se inflaman y reducen el paso del aire. Puede acompañar un resfriado,
-            una alergia, una irritación ambiental u otras condiciones. En Venezuela,
-            polvo, humedad, humo, cambios bruscos de temperatura y exposición laboral
-            pueden formar parte del contexto, pero ningún factor aislado permite
-            diagnosticar la causa desde una landing.
-          </p>
-          <p>
-            Antes de elegir un producto, observa qué otros síntomas aparecen.
-            Picazón nasal, estornudos repetidos y ojos llorosos pueden orientar hacia
-            alergia; dolor de garganta, tos y malestar pueden acompañar un cuadro viral.
-            Si la congestión es de un solo lado, se repite con frecuencia, se acompaña
-            de fiebre alta, dolor intenso o dificultad para respirar, conviene buscar
-            valoración médica.
-          </p>
+          <h2 class="fw-bold mb-3"> Una nariz tapada no explica por sí sola la causa </h2>
+          <p> La congestión nasal aparece cuando los tejidos y vasos de la nariz se inflaman y reducen el paso del aire. Puede acompañar un resfriado, una alergia, una irritación ambiental u otras condiciones. En Venezuela, polvo, humedad, humo, cambios bruscos de temperatura y exposición laboral pueden formar parte del contexto, pero ningún factor aislado permite diagnosticar la causa desde una landing. </p>
+          <p> Antes de elegir un producto, observa qué otros síntomas aparecen. Picazón nasal, estornudos repetidos y ojos llorosos pueden orientar hacia alergia; dolor de garganta, tos y malestar pueden acompañar un cuadro viral. Si la congestión es de un solo lado, se repite con frecuencia, se acompaña de fiebre alta, dolor intenso o dificultad para respirar, conviene buscar valoración médica. </p>
         </article>
         <!-- BLOQUE 2 -->
         <article class="mb-5">
-          <h2 class="fw-bold mb-3">
-            Alivio temporal no significa tratamiento de la causa
-          </h2>
-          <p>
-            Los descongestionantes nasales tópicos pueden ofrecer alivio de corta
-            duración al reducir temporalmente la hinchazón de la mucosa. No curan
-            un resfriado, no eliminan un alérgeno ni sustituyen el estudio de síntomas
-            persistentes. Esa diferencia debe quedar visible en la página para evitar
-            que una mejoría momentánea se interprete como resolución del problema.
-          </p>
-          <p>
-            La fuente corporativa de LabOftalmi identifica NAS como descongestionante
-            nasal con nafazolina nitrato en dos concentraciones: 0,1% para la presentación
-            adulta y 0,05% para la pediátrica. La elección no puede hacerse solo por el
-            color del empaque: debe comprobarse la edad autorizada, la concentración,
-            la etiqueta y las condiciones de la persona.
-          </p>
+          <h2 class="fw-bold mb-3"> Alivio temporal no significa tratamiento de la causa</h2>
+          <p> Los descongestionantes nasales tópicos pueden ofrecer alivio de corta duración al reducir temporalmente la hinchazón de la mucosa. No curan un resfriado, no eliminan un alérgeno ni sustituyen el estudio de síntomas persistentes. Esa diferencia debe quedar visible en la página para evitar que una mejoría momentánea se interprete como resolución del problema. </p>
+          <p> La fuente corporativa de LabOftalmi identifica NAS como descongestionante nasal con nafazolina nitrato en dos concentraciones: 0,1% para la presentación adulta y 0,05% para la pediátrica. La elección no puede hacerse solo por el color del empaque: debe comprobarse la edad autorizada, la concentración, la etiqueta y las condiciones de la persona. </p>
         </article>
         <!-- BLOQUE DESTACADO -->
         <div class="border-start border-4 border-danger ps-4 py-2 mb-5">
-          <h2 class="fw-bold mb-3">
-            Tres preguntas útiles en la farmacia
-          </h2>
-          <p class="mb-3">
-            ¿Para quién es el producto y qué edad tiene?
-            ¿Desde cuándo existe la congestión y qué otros síntomas hay?
-            ¿La persona usa otros descongestionantes o vive con hipertensión,
-            cardiopatía, diabetes, enfermedad tiroidea, glaucoma o recibe medicamentos
-            que puedan interactuar?
-          </p>
-          <p class="mb-0">
-            Estas preguntas no diagnostican, pero ayudan a detectar cuándo la etiqueta
-            no basta y hace falta la intervención del farmacéutico.
-          </p>
+          <h2 class="fw-bold mb-3"> Tres preguntas útiles en la farmacia </h2>
+          <p class="mb-3"> ¿Para quién es el producto y qué edad tiene? ¿Desde cuándo existe la congestión y qué otros síntomas hay? ¿La persona usa otros descongestionantes o vive con hipertensión, cardiopatía, diabetes, enfermedad tiroidea, glaucoma o recibe medicamentos que puedan interactuar?</p>
+          <p class="mb-0"> Estas preguntas no diagnostican, pero ayudan a detectar cuándo la etiqueta no basta y hace falta la intervención del farmacéutico.</p>
         </div>
-        <p class="mb-5">
-          Si el producto resulta apropiado, debe usarse exactamente durante el tiempo
-          y con la frecuencia indicados en el prospecto venezolano vigente. Si la
-          congestión persiste, empeora o regresa de forma repetida, no se debe prolongar
-          el uso por cuenta propia.
-        </p>
+        <p class="mb-5">Si el producto resulta apropiado, debe usarse exactamente durante el tiempo y con la frecuencia indicados en el prospecto venezolano vigente. Si la congestión persiste, empeora o regresa de forma repetida, no se debe prolongar el uso por cuenta propia. </p>
         <!-- CIERRE -->
         <div class="bg-light rounded-4 p-4 p-md-5 mb-5">
-          <h2 class="fw-bold mb-3">
-            Cierre sugerido
-          </h2>
-          <p class="fs-5 mb-0">
-            Respirar mejor empieza por entender qué acompaña la congestión.
-            Observa el contexto, lee la etiqueta y consulta cuando el cuadro
-            no sea claramente leve y temporal.
-          </p>
+          <h2 class="fw-bold mb-3">Cierre sugerido </h2>
+          <p class="fs-5 mb-0">Respirar mejor empieza por entender qué acompaña la congestión. Observa el contexto, lee la etiqueta y consulta cuando el cuadro no sea claramente leve y temporal.</p>
         </div>
         <!-- FUENTES -->
         <div class="border-top pt-4">
-          <h2 class="h4 fw-bold mb-3">
-            Enlaces y fuentes visibles
-          </h2>
-          <p>
-            Las fuentes internacionales respaldan educación y criterios de seguridad;
-            no sustituyen el prospecto venezolano de NAS.
-          </p>
+          <h2 class="h4 fw-bold mb-3"> Enlaces y fuentes visibles</h2>
+          <p> Las fuentes internacionales respaldan educación y criterios de seguridad; no sustituyen el prospecto venezolano de NAS.</p>
           <ul class="list-group list-group-flush">
             <li class="list-group-item px-0">
               <strong>LabOftalmi · Catálogo de productos: NAS</strong><br>
-              <a href="https://www.oftalmi.com/productos/" target="_blank">
-                https://www.oftalmi.com/productos/
-              </a>
-            </li>
-            <li class="list-group-item px-0">
-              <strong>Afrin · Sitio oficial y arquitectura de contenidos</strong><br>
-              <a href="https://www.afrin.com/" target="_blank">
-                https://www.afrin.com/
-              </a>
+              <a href="https://www.oftalmi.com/productos/" target="_blank"> https://www.oftalmi.com/productos/ </a>
             </li>
             <li class="list-group-item px-0">
               <strong>DailyMed · Nafazolina 0,05% solución nasal</strong><br>
-              <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=30cade3d-208f-8594-e063-6394a90ad2a0&version=2" target="_blank">
-                DailyMed
-              </a>
+              <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=30cade3d-208f-8594-e063-6394a90ad2a0&version=2" target="_blank"> DailyMed</a>
             </li>
             <li class="list-group-item px-0">
               <strong>NHS · Decongestants</strong><br>
-              <a href="https://www.nhs.uk/medicines/decongestants/" target="_blank">
-                https://www.nhs.uk/medicines/decongestants/
-              </a>
+              <a href="https://www.nhs.uk/medicines/decongestants/" target="_blank"> https://www.nhs.uk/medicines/decongestants/ </a>
             </li>
             <li class="list-group-item px-0">
               <strong>NHS · Allergic rhinitis</strong><br>
-              <a href="https://www.nhs.uk/conditions/allergic-rhinitis/" target="_blank">
-                https://www.nhs.uk/conditions/allergic-rhinitis/
-              </a>
+              <a href="https://www.nhs.uk/conditions/allergic-rhinitis/" target="_blank"> https://www.nhs.uk/conditions/allergic-rhinitis/</a>
             </li>
             <li class="list-group-item px-0">
               <strong>NHS Greater Glasgow and Clyde · Rhinitis</strong><br>
-              <a href="https://www.rightdecisions.scot.nhs.uk/ggc-primary-care/ear-nose-and-throat-ent/ear-nose-and-throat-ent-referral-guidance/nose-conditions/rhinorrhoea/rhinitis/" target="_blank">
-                Right Decisions
-              </a>
+              <a href="https://www.rightdecisions.scot.nhs.uk/ggc-primary-care/ear-nose-and-throat-ent/ear-nose-and-throat-ent-referral-guidance/nose-conditions/rhinorrhoea/rhinitis/" target="_blank"> Right Decisions </a>
             </li>
           </ul>
         </div>
@@ -342,172 +259,56 @@
   </div>
 </section>
 <!-- NOTICIAS 2-->
-<section class="oculto seccion-animada" id="noticia2">
-  <!-- =========================================
-     NOTICIA - MODELO 2
-     MODERNO DOS COLUMNAS
-========================================= -->
+<section class="oculto" id="noticia2">
 <section class="noticia-moderna py-5">
   <div class="container">
     <!-- CABECERA -->
     <div class="row justify-content-center mb-5">
       <div class="col-12 col-xl-11">
-        <span class="text-uppercase fw-bold small">
-          Adultos y público general
-        </span>
-        <h1 class="display-3 fw-bold mt-2 mb-4">
-          Congestión nasal en adultos: identificar el contexto antes de buscar alivio
-        </h1>
-        <p class="lead fs-4 col-lg-9">
-          Resfriado, alergia e irritantes pueden sentirse parecidos,
-          pero no siempre se manejan de la misma manera.
-        </p>
+        <span class="text-uppercase fw-bold small"> Adultos y público general</span>
+        <h1 class="display-3 fw-bold mt-2 mb-4"> Gotas nasales: una técnica sencilla para usarlas con higiene y precisión</h1>
+        <p class="lead fs-4 col-lg-9"> Preparar el frasco, colocar bien la cabeza y no compartir el gotero son parte del uso responsable. </p>
       </div>
     </div>
     <div class="row justify-content-center g-5">
-      <!-- ===========================
-           COLUMNA PRINCIPAL
-      ============================ -->
+      <!-- CONTENIDO PRINCIPAL -->
       <div class="col-12 col-lg-8">
         <section class="mb-5">
-          <h2 class="fw-bold mb-3">
-            Una nariz tapada no explica por sí sola la causa
-          </h2>
-          <p>
-            La congestión nasal aparece cuando los tejidos y vasos de la nariz
-            se inflaman y reducen el paso del aire. Puede acompañar un resfriado,
-            una alergia, una irritación ambiental u otras condiciones. En Venezuela,
-            polvo, humedad, humo, cambios bruscos de temperatura y exposición laboral
-            pueden formar parte del contexto, pero ningún factor aislado permite
-            diagnosticar la causa desde una landing.
-          </p>
-          <p>
-            Antes de elegir un producto, observa qué otros síntomas aparecen.
-            Picazón nasal, estornudos repetidos y ojos llorosos pueden orientar hacia
-            alergia; dolor de garganta, tos y malestar pueden acompañar un cuadro viral.
-            Si la congestión es de un solo lado, se repite con frecuencia, se acompaña
-            de fiebre alta, dolor intenso o dificultad para respirar, conviene buscar
-            valoración médica.
-          </p>
+          <h2 class="fw-bold mb-3"> Antes de aplicar</h2>
+          <p> Lee la etiqueta completa y confirma que tienes la presentación correcta. Lávate las manos, revisa que el sello y el gotero estén en buen estado y limpia suavemente la nariz si es necesario. No uses el producto si el envase está deteriorado, abierto sin explicación o fuera de la fecha indicada. El frasco es personal: compartirlo puede transferir secreciones y favorecer la propagación de infecciones.</p>
+          <p> En la propuesta visual suministrada se destaca un sistema de formado, llenado y sellado continuo del frasco. Esa característica puede convertirse en contenido de confianza solo si Producción y Calidad entregan evidencia técnica, denominación aprobada y alcance exacto del beneficio. No debe traducirse en afirmaciones de esterilidad o superioridad sin respaldo. </p>
         </section>
         <section class="mb-5">
-          <h2 class="fw-bold mb-3">
-            Alivio temporal no significa tratamiento de la causa
-          </h2>
-          <p>
-            Los descongestionantes nasales tópicos pueden ofrecer alivio de corta
-            duración al reducir temporalmente la hinchazón de la mucosa. No curan
-            un resfriado, no eliminan un alérgeno ni sustituyen el estudio de síntomas
-            persistentes. Esa diferencia debe quedar visible en la página para evitar
-            que una mejoría momentánea se interprete como resolución del problema.
-          </p>
-          <p>
-            La fuente corporativa de LabOftalmi identifica NAS como descongestionante
-            nasal con nafazolina nitrato en dos concentraciones: 0,1% para la presentación
-            adulta y 0,05% para la pediátrica. La elección no puede hacerse solo por el
-            color del empaque: debe comprobarse la edad autorizada, la concentración,
-            la etiqueta y las condiciones de la persona.
-          </p>
+          <h2 class="fw-bold mb-3"> Durante la aplicación </h2>
+          <p> Inclina la cabeza según las instrucciones del producto y acerca el gotero sin apoyarlo dentro de la fosa nasal. Administra únicamente la cantidad indicada en el prospecto, mantén la posición unos instantes y respira con suavidad. Evita aspirar con fuerza, porque el líquido puede bajar hacia la garganta. Si el gotero toca la piel o secreciones, límpialo como indique el fabricante antes de cerrarlo. </p>
+          <p> No introduzcas pañuelos, hisopos u otros objetos para “abrir” la nariz. Tampoco trasvases el contenido a otro frasco ni uses un gotero de un medicamento distinto. Aunque dos envases parezcan iguales, pueden tener concentraciones y mecanismos de dosificación diferentes. </p>
         </section>
         <section class="mb-5">
-          <h2 class="fw-bold mb-3">
-            Tres preguntas útiles en la farmacia
-          </h2>
-          <p>
-            ¿Para quién es el producto y qué edad tiene? ¿Desde cuándo existe la
-            congestión y qué otros síntomas hay? ¿La persona usa otros descongestionantes
-            o vive con hipertensión, cardiopatía, diabetes, enfermedad tiroidea, glaucoma
-            o recibe medicamentos que puedan interactuar? Estas preguntas no diagnostican,
-            pero ayudan a detectar cuándo la etiqueta no basta y hace falta la intervención
-            del farmacéutico.
-          </p>
-          <p>
-            Si el producto resulta apropiado, debe usarse exactamente durante el tiempo
-            y con la frecuencia indicados en el prospecto venezolano vigente. Si la
-            congestión persiste, empeora o regresa de forma repetida, no se debe prolongar
-            el uso por cuenta propia.
-          </p>
+          <h2 class="fw-bold mb-3"> Después: registrar y observar </h2>
+          <p> Cierra el frasco inmediatamente y guárdalo según la temperatura y condiciones del prospecto, fuera de la vista y alcance de los niños. Anota la hora de aplicación si varias personas comparten responsabilidades de cuidado. No repitas antes del intervalo indicado y no aumentes la cantidad porque el alivio parezca insuficiente. </p>
+          <p> Una sensación transitoria de irritación o resequedad aparece entre las reacciones mencionadas en la literatura suministrada. Si la molestia es intensa, ocurre sangrado, hay reacción alérgica, palpitaciones, mareo u otro síntoma preocupante, suspende y consulta. El texto final debe ajustarse al prospecto local y al canal de farmacovigilancia de LabOftalmi. </p>
         </section>
         <!-- CIERRE -->
         <section class="border-top border-bottom py-4">
-          <h2 class="h4 fw-bold">
-            Cierre sugerido
-          </h2>
-          <p class="fs-5 mb-0">
-            Respirar mejor empieza por entender qué acompaña la congestión.
-            Observa el contexto, lee la etiqueta y consulta cuando el cuadro
-            no sea claramente leve y temporal.
-          </p>
+          <h2 class="h4 fw-bold"> Cierre sugerido </h2>
+          <p class="fs-5 mb-0"> La técnica correcta protege el producto, reduce errores y ayuda a que cada aplicación siga realmente las instrucciones del envase. </p>
         </section>
       </div>
-      <!-- ===========================
-           SIDEBAR
-      ============================ -->
+      <!-- SIDEBAR -->
       <aside class="col-12 col-lg-4">
         <div class="sticky-lg-top noticia-sidebar">
-          <!-- NOTA DESTACADA -->
           <div class="card border-0 bg-light rounded-4 mb-4">
             <div class="card-body p-4">
               <i class="bi bi-info-circle fs-2"></i>
-              <h3 class="h5 fw-bold mt-3">
-                Información importante
-              </h3>
-              <p class="mb-0">
-                Alivio temporal no significa tratamiento de la causa.
-                Los síntomas persistentes requieren valoración apropiada.
-              </p>
-            </div>
-          </div>
-          <!-- FUENTES -->
-          <div class="card rounded-4">
-            <div class="card-body p-4">
-              <h3 class="h5 fw-bold mb-3">
-                Enlaces y fuentes visibles
-              </h3>
-              <p class="small">
-                Las fuentes internacionales respaldan educación y criterios
-                de seguridad; no sustituyen el prospecto venezolano de NAS.
-              </p>
-              <div class="d-grid gap-3">
-                <a href="https://www.oftalmi.com/productos/"
-                   target="_blank"
-                   class="text-decoration-none">
-                  LabOftalmi · Catálogo de productos: NAS
-                </a>
-                <a href="https://www.afrin.com/"
-                   target="_blank"
-                   class="text-decoration-none">
-                  Afrin · Sitio oficial
-                </a>
-                <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=30cade3d-208f-8594-e063-6394a90ad2a0&version=2"
-                   target="_blank"
-                   class="text-decoration-none">
-                  DailyMed · Nafazolina 0,05%
-                </a>
-                <a href="https://www.nhs.uk/medicines/decongestants/"
-                   target="_blank"
-                   class="text-decoration-none">
-                  NHS · Decongestants
-                </a>
-                <a href="https://www.nhs.uk/conditions/allergic-rhinitis/"
-                   target="_blank"
-                   class="text-decoration-none">
-                  NHS · Allergic rhinitis
-                </a>
-                <a href="https://www.rightdecisions.scot.nhs.uk/ggc-primary-care/ear-nose-and-throat-ent/ear-nose-and-throat-ent-referral-guidance/nose-conditions/rhinorrhoea/rhinitis/"
-                   target="_blank"
-                   class="text-decoration-none">
-                  NHS Greater Glasgow and Clyde · Rhinitis
-                </a>
-              </div>
+              <h3 class="h5 fw-bold mt-3"> Información importante</h3>
+              <p class="mb-0"> El frasco es de uso personal. No compartas el gotero, no trasvases el contenido y utiliza únicamente la cantidad y frecuencia indicadas en el prospecto.</p>
             </div>
           </div>
         </div>
       </aside>
     </div>
   </div>
-</section> 
-
+</section>
   <div class="section-close-wrap">
     <div class="section-close-line"></div>
     <button class="section-close-btn" onclick="ocultarnoticia('noticia2')" aria-label="Ocultar sección" title="Ocultar sección" >
@@ -516,278 +317,73 @@
   </div>
 </section>
 <!-- NOTICIAS 3-->
-<section class="oculto seccion-animada" id="noticia3">
-<!-- =========================================
-     NOTICIA - MODELO 3
-     CORPORATIVO NAS
-========================================= -->
-<section class="noticia-nas py-5">
+<section class="oculto" id="noticia3">
+<section class="noticia-editorial py-5">
   <div class="container">
-    <!-- ====================================
-         ENCABEZADO
-    ===================================== -->
-    <div class="row justify-content-center text-center mb-5">
-      <div class="col-12 col-lg-10">
-        <span class="badge text-bg-danger rounded-pill px-3 py-2 mb-3">
-          Adultos y público general
-        </span>
-        <h1 class="display-4 fw-bold">
-          Congestión nasal en adultos:<br>
-          identificar el contexto antes de buscar alivio
-        </h1>
-        <p class="lead fs-4 mt-4">
-          Resfriado, alergia e irritantes pueden sentirse parecidos,
-          pero no siempre se manejan de la misma manera.
-        </p>
-      </div>
-    </div>
-    <!-- ====================================
-         PRIMER BLOQUE
-    ===================================== -->
-    <div class="row justify-content-center mb-4">
-      <div class="col-12 col-lg-10">
-        <div class="card border-0 rounded-4 bg-light">
-          <div class="card-body p-4 p-md-5">
-            <div class="row g-4">
-              <div class="col-12 col-md-3">
-                <span class="display-4 fw-bold">
-                  01
-                </span>
-              </div>
-              <div class="col-12 col-md-9">
-                <h2 class="fw-bold mb-4">
-                  Una nariz tapada no explica por sí sola la causa
-                </h2>
-                <p>
-                  La congestión nasal aparece cuando los tejidos y vasos de la nariz
-                  se inflaman y reducen el paso del aire. Puede acompañar un resfriado,
-                  una alergia, una irritación ambiental u otras condiciones. En Venezuela,
-                  polvo, humedad, humo, cambios bruscos de temperatura y exposición laboral
-                  pueden formar parte del contexto, pero ningún factor aislado permite
-                  diagnosticar la causa desde una landing.
-                </p>
-                <p class="mb-0">
-                  Antes de elegir un producto, observa qué otros síntomas aparecen.
-                  Picazón nasal, estornudos repetidos y ojos llorosos pueden orientar
-                  hacia alergia; dolor de garganta, tos y malestar pueden acompañar un
-                  cuadro viral. Si la congestión es de un solo lado, se repite con frecuencia,
-                  se acompaña de fiebre alta, dolor intenso o dificultad para respirar,
-                  conviene buscar valoración médica.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ====================================
-         SEGUNDO BLOQUE
-    ===================================== -->
-    <div class="row justify-content-center mb-4">
-      <div class="col-12 col-lg-10">
-        <div class="card border-0 rounded-4">
-          <div class="card-body p-4 p-md-5">
-            <div class="row g-4">
-              <div class="col-12 col-md-3">
-                <span class="display-4 fw-bold">
-                  02
-                </span>
-              </div>
-              <div class="col-12 col-md-9">
-                <h2 class="fw-bold mb-4">
-                  Alivio temporal no significa tratamiento de la causa
-                </h2>
-                <p>
-                  Los descongestionantes nasales tópicos pueden ofrecer alivio de corta
-                  duración al reducir temporalmente la hinchazón de la mucosa. No curan
-                  un resfriado, no eliminan un alérgeno ni sustituyen el estudio de síntomas
-                  persistentes. Esa diferencia debe quedar visible en la página para evitar
-                  que una mejoría momentánea se interprete como resolución del problema.
-                </p>
-                <p class="mb-0">
-                  La fuente corporativa de LabOftalmi identifica NAS como descongestionante
-                  nasal con nafazolina nitrato en dos concentraciones: 0,1% para la
-                  presentación adulta y 0,05% para la pediátrica. La elección no puede
-                  hacerse solo por el color del empaque: debe comprobarse la edad autorizada,
-                  la concentración, la etiqueta y las condiciones de la persona.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ====================================
-         TERCER BLOQUE
-    ===================================== -->
-    <div class="row justify-content-center mb-5">
-      <div class="col-12 col-lg-10">
-        <div class="card border-0 rounded-4 bg-light">
-          <div class="card-body p-4 p-md-5">
-            <div class="row g-4">
-              <div class="col-12 col-md-3">
-                <span class="display-4 fw-bold">
-                  03
-                </span>
-              </div>
-              <div class="col-12 col-md-9">
-                <h2 class="fw-bold mb-4">
-                  Tres preguntas útiles en la farmacia
-                </h2>
-                <!-- PREGUNTAS -->
-                <div class="row g-3 mb-4">
-                  <div class="col-12">
-                    <div class="border rounded-3 p-3">
-                      <strong>
-                        ¿Para quién es el producto y qué edad tiene?
-                      </strong>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="border rounded-3 p-3">
-                      <strong>
-                        ¿Desde cuándo existe la congestión y qué otros síntomas hay?
-                      </strong>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="border rounded-3 p-3">
-                      <strong>
-                        ¿La persona usa otros descongestionantes o vive con hipertensión,
-                        cardiopatía, diabetes, enfermedad tiroidea, glaucoma o recibe
-                        medicamentos que puedan interactuar?
-                      </strong>
-                    </div>
-                  </div>
-                </div>
-                <p>
-                  Estas preguntas no diagnostican, pero ayudan a detectar cuándo la
-                  etiqueta no basta y hace falta la intervención del farmacéutico.
-                </p>
-                <p class="mb-0">
-                  Si el producto resulta apropiado, debe usarse exactamente durante el
-                  tiempo y con la frecuencia indicados en el prospecto venezolano vigente.
-                  Si la congestión persiste, empeora o regresa de forma repetida, no se debe
-                  prolongar el uso por cuenta propia.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ====================================
-         CIERRE
-    ===================================== -->
-    <div class="row justify-content-center mb-5">
-      <div class="col-12 col-lg-8 text-center">
-        <h2 class="fw-bold mb-3">
-          Respirar mejor empieza por entender qué acompaña la congestión
-        </h2>
-        <p class="fs-5">
-          Observa el contexto, lee la etiqueta y consulta cuando
-          el cuadro no sea claramente leve y temporal.
-        </p>
-      </div>
-    </div>
-    <!-- ====================================
-         FUENTES
-    ===================================== -->
+    <!-- ENCABEZADO -->
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
-        <div class="border-top pt-5">
-          <h2 class="h4 fw-bold">
-            Enlaces y fuentes visibles
-          </h2>
-          <p class="mb-4">
-            Las fuentes internacionales respaldan educación y criterios de seguridad;
-            no sustituyen el prospecto venezolano de NAS.
-          </p>
-          <div class="row g-3">
-            <div class="col-12 col-md-6">
-              <a
-                href="https://www.oftalmi.com/productos/"
-                target="_blank"
-                class="card text-decoration-none h-100"
-              >
-                <div class="card-body">
-                  <strong>LabOftalmi</strong>
-                  <p class="mb-0">Catálogo de productos: NAS</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-12 col-md-6">
-              <a
-                href="https://www.afrin.com/"
-                target="_blank"
-                class="card text-decoration-none h-100"
-              >
-                <div class="card-body">
-                  <strong>Afrin</strong>
-                  <p class="mb-0">
-                    Sitio oficial y arquitectura de contenidos
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="col-12 col-md-6">
-              <a
-                href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=30cade3d-208f-8594-e063-6394a90ad2a0&version=2"
-                target="_blank"
-                class="card text-decoration-none h-100"
-              >
-                <div class="card-body">
-                  <strong>DailyMed</strong>
-                  <p class="mb-0">
-                    Nafazolina 0,05% solución nasal
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="col-12 col-md-6">
-              <a
-                href="https://www.nhs.uk/medicines/decongestants/"
-                target="_blank"
-                class="card text-decoration-none h-100"
-              >
-                <div class="card-body">
-                  <strong>NHS</strong>
-                  <p class="mb-0">Decongestants</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-12 col-md-6">
-              <a
-                href="https://www.nhs.uk/conditions/allergic-rhinitis/"
-                target="_blank"
-                class="card text-decoration-none h-100"
-              >
-                <div class="card-body">
-                  <strong>NHS</strong>
-                  <p class="mb-0">Allergic rhinitis</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-12 col-md-6">
-              <a
-                href="https://www.rightdecisions.scot.nhs.uk/ggc-primary-care/ear-nose-and-throat-ent/ear-nose-and-throat-ent-referral-guidance/nose-conditions/rhinorrhoea/rhinitis/"
-                target="_blank"
-                class="card text-decoration-none h-100"
-              >
-                <div class="card-body">
-                  <strong>NHS Greater Glasgow and Clyde</strong>
-                  <p class="mb-0">Rhinitis</p>
-                </div>
-              </a>
-            </div>
-          </div>
+        <div class="mb-3">
+          <span class="badge rounded-pill text-bg-danger px-3 py-2"> Adultos y vendedores de farmacia </span>
+        </div>
+        <h1 class="display-4 fw-bold mb-4"> Congestión de rebote: por qué prolongar un descongestionante puede empeorar el problema </h1>
+        <p class="lead fs-4 mb-5"> Cuando la nariz vuelve a taparse, usar el producto cada vez más seguido no es una solución segura. </p>
+        <hr class="mb-5">
+      </div>
+    </div>
+    <!-- CUERPO -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <article class="mb-5">
+          <h2 class="fw-bold mb-3"> El ciclo que puede pasar desapercibido</h2>
+          <p> Los descongestionantes nasales tópicos están pensados para uso breve. Cuando se utilizan con mayor frecuencia o durante más días de lo indicado, la congestión puede regresar o empeorar al desaparecer el efecto. A este fenómeno se le llama congestión de rebote o rinitis medicamentosa. La persona siente que necesita otra aplicación y puede entrar en un ciclo de uso cada vez más frecuente.</p>
+          <p> No significa que todas las personas desarrollarán el problema, pero sí que la duración indicada en la etiqueta es una medida de seguridad. Referencias internacionales suelen limitar estos productos a pocos días, aunque el límite exacto varía según el ingrediente y el país. Para NAS, el material suministrado indica suspender y consultar si no hay mejoría después de dos o tres días; ese texto debe prevalecer cuando sea confirmado por el prospecto venezolano vigente. </p>
+        </article>
+        <article class="mb-5">
+          <h2 class="fw-bold mb-3"> Señales para detenerse y consultar </h2>
+          <p> Presta atención si necesitas aplicar el producto antes de la hora indicada, si la nariz se tapa con mayor intensidad cuando pasa el efecto, si llevas más días de los permitidos o si empiezas a usar más cantidad. También requiere consulta la congestión que interfiere repetidamente con el sueño o el trabajo, se presenta solo de un lado o se acompaña de sangrado, fiebre persistente, dolor facial intenso o dificultad respiratoria. </p>
+          <p> No conviene resolver el rebote cambiando inmediatamente a otro descongestionante ni combinando gotas, spray y tabletas. El farmacéutico o el médico puede revisar la causa de fondo y orientar una alternativa adecuada. Los lavados salinos pueden formar parte de algunos planes de autocuidado, pero no deben presentarse como sustituto universal ni mezclarse dentro del frasco de NAS. </p>
+        </article>
+        <article class="mb-5">
+          <h2 class="fw-bold mb-3"> El papel de la farmacia </h2>
+          <p> Cuando una persona pide el mismo descongestionante repetidamente, el vendedor puede preguntar desde cuándo lo usa, cuántas veces al día, si la frecuencia ha aumentado y qué otros productos para la congestión está tomando. Si hay uso prolongado o empeoramiento, corresponde derivar al farmacéutico y evitar una recomendación automática. </p>
+          <p> La landing debe hacer visible la duración de uso junto al CTA de producto, no esconderla en preguntas frecuentes. Una marca de autocuidado gana confianza cuando explica también cuándo detenerse. </p>
+        </article>
+        <!-- FUENTES -->
+        <div class="border-top pt-4">
+          <h2 class="h4 fw-bold mb-3"> Enlaces y fuentes visibles </h2>
+          <p> Las fuentes internacionales respaldan educación y criterios de seguridad; no sustituyen el prospecto venezolano de NAS. </p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0">
+              <strong>LabOftalmi · Catálogo de productos: NAS</strong><br>
+              <a href="https://www.oftalmi.com/productos/" target="_blank"> https://www.oftalmi.com/productos/ </a>
+            </li>
+            <li class="list-group-item px-0">
+              <strong>Afrin · Sitio oficial y arquitectura de contenidos</strong><br>
+              <a href="https://www.afrin.com/" target="_blank"> https://www.afrin.com/ </a>
+            </li>
+            <li class="list-group-item px-0">
+              <strong>DailyMed · Nafazolina 0,05% solución nasal</strong><br>
+              <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=30cade3d-208f-8594-e063-6394a90ad2a0&version=2" target="_blank"> DailyMed </a>
+            </li>
+            <li class="list-group-item px-0">
+              <strong>NHS · Decongestants</strong><br>
+              <a href="https://www.nhs.uk/medicines/decongestants/" target="_blank">https://www.nhs.uk/medicines/decongestants/</a>
+            </li>
+            <li class="list-group-item px-0">
+              <strong>NHS · Allergic rhinitis</strong><br>
+              <a href="https://www.nhs.uk/conditions/allergic-rhinitis/" target="_blank"> https://www.nhs.uk/conditions/allergic-rhinitis/</a>
+            </li>
+            <li class="list-group-item px-0">
+              <strong>NHS Greater Glasgow and Clyde · Rhinitis</strong><br>
+              <a href="https://www.rightdecisions.scot.nhs.uk/ggc-primary-care/ear-nose-and-throat-ent/ear-nose-and-throat-ent-referral-guidance/nose-conditions/rhinorrhoea/rhinitis/" target="_blank"> Right Decisions</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-</section>  
-
-
+</section>
   <div class="section-close-wrap">
     <div class="section-close-line"></div>
     <button class="section-close-btn" onclick="ocultarnoticia('noticia3')" aria-label="Ocultar sección" title="Ocultar sección" >
@@ -796,16 +392,65 @@
   </div>
 </section>
 <!-- NOTICIAS 4-->
-<section class="oculto seccion-animada" id="noticia4">
-   <div class="container">
-    <h3>¿Cómo usar gotas nasales correctamente?</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum voluptatum neque sit ab et reiciendis cupiditate sed exercitationem, sequi ex, ipsa eum, molestiae cum dolorem. Provident, facere. Libero, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod tenetur mollitia illum exercitationem nesciunt, molestias cumque autem molestiae dicta! Illum animi sed velit labore ducimus illo facilis molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga quaerat. Obcaecati rem iure porro. Ex fuga pariatur assumenda deleniti? Exercitationem ratione, neque nihil error maiores nobis impedit quibusdam quos?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum voluptatum neque sit ab et reiciendis cupiditate sed exercitationem, sequi ex, ipsa eum, molestiae cum dolorem. Provident, facere. Libero, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod tenetur mollitia illum exercitationem nesciunt, molestias cumque autem molestiae dicta! Illum animi sed velit labore ducimus illo facilis molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga quaerat. Obcaecati rem iure porro. Ex fuga pariatur assumenda deleniti? Exercitationem ratione, neque nihil error maiores nobis impedit quibusdam quos?</p>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum voluptatum neque sit ab et reiciendis cupiditate sed exercitationem, sequi ex, ipsa eum, molestiae cum dolorem. Provident, facere. Libero, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod tenetur mollitia illum exercitationem nesciunt, molestias cumque autem molestiae dicta! Illum animi sed velit labore ducimus illo facilis molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga quaerat. Obcaecati rem iure porro. Ex fuga pariatur assumenda deleniti? Exercitationem ratione, neque nihil error maiores nobis impedit quibusdam quos?</p>
-    <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum voluptatum neque sit ab et reiciendis cupiditate sed exercitationem, sequi ex, ipsa eum, molestiae cum dolorem. Provident, facere. Libero, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod tenetur mollitia illum exercitationem nesciunt, molestias cumque autem molestiae dicta! Illum animi sed velit labore ducimus illo facilis molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga quaerat. Obcaecati rem iure porro. Ex fuga pariatur assumenda deleniti? Exercitationem ratione, neque nihil error maiores nobis impedit quibusdam quos?</p>
+<section class="oculto" id="noticia4">
+   <section class="noticia-moderna py-5">
+  <div class="container">
+    <!-- CABECERA -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 col-xl-11">
+        <span class="text-uppercase fw-bold small"> Adultos y vendedores de farmacia</span>
+        <h1 class="display-3 fw-bold mt-2 mb-4">Antes de usar un descongestionante nasal: condiciones y medicamentos que conviene mencionar</h1>
+        <p class="lead fs-4 col-lg-9"> Una conversación breve con el farmacéutico puede detectar precauciones que no se ven en el síntoma. </p>
+      </div>
+    </div>
+    <div class="row justify-content-center g-5">
+      <!-- CONTENIDO -->
+      <div class="col-12 col-lg-8">
+        <section class="mb-5">
+          <h2 class="fw-bold mb-3">La congestión puede ser leve; los antecedentes siguen importando</h2>
+          <p> Que un medicamento sea de venta libre no significa que sea apropiado para todas las personas. La literatura de NAS solicita precaución en hipertensión, enfermedades del corazón, diabetes y trastornos tiroideos, y menciona contraindicaciones relacionadas con glaucoma, alergia a los componentes y ciertos tratamientos, incluidos inhibidores de la monoaminooxidasa y betabloqueantes. El prospecto final debe definir el alcance exacto de cada advertencia. </p>
+          <p> Antes de comprar, informa al farmacéutico si tienes alguna de esas condiciones, si estás embarazada o amamantando, si presentas dificultad para orinar por problemas de próstata, o si tomas medicamentos para presión arterial, corazón, depresión, Parkinson u otras enfermedades crónicas. No suspendas tratamientos prescritos para poder usar un descongestionante.</p>
+        </section>
+        <section class="mb-5">
+          <h2 class="fw-bold mb-3">Evita duplicar el mismo objetivo</h2>
+          <p> Los productos “para gripe y resfriado” pueden incluir descongestionantes además de analgésicos o antihistamínicos. Usar al mismo tiempo gotas, spray, tabletas o sobres para la nariz tapada puede duplicar efectos aunque los nombres comerciales sean distintos. Llevar los empaques o fotografías de las etiquetas ayuda al farmacéutico a revisar ingredientes y advertencias. </p>
+          <p> También conviene indicar si ya utilizaste otro producto nasal, cuánto tiempo llevas usándolo y si has presentado resequedad, irritación, nerviosismo, intranquilidad o insomnio. Estos últimos aparecen en la literatura suministrada de NAS como posibles problemas asociados al uso prolongado.</p>
+        </section>
+        <section class="mb-5">
+          <h2 class="fw-bold mb-3">Cuándo no basta el mostrador</h2>
+          <p>Dificultad para respirar, hinchazón de cara o garganta, desmayo, palpitaciones intensas, confusión, sangrado nasal que no cede, fiebre persistente o dolor facial fuerte requieren valoración profesional. En caso de ingestión accidental, especialmente por un niño, se debe buscar ayuda médica de inmediato y seguir el canal de toxicología o emergencia disponible en Venezuela. </p>
+          <p> Para el vendedor de farmacia, la función es reconocer la alerta y llamar al farmacéutico responsable. No debe minimizar antecedentes porque el cliente  haya usado antes un producto similar.</p>
+        </section>
+      </div>
+      <!-- SIDEBAR -->
+      <aside class="col-12 col-lg-4">
+        <div class="sticky-lg-top noticia-sidebar">
+          <div class="card border-0 bg-light rounded-4 mb-4">
+            <div class="card-body p-4">
+              <i class="bi bi-info-circle fs-2"></i>
+              <h3 class="h5 fw-bold mt-3">Información importante</h3>
+              <p class="mb-0"> Antes de usar un descongestionante, informa al farmacéutico sobre enfermedades crónicas, embarazo o lactancia y otros medicamentos que estés utilizando. </p>
+            </div>
+          </div>
+          <div class="card rounded-4">
+            <div class="card-body p-4">
+              <h3 class="h5 fw-bold mb-3"> Enlaces y fuentes visibles </h3>
+              <p class="small"> Las fuentes internacionales respaldan educación y criterios de seguridad; no sustituyen el prospecto venezolano de NAS. </p>
+              <div class="d-grid gap-3">
+                <a href="https://www.oftalmi.com/productos/" target="_blank" class="text-decoration-none"> LabOftalmi · Catálogo de productos: NAS</a>
+                <a href="https://www.afrin.com/" target="_blank" class="text-decoration-none"> Afrin · Sitio oficial</a>
+                <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=30cade3d-208f-8594-e063-6394a90ad2a0&version=2" target="_blank" class="text-decoration-none">  DailyMed · Nafazolina 0,05% </a>
+                <a href="https://www.nhs.uk/medicines/decongestants/" target="_blank" class="text-decoration-none"> NHS · Decongestants </a>
+                <a href="https://www.nhs.uk/conditions/allergic-rhinitis/" target="_blank"  class="text-decoration-none">  NHS · Allergic rhinitis </a>
+                <a href="https://www.rightdecisions.scot.nhs.uk/ggc-primary-care/ear-nose-and-throat-ent/ear-nose-and-throat-ent-referral-guidance/nose-conditions/rhinorrhoea/rhinitis/" target="_blank" class="text-decoration-none"> NHS Greater Glasgow and Clyde · Rhinitis </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
   </div>
+</section>
   <div class="section-close-wrap">
     <div class="section-close-line"></div>
     <button class="section-close-btn" onclick="ocultarnoticia('noticia4')" aria-label="Ocultar sección" title="Ocultar sección" >
@@ -814,17 +459,72 @@
   </div>
 </section>
 <!-- NOTICIAS 5-->
-<section class="oculto seccion-animada" id="noticia5">
+<section class="oculto" id="noticia5">
+<section class="noticia-editorial py-5">
   <div class="container">
-
-    <h3>¿Qué puede estar detrás de tu congestión nasal?</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum voluptatum neque sit ab et reiciendis cupiditate sed exercitationem, sequi ex, ipsa eum, molestiae cum dolorem. Provident, facere. Libero, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod tenetur mollitia illum exercitationem nesciunt, molestias cumque autem molestiae dicta! Illum animi sed velit labore ducimus illo facilis molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga quaerat. Obcaecati rem iure porro. Ex fuga pariatur assumenda deleniti? Exercitationem ratione, neque nihil error maiores nobis impedit quibusdam quos?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum voluptatum neque sit ab et reiciendis cupiditate sed exercitationem, sequi ex, ipsa eum, molestiae cum dolorem. Provident, facere. Libero, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod tenetur mollitia illum exercitationem nesciunt, molestias cumque autem molestiae dicta! Illum animi sed velit labore ducimus illo facilis molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga quaerat. Obcaecati rem iure porro. Ex fuga pariatur assumenda deleniti? Exercitationem ratione, neque nihil error maiores nobis impedit quibusdam quos?</p>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum voluptatum neque sit ab et reiciendis cupiditate sed exercitationem, sequi ex, ipsa eum, molestiae cum dolorem. Provident, facere. Libero, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod tenetur mollitia illum exercitationem nesciunt, molestias cumque autem molestiae dicta! Illum animi sed velit labore ducimus illo facilis molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga quaerat. Obcaecati rem iure porro. Ex fuga pariatur assumenda deleniti? Exercitationem ratione, neque nihil error maiores nobis impedit quibusdam quos?</p>
-    <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum voluptatum neque sit ab et reiciendis cupiditate sed exercitationem, sequi ex, ipsa eum, molestiae cum dolorem. Provident, facere. Libero, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod tenetur mollitia illum exercitationem nesciunt, molestias cumque autem molestiae dicta! Illum animi sed velit labore ducimus illo facilis molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga quaerat. Obcaecati rem iure porro. Ex fuga pariatur assumenda deleniti? Exercitationem ratione, neque nihil error maiores nobis impedit quibusdam quos?</p>
+    <!-- ENCABEZADO -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <div class="mb-3">
+          <span class="badge rounded-pill text-bg-danger px-3 py-2"> Familias y cuidadores </span>
+        </div>
+        <h1 class="display-4 fw-bold mb-4"> Congestión nasal en niños: la edad y la presentación importan </h1>
+        <p class="lead fs-4 mb-5"> Antes de usar gotas descongestionantes, confirma para qué edades están autorizadas y qué señales necesitan consulta. </p>
+        <hr class="mb-5">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <article class="mb-5">
+          <h2 class="fw-bold mb-3"> Primero: observar al niño</h2>
+          <p> La nariz tapada es frecuente en resfriados y alergias, pero el cuidado cambia según la edad, los síntomas y los antecedentes. Observa si el niño puede respirar con tranquilidad, dormir, beber líquidos y realizar sus actividades. Dificultad respiratoria, coloración azulada, deshidratación, somnolencia marcada, dolor intenso, fiebre persistente o empeoramiento requieren atención profesional. </p>
+          <p>En menores, no se debe elegir un descongestionante por parecido del envase ni usar una presentación de adultos en menor cantidad. Las concentraciones, edades autorizadas y advertencias son específicas. La propuesta de landing suministrada asigna NAS pediátrico a niños de 6 a 12 años, pero esa franja no aparece claramente en el díptico y debe confirmarse con el registro y el prospecto vigentes antes de publicarse.</p>
+        </article>
+        <article class="mb-5">
+          <h2 class="fw-bold mb-3"> Un frasco, un niño, instrucciones claras </h2>
+          <p> Si el pediatra o farmacéutico confirma que el producto es apropiado, el cuidador debe leer la etiqueta, usar solo la cantidad y frecuencia indicadas y anotar la hora. El gotero no debe tocar la nariz ni compartirse con hermanos. El frasco debe cerrarse y guardarse de inmediato fuera de la vista y el alcance de los niños. </p>
+          <p> No combines gotas descongestionantes con jarabes, sobres o tabletas “para el resfriado” sin revisar ingredientes y edades. Tampoco prolongues el uso porque el niño duerma mejor la primera noche. El material de NAS indica suspender y consultar si no hay mejoría después de pocos días; el texto público debe copiar la versión aprobada palabra por palabra. </p>
+        </article>
+        <article class="mb-5">
+          <h2 class="fw-bold mb-3"> Medidas de apoyo y consulta </h2>
+          <p> Mantener líquidos adecuados para la edad y evitar humo o irritantes puede ayudar al confort. Las soluciones salinas se utilizan en algunos niños, pero son productos distintos y deben administrarse con una técnica apropiada. No prepares mezclas dentro del frasco de NAS ni reemplaces una valoración médica cuando los síntomas son importantes.</p>
+          <p>Si el niño tiene enfermedad del corazón, presión alta, diabetes, alteraciones tiroideas, glaucoma, usa otros medicamentos o ingiere accidentalmente el producto, busca orientación profesional inmediata. La seguridad pediátrica debe ocupar una zona visible de la landing y no quedar reducida a un acordeón. </p>
+        </article>
+        <!-- FUENTES -->
+        <div class="border-top pt-4">
+          <h2 class="h4 fw-bold mb-3"> Enlaces y fuentes visibles </h2>
+          <p> Las fuentes internacionales respaldan educación y criterios de seguridad; no sustituyen el prospecto venezolano de NAS. </p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0">
+              <strong>LabOftalmi · Catálogo de productos: NAS</strong><br>
+              <a href="https://www.oftalmi.com/productos/" target="_blank"> https://www.oftalmi.com/productos/ </a>
+            </li>
+            <li class="list-group-item px-0">
+              <strong>Afrin · Sitio oficial y arquitectura de contenidos</strong><br>
+              <a href="https://www.afrin.com/" target="_blank"> https://www.afrin.com/ </a>
+            </li>
+            <li class="list-group-item px-0">
+              <strong>DailyMed · Nafazolina 0,05% solución nasal</strong><br>
+              <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=30cade3d-208f-8594-e063-6394a90ad2a0&version=2" target="_blank"> DailyMed </a>
+            </li>
+            <li class="list-group-item px-0">
+              <strong>NHS · Decongestants</strong><br>
+              <a href="https://www.nhs.uk/medicines/decongestants/" target="_blank"> NHS · Decongestants  </a>
+            </li>
+            <li class="list-group-item px-0">
+              <strong>NHS · Allergic rhinitis</strong><br>
+              <a href="https://www.nhs.uk/conditions/allergic-rhinitis/" target="_blank"> NHS · Allergic rhinitis </a>
+            </li>
+            <li class="list-group-item px-0">
+              <strong>NHS Greater Glasgow and Clyde · Rhinitis</strong><br>
+              <a href="https://www.rightdecisions.scot.nhs.uk/ggc-primary-care/ear-nose-and-throat-ent/ear-nose-and-throat-ent-referral-guidance/nose-conditions/rhinorrhoea/rhinitis/" target="_blank"> NHS Greater Glasgow and Clyde · Rhinitis </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
   <div class="section-close-wrap">
     <div class="section-close-line"></div>
     <button class="section-close-btn" onclick="ocultarnoticia('noticia5')" aria-label="Ocultar sección" title="Ocultar sección" >
@@ -833,16 +533,75 @@
   </div>
 </section>
 <!-- NOTICIAS 6-->
-<section class="oculto seccion-animada" id="noticia6">
-   <div class="container">
-    <h3>¿Cómo usar gotas nasales correctamente?</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum voluptatum neque sit ab et reiciendis cupiditate sed exercitationem, sequi ex, ipsa eum, molestiae cum dolorem. Provident, facere. Libero, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod tenetur mollitia illum exercitationem nesciunt, molestias cumque autem molestiae dicta! Illum animi sed velit labore ducimus illo facilis molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga quaerat. Obcaecati rem iure porro. Ex fuga pariatur assumenda deleniti? Exercitationem ratione, neque nihil error maiores nobis impedit quibusdam quos?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum voluptatum neque sit ab et reiciendis cupiditate sed exercitationem, sequi ex, ipsa eum, molestiae cum dolorem. Provident, facere. Libero, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod tenetur mollitia illum exercitationem nesciunt, molestias cumque autem molestiae dicta! Illum animi sed velit labore ducimus illo facilis molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga quaerat. Obcaecati rem iure porro. Ex fuga pariatur assumenda deleniti? Exercitationem ratione, neque nihil error maiores nobis impedit quibusdam quos?</p>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum voluptatum neque sit ab et reiciendis cupiditate sed exercitationem, sequi ex, ipsa eum, molestiae cum dolorem. Provident, facere. Libero, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod tenetur mollitia illum exercitationem nesciunt, molestias cumque autem molestiae dicta! Illum animi sed velit labore ducimus illo facilis molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga quaerat. Obcaecati rem iure porro. Ex fuga pariatur assumenda deleniti? Exercitationem ratione, neque nihil error maiores nobis impedit quibusdam quos?</p>
-    <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum voluptatum neque sit ab et reiciendis cupiditate sed exercitationem, sequi ex, ipsa eum, molestiae cum dolorem. Provident, facere. Libero, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod tenetur mollitia illum exercitationem nesciunt, molestias cumque autem molestiae dicta! Illum animi sed velit labore ducimus illo facilis molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga quaerat. Obcaecati rem iure porro. Ex fuga pariatur assumenda deleniti? Exercitationem ratione, neque nihil error maiores nobis impedit quibusdam quos?</p>
+<section class="oculto" id="noticia6">
+<section class="noticia-moderna py-5">
+  <div class="container">
+    <!-- CABECERA -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 col-xl-11">
+        <span class="text-uppercase fw-bold small">Vendedores y auxiliares de farmacia</span>
+        <h1 class="display-3 fw-bold mt-2 mb-4">Cinco verificaciones antes de orientar NAS en el mostrador</h1>
+        <p class="lead fs-4 col-lg-9">Presentación, edad, duración, antecedentes y otros medicamentos: una conversación breve reduce errores.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center g-5">
+      <!-- CONTENIDO -->
+      <div class="col-12 col-lg-8">
+        <section class="mb-5">
+          <h2 class="fw-bold mb-3"> 1. ¿Para quién es?</h2>
+          <p>Confirma si el producto es para un adulto o un niño y pregunta la edad exacta. NAS adulto y NAS pediátrico contienen nafazolina nitrato en concentraciones distintas. No se debe recomendar la presentación pediátrica como una versión “más suave” para cualquier persona ni fraccionar la adulta para un niño. La edad autorizada debe leerse directamente en el prospecto aprobado. </p>
+          <p> Si se trata de un niño menor a la edad permitida, una persona embarazada  o en lactancia, o alguien que no puede explicar para quién es el producto, deriva al farmacéutico.</p>
+        </section>
+        <section class="mb-5">
+          <h2 class="fw-bold mb-3"> 2. ¿Qué síntomas tiene y desde cuándo? </h2>
+          <p> Pregunta si la congestión es reciente, si hay secreción, estornudos, fiebre, dolor facial, sangrado o dificultad respiratoria. No intentes diagnosticar resfriado, alergia o sinusitis. La finalidad es detectar señales de consulta y saber si la persona ya superó el tiempo de uso indicado en la etiqueta. </p>
+        </section>
+        <section class="mb-5">
+          <h2 class="fw-bold mb-3"> 3. ¿Qué ha usado ya? </h2>
+          <p> Revisa gotas, sprays, jarabes, tabletas y sobres para gripe o alergia. La persona puede estar duplicando descongestionantes sin reconocerlos. Pregunta también si la frecuencia de aplicación ha aumentado o si la nariz se tapa más cuando pasa el efecto; esto puede sugerir uso prolongado y requiere intervención del farmacéutico. </p>
+        </section>
+        <section class="mb-5">
+          <h2 class="fw-bold mb-3"> 4. ¿Hay condiciones o tratamientos relevantes? </h2>
+          <p> Confirma hipertensión, cardiopatía, diabetes, enfermedad tiroidea, glaucoma, problemas prostáticos, embarazo/lactancia y medicamentos crónicos. La literatura de NAS menciona inhibidores de la monoaminooxidasa y betabloqueantes entre las situaciones a revisar. No aconsejes suspender medicamentos prescritos. </p>
+        </section>
+        <section class="mb-5">
+          <h2 class="fw-bold mb-3"> 5. ¿Comprendió cómo y cuándo detenerse? </h2>
+          <p> Señala en la etiqueta la cantidad, frecuencia, duración y advertencias. Pide al cliente que repita cómo lo utilizará, recuérdale no compartir el frasco y explica qué síntomas o falta de mejoría requieren consulta. Registra o reporta reacciones adversas según el protocolo de la farmacia y el canal de LabOftalmi. </p>
+        </section>
+      </div>
+      <!-- SIDEBAR -->
+      <aside class="col-12 col-lg-4">
+        <div class="sticky-lg-top noticia-sidebar">
+          <div class="card border-0 bg-light rounded-4 mb-4">
+            <div class="card-body p-4">
+              <i class="bi bi-check2-circle fs-2"></i>
+              <h3 class="h5 fw-bold mt-3"> Las cinco verificaciones </h3>
+              <ol class="mb-0 ps-3">
+                <li class="mb-2">¿Para quién es?</li>
+                <li class="mb-2">¿Qué síntomas tiene?</li>
+                <li class="mb-2">¿Qué ha usado ya?</li>
+                <li class="mb-2">¿Hay condiciones o tratamientos relevantes?</li>
+                <li>¿Comprendió cómo y cuándo detenerse?</li>
+              </ol>
+            </div>
+          </div>
+          <div class="card rounded-4">
+            <div class="card-body p-4">
+              <h3 class="h5 fw-bold mb-3">Enlaces y fuentes visibles</h3>
+              <div class="d-grid gap-3">
+                <a href="https://www.nhs.uk/medicines/decongestants/" target="_blank" class="text-decoration-none" > NHS · Decongestants </a> 
+                <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=30cade3d-208f-8594-e063-6394a90ad2a0&version=2" target="_blank" class="text-decoration-none" > DailyMed · Etiqueta de nafazolina nasal </a>
+                <div>
+                  Literatura NAS adulto y pediátrico suministrada
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
   </div>
+</section>
   <div class="section-close-wrap">
     <div class="section-close-line"></div>
     <button class="section-close-btn" onclick="ocultarnoticia('noticia6')" aria-label="Ocultar sección" title="Ocultar sección" >
@@ -851,7 +610,7 @@
   </div>
 </section>
 <!-- NOTICIAS 7-->
-<section class="oculto seccion-animada" id="noticia7">
+<section class="oculto" id="noticia7">
   <div class="container">
 
     <h3>¿Qué puede estar detrás de tu congestión nasal?</h3>
@@ -870,7 +629,7 @@
   </div>
 </section>
 <!-- NOTICIAS 8-->
-<section class="oculto seccion-animada" id="noticia8">
+<section class="oculto" id="noticia8">
    <div class="container">
     <h3>¿Cómo usar gotas nasales correctamente?</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum voluptatum neque sit ab et reiciendis cupiditate sed exercitationem, sequi ex, ipsa eum, molestiae cum dolorem. Provident, facere. Libero, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod tenetur mollitia illum exercitationem nesciunt, molestias cumque autem molestiae dicta! Illum animi sed velit labore ducimus illo facilis molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga quaerat. Obcaecati rem iure porro. Ex fuga pariatur assumenda deleniti? Exercitationem ratione, neque nihil error maiores nobis impedit quibusdam quos?</p>
@@ -887,18 +646,19 @@
     </button>
   </div>
 </section>
-<!-- TARJETAS DE PRODUCTOS -->
+
+<!--------------------------------------- TARJETAS DE PRODUCTOS -------------------------------------->
 <section class="py-5">
   <div class="container py-3" id="nuestro">
     <!-- TITULO DE LA SECCION -->
     <div class=" mb-4">
-      <h2 class=" fs-1 fw-bold">Encuentra tu <span > <img src="img/LOGO_NAS.png" class="pb-2" style="height: 45px;"></span> </h2>
+      <h2 class=" fs-1 fw-bold">Encuentra tu <span > <img src="img/LOGO_NAS.png" class="pb-2" style="height: 45px;" alt="Logo Nas"></span> </h2>
     </div>
     <div class="row g-4">
       <!-- TARJETA 1 -->
       <div class="col-12 col-md-6">
         <div class="card">
-          <img src="img/Elementos_Nas/Tarjeta-1.webp"  alt="Producto 1">
+          <img src="img/Tarjeta-Adulto.webp"  alt="Producto Adulto">
           <div class="card-body p-0">
               <button class="btn btn-danger fw-bold card-btn" onclick="mostrarSeccion('section1')"> Mas información </button>
           </div>
@@ -907,7 +667,7 @@
       <!-- TARJETA 2 -->
       <div class="col-12 col-md-6">
         <div class="card">
-          <img src="img/Elementos_Nas/Tarjeta-2.webp"  alt="Producto 2">
+          <img src="img/Tarjeta-Pediatrico.webp"  alt="Producto Pediátrico">
           <div class="card-body p-0">
               <button class="btn btn-danger fw-bold card-btn" onclick="mostrarSeccion('section2')"> Mas información </button>
           </div>
@@ -916,11 +676,9 @@
     </div>
   </div>
 </section>
-
-
-<!-- PRODUCTO DE ADULTO -->
-<section class="oculto seccion-animada" id="section1">
-<section class="product-detail producto-amarillo carusel-amarillo py-5">
+<!--------------------------------------- PRODUCTO DE ADULTO ------------------------------------------>
+<section class="oculto" id="section1">
+<section class="product-detail carusel-amarillo py-5">
   <div class="container mt-5" id="adulto">
     <div class="row align-items-start g-4">
       <div class="col-lg-5">
@@ -930,8 +688,8 @@
             <button type="button" data-bs-target="#nasCarousel" data-bs-slide-to="1"></button>
           </div>
           <div class="carousel-inner text-center">
-            <div class="carousel-item active"><img src="img/NAS_ADULDO.jpg" class="pd-image" alt="Producto 1"></div>
-            <div class="carousel-item"><img src="img/NAS_ADULTO_DERECHO_1080X1080.png" class="pd-image" alt="Producto 2"></div>
+            <div class="carousel-item active"><img src="img/NAS_ADULDO.jpg" class="pd-image" alt="Producto Adulto frontal"></div>
+            <div class="carousel-item"><img src="img/NAS_ADULTO_DERECHO_1080X1080.png" class="pd-image" alt="Producto Aduldo Caja"></div>
           </div>
           <button class="carousel-control-prev pd-control" type="button" data-bs-target="#nasCarousel" data-bs-slide="prev"><span class="pd-arrow-icon">‹</span></button>
           <button class="carousel-control-next pd-control" type="button" data-bs-target="#nasCarousel" data-bs-slide="next"><span class="pd-arrow-icon">›</span></button>
@@ -964,11 +722,11 @@
         <div class="row">
           <div class="col-7 d-flex align-items-center"><p class="info-text m-0 ms-md-5 ps-md-5"><strong>(1)</strong> El frasco esta totalmente sellado, <strong>(sin orificio)</strong>. Cuando utilice el frasco por primera vez, enrosque la 
             a del frasco en el sentido de la flecha <strong>(sentido de las agujas del reloj)</strong>, a fin de perforar la punta del frasco de forma aséptica.</p></div>
-          <div class="col-5 d-flex align-items-center"><img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_1_180X180.png" alt="BFS1"></div>
+          <div class="col-5 d-flex align-items-center"><img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_1_180X180.png" alt="BFS 1"></div>
         </div>
         <div class="row mt-5 d-flex">
           <div class="col-7 justify-content-end d-flex align-items-center "><p class="info-text m-0 ms-md-5 ps-md-5" ><strong>(2)</strong> La tapa puede entoces retirarse desenroscándola del frasco en el sentido de la flecha<strong>(sentido contrario a las agujas del reloj)</strong>, para abrir el frasco y aplicar el producto.</p></div>
-          <div class="col-5 justify-content-md-start justify-content-center d-flex align-items-center"><img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_2_180X180.png" alt="BFS2"></div>
+          <div class="col-5 justify-content-md-start justify-content-center d-flex align-items-center"><img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_2_180X180.png" alt="BFS 2"></div>
         </div>
       </div>
       <div class="tab-pane fade" id="comp" role="tabpanel">
@@ -993,8 +751,8 @@
   </button>
 </div>
 </section>
-<!-- PRODUCTO DE PEDIATRICO -->
-<section class="oculto seccion-animada" id="section2">
+<!------------------------------------------- PRODUCTO DE PEDIATRICO -------------------------------------->
+<section class="oculto" id="section2">
 <section class="product-detail producto-blanco py-5 my-5">
   <div class="container mt-5">
     <div class="row align-items-start g-4">
@@ -1005,8 +763,8 @@
             <button type="button" data-bs-target="#nasCarousel1" data-bs-slide-to="1"></button>
           </div>
           <div class="carousel-inner text-center">
-            <div class="carousel-item active"><img src="img/NAS_PEDIATRA.jpg" class="pd-image shadow" alt="Producto 1"></div>
-            <div class="carousel-item"><img src="img/NAS_PEDIATRICO_IZQUIERDO_1080X1080.png" class="pd-image" alt="Producto 2"></div>
+            <div class="carousel-item active"><img src="img/NAS_PEDIATRA.jpg" class="pd-image shadow" alt="Producto Pediatrico Frontal"></div>
+            <div class="carousel-item"><img src="img/NAS_PEDIATRICO_IZQUIERDO_1080X1080.png" class="pd-image" alt="Producto Pediatrico Caja"></div>
           </div>
           <button class="carousel-control-prev pd-control" type="button" data-bs-target="#nasCarousel1" data-bs-slide="prev"><span class="pd-arrow-icon">‹</span></button>
           <button class="carousel-control-next pd-control" type="button" data-bs-target="#nasCarousel1" data-bs-slide="next"><span class="pd-arrow-icon">›</span></button>
@@ -1015,7 +773,7 @@
       <div class="col-lg-7">
         <h2 class="pd-title">Nas Solución Nasal <br> Pediátrico</h2>
         <div class="pd-meta d-flex align-items-center gap-3 my-3">
-          <div class="pd-iconbox"><img src="img/LOGO_NAS.png" alt="Icono" class="pd-icon"></div>
+          <div class="pd-iconbox"><img src="img/LOGO_NAS.png" alt="Icono NAS" class="pd-icon"></div>
           <div class="pd-dose">0,05% Nafazolina Nitrato - 15 mL Solucion</div>
         </div>
         <p class="pd-text"><strong>NAS 0.05% Solución Nasal (Gotas) </strong>es un descongestionante nasal de uso pediátrico, indicado en niños de 6 a 12 años. Actúa como vasoconstrictor tópico, ayudando a reducir la inflamación de la mucosa nasal y brindando alivio temporal de la congestión, facilitando la respiración. Es un producto de uso delicado que debe administrarse bajo vigilancia médica y siguiendo estrictamente la posología indicada por el facultativo, no recomendándose su uso por más de 3 días consecutivos. </p>
@@ -1038,11 +796,11 @@
         <h2 class="info-title mt-4 text-center">Como abrir frasco BFS:</h2>
         <div class="row">
           <div class="col-7 d-flex align-items-center"><p class="info-text m-0 ms-md-5 ps-md-5"><strong>(1)</strong> El frasco esta totalmente sellado, <strong>(sin orificio)</strong>. Cuando utilice el frasco por primera vez, enrosque la tapa del frasco en el sentido de la flecha <strong>(sentido de las agujas del reloj)</strong>, a fin de perforar la punta del frasco de forma aséptica.</p></div>
-          <div class="col-5 d-flex align-items-center"><img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_1_180X180.png" alt="BFS1"></div>
+          <div class="col-5 d-flex align-items-center"><img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_1_180X180.png" alt="BFS 1"></div>
         </div>
         <div class="row mt-5 d-flex">
           <div class="col-7 justify-content-end d-flex align-items-center "><p class="info-text m-0 ms-md-5 ps-md-5" ><strong>(2)</strong> La tapa puede entoces retirarse desenroscándola del frasco en el sentido de la flecha<strong>(sentido contrario a las agujas del reloj)</strong>, para abrir el frasco y aplicar el producto.</p></div>
-          <div class="col-5 justify-content-md-start justify-content-center d-flex align-items-center"><img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_2_180X180.png" alt="BFS2"></div>
+          <div class="col-5 justify-content-md-start justify-content-center d-flex align-items-center"><img class="img-fluid imagen-bfs ms-md-5 ps-md-5" src="img/BFS_2_180X180.png" alt="BFS 2"></div>
         </div>
       </div>
       <div class="tab-pane fade" id="comp1" role="tabpanel">
@@ -1067,16 +825,12 @@
   </button>
 </div>
 </section>
-  
-
-
-
-<!-- CAROUSEL -->
+<!---------------------------------------- TECNOLOGIA BFS ---------------------------------------------->
 <section class="fondo-amarillo py-5" id="BFS">
   <div class="container">
           <div class="row align-items-center g-4">
             <div class="col-md-3 col-6 text-center order-md-1 order-2">
-              <img class="p-img1" src="img/Elementos_Nas/Bfs-2.webp" alt="Producto">
+              <img class="p-img1" src="img/BFS-Espiral.webp" alt="BFS Espiral">
             </div>
             <div class="col-md-6 col-12 order-md-2 order-1">
               <h2 class="fw-bold display-6 mb-2 ms-5">Tecnología BFS </h2>
@@ -1089,33 +843,28 @@
               </div>
             </div>
             <div class="col-md-3 col-6 align-items-center text-center order-md-3 order-3 ">
-                <img class="p-img" src="img/Elementos_Nas/BFS-1.webp" alt="Producto">
+                <img class="p-img" src="img/BFS-Tapa.webp" alt="BFS Tapa">
             </div>
           </div>
   </div>
 </section>
-
-<!-- IMAGEN DIVISORA -->
+<!-------------------------------------- IMAGEN DIVISORA -------------------------------------------------->
 <section class="fondo-blanco1">
   <div class="container p-0">
     <picture class="w-100 d-block">
-      <source media="(min-width: 1200px)" srcset="img/Elementos_Nas/banner_2.webp">
-      <source media="(min-width: 576px)" srcset="img/Elementos_Nas/banner-2d.webp">
-      <img src="img/Elementos_Nas/banner-2d.webp" class="img-fluid w-100 d-block" alt="Banner principal NAS">
+      <source media="(min-width: 1200px)" srcset="img/Banner_Pediatrico.webp">
+      <source media="(min-width: 576px)" srcset="img/Banner_Pediatrico_Nas.webp">
+      <img src="img/Banner_Pediatrico_Nas.webp" class="img-fluid w-100 d-block" alt="Banner Pediátrico NAS">
     </picture>
   </div>
 </section>
-
-<!-- PASOS A SEGUIR -->
- <!-- MODO DE USO -->
+ <!--------------------------------------------- MODO DE USO ----------------------------------------------->
 <section class="fondo-rojo py-5" id="modo">
   <div class="container">
     <div class="row align-items-center g-4">
       <!-- TITULO -->
       <div class="col-12 col-lg-3 text-center text-lg-start">
-        <h2 class=" display-5 fw-bold mb-0">
-          Modo de Uso
-        </h2>
+        <h2 class=" display-5 fw-bold mb-0"> Modo de Uso </h2>
       </div>
       <!-- PASOS -->
       <div class="col-12 col-lg-9">
@@ -1123,7 +872,7 @@
           <!-- PASO 1 -->
           <div class="col-6 col-md-3 text-center">
             <div class="modo-paso mx-auto">
-              <img src="img/Elementos_Nas/Paso-1.webp" class="img-fluid rounded-circle modo-img" alt="Paso 1" >
+              <img src="img/Paso-1.webp" class="img-fluid rounded-circle modo-img" alt="Paso 1" >
               <div class="modo-numero">1</div>
             </div>
             <p class="texto-blanco mt-4 mb-0 fs-5"> Lava tus manos </p>
@@ -1131,7 +880,7 @@
           <!-- PASO 2 -->
           <div class="col-6 col-md-3 text-center">
             <div class="modo-paso mx-auto">
-              <img src="img/Elementos_Nas/Paso-2.webp" class="img-fluid rounded-circle modo-img" alt="Paso 2" >
+              <img src="img/Paso-2.webp" class="img-fluid rounded-circle modo-img" alt="Paso 2" >
               <div class="modo-numero"> 2 </div>
             </div>
             <p class="texto-blanco mt-4 mb-0 fs-5"> Inclina la cabeza </p>
@@ -1139,7 +888,7 @@
           <!-- PASO 3 -->
           <div class="col-6 col-md-3 text-center">
             <div class="modo-paso mx-auto">
-              <img src="img/Elementos_Nas/Paso-3.webp" class="img-fluid rounded-circle modo-img" alt="Paso 3" >
+              <img src="img/Paso-3.webp" class="img-fluid rounded-circle modo-img" alt="Paso 3" >
               <div class="modo-numero"> 3 </div>
             </div>
             <p class="texto-blanco mt-4 mb-0 fs-5"> Aplica las gotas </p>
@@ -1147,7 +896,7 @@
           <!-- PASO 4 -->
           <div class="col-6 col-md-3 text-center">
             <div class="modo-paso mx-auto">
-              <img src="img/Elementos_Nas/Paso-4.webp" class="img-fluid rounded-circle modo-img" alt="Paso 4" >
+              <img src="img/Paso-4.webp" class="img-fluid rounded-circle modo-img" alt="Paso 4" >
               <div class="modo-numero"> 4 </div>
             </div>
             <p class="texto-blanco mt-4 mb-0 fs-5"> Respira suavemente </p>
@@ -1157,46 +906,31 @@
     </div>
   </div>
 </section>
-
-
-
-
-
-
-<!-- MAPA MUNDI -->
+<!---------------------------------------------- MAPA MUNDI ---------------------------------------------------->
 <section class="fondo-amarillo">
   <div class="container">
     <div class="row py-3 align-items-center g-4">
       <div class="col-md-6 col-12">
         <h2 class="fw-bold display-6">Nuestros aliados</h2>
-        <p class="texto-v">lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt pariatur aliquam quasi qui, error accusantium delectus quam est harum, laudantium sunt esse molestias natus facere quas illo veritatis amet magnam?
+        <p class="texto-ajustado">lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt pariatur aliquam quasi qui, error accusantium delectus quam est harum, laudantium sunt esse molestias natus facere quas illo veritatis amet magnam?
         </p>
-        <div>
-
-          <a class="btn fondo-rojo fw-bold texto-blanco" href="#" >Nuestros aliados</a>
-        </div>
       </div>
       <div class="col-md-6 col-12">
-        <img src="img/Elementos_Nas/mapa.png" class="img-fluid w-100" alt="Doctora">
+        <img src="img/mapa.png" class="img-fluid w-100" alt="Mapa de Venezuela">
       </div>
     </div>
   </div>
 </section>
-
-
-
-
-
-<!-- FOOTER -->
+<!------------------------------------------------ FOOTER ---------------------------------------------->
 <footer class="fondo-rojo">
   <div class="container">
     <div class="row g-3 align-items-start">
       <div class="col-lg-7">
         <div class="d-flex flex-wrap gap-3 gap-md-4 mb-3">
-          <a href="#">Producto</a>
-          <a href="#">Marca</a>
-          <a href="#">Modo de empleo</a>
-          <a href="#">Términos legales</a>
+          <a href="#noticias">Noticias</a>
+          <a href="#nuestro">Nuestros Productos</a>
+          <a href="#BFS">BFS</a>
+          <a href="#modo">Modo de Uso</a>
         </div>
         <div class="fineprint">Texto legal / descargo. Información de la empresa, notas, etc.</div>
       </div>
@@ -1206,7 +940,7 @@
     </div>
   </div>
 </footer>
-<!-- BOTON SUBIR ARRIBA -->
+<!---------------------------------------- BOTON SUBIR ARRIBA -------------------------------------------------->
 <a href="javascript:void(0)" id="backToTop" class="back-to-top" aria-label="Subir al inicio">
   <span class="back-to-top-icon"></span>
 </a>
@@ -1214,6 +948,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- JAVASCRIPT PERSONALIZADO -->
   <script src="javacript.js"></script>
-
 </body>
 </html>

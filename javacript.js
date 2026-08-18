@@ -65,7 +65,7 @@ function initBackToTop() {
 
 
   // Mostrar una sección y ocultar las demás
-  function mostrarnoticia(idSeccion) {
+  function mostrarSeccion(idSeccion) {
     // Lista de secciones desplegables
     const secciones = document.querySelectorAll(
       '#section1, #section2'
