@@ -82,14 +82,7 @@ html {
   text-underline-offset: .6rem;
 }
 /* ------------------------------------------INTRODUCCION-------------------------------------------- */
-.hero-banner {
-  height: 650px;
-  overflow: hidden;
-}
-.hero-banner-img {
-  object-fit: cover;
-  object-position: center;
-}
+
 /* BOTON ENCIMA DE LA IMAGEN */
 .hero-btn {
   position: absolute;
@@ -102,6 +95,11 @@ html {
 .noticia-card-img {
   width: 100%;
   height: 210px;
+  object-fit: cover;
+}
+.noticia-card-img1 {
+  width: 100%;
+  height: 150px;
   object-fit: cover;
 }
 .noticia-card-body {
@@ -415,6 +413,104 @@ html {
   font-size: 2rem;
   margin: 0 auto 12px auto;
 }
+/* ESTILOS DE AMPLIACIÓN (NUEVA SECCIÓN) */
+.custom-divider {
+  border-top: 2px dashed rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}
+.bsf-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.bsf-item {
+  font-weight: 600;
+  color: #212529;
+  font-size: 0.95rem;
+}
+.analogia-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-left: 4px solid var(--rojo_nas, #dc3545);
+}
+.max-w-700 {
+  max-width: 700px;
+}
+/* ==========================================
+   COMPLEMENTO TECNOLOGIA BFS
+========================================== */
+/* ICONO GRANDE */
+.bfs-big-icon {
+  width: 130px;
+  height: 130px;
+  border: 2px solid var(--rojo_nas);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+}
+/* ==========================================
+   BENEFICIOS
+========================================== */
+.bfs-benefit-card {
+  background-color: rgba(255, 255, 255, 0.35);
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+.bfs-benefit-card:hover {
+  transform: translateY(-6px);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.bfs-benefit-icon {
+  width: 58px;
+  height: 58px;
+  border: 2px solid var(--rojo_nas);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+/* ==========================================
+   EJEMPLO PRACTICO
+========================================== */
+.bfs-example {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+.bfs-step-number {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--rojo_nas);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+/* ==========================================
+   FRASE FINAL
+========================================== */
+.bfs-quote {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+}
+/* ==========================================
+   RESPONSIVE
+========================================== */
+@media (max-width: 768px) {
+  .bfs-big-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+  }
+  .bfs-quote {
+    padding: 35px 15px;
+  }
+}
 /*--------------------------------------------- MODO DE USO ----------------------------------------------------*/
 .modo-paso {
   position: relative;
@@ -500,10 +596,16 @@ footer a:hover{
   border-bottom: 15px solid var(--azul_nas); 
 }
 /*--------------------------------------------- RESPONSIVE ----------------------------------------------*/
+@media (max-width: 1440px) {
+
+}
 @media (max-width: 1024px) {
   .hero-btn {
   left: 7.5%;
-  bottom: 23%;
+  bottom: 32%;
+}
+.hero-banner {
+  height: 811px;
 }
 }
 @media (max-width: 992px) {
@@ -518,6 +620,7 @@ footer a:hover{
     padding: 0;
     background: transparent;
   }
+  
 }
 
 @media (max-width: 991.98px) {
@@ -557,18 +660,12 @@ footer a:hover{
 @media (max-width: 768px) {
   .hero-btn {
   left: 7%;
-  bottom: 32%;
+  bottom: 31%;
   font-size: 1.2rem;
   }
-   .hero-banner {
-    height: auto;
-    overflow: visible;
-  }
-  .hero-banner-img {
-    height: auto !important;
-    object-fit: initial;
-    object-position: initial;
-  }
+.hero-banner {
+  height: 600px;
+}
 }
 @media (max-width: 767.98px) {
   .modo-paso {
@@ -583,6 +680,9 @@ footer a:hover{
     width: 40px;
     height: 40px;
     font-size: 1.5rem;
+  }
+  .hero-banner{
+    height: auto;
   }
 }
 @media (max-width: 576px){

@@ -17,7 +17,7 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-site" data-bs-offset="75">
 <!------------------------------------------------------ NAVEGADOR -------------------------------------->
-<nav class="navbar navbar-expand-lg sticky-top nav-gris py-2" id="navbar-site">
+<nav class="navbar navbar-expand-lg sticky-top nav-gris py-3" id="navbar-site">
   <div class="container">
     <!-- LOGO_NAS -->
     <a class="navbar-brand navbar-brand-centered d-flex align-items-center order-2 order-lg-0" title="NAS Nafazolina Nitrato" href="#">
@@ -42,7 +42,7 @@
 <section>
   <div class="container-fluid position-relative p-0 hero-banner">
     <picture class="w-100 d-block h-100">
-      <source media="(min-width: 1200px)" srcset="img/Banner_Portada.webp">
+      <source media="(min-width: 1200px)" srcset="img/bannerportada.webp">
       <source media="(min-width: 576px)" srcset="img/Banner_Portada_Nas.webp">
       <img src="img/Banner_Portada_Nas.webp" class="img-fluid w-100 h-100 d-block hero-banner-img" alt="Banner principal NAS">
     </picture>
@@ -57,9 +57,9 @@
       <h2>¿Qué necesitas aliviar?</h2>
     </div>
     <!-- CAROUSEL BOOTSTRAP -->
-    <div id="reliefCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-wrap="true" >
+    <div id="reliefCarouselDesktop" class="carousel slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="5000" data-bs-wrap="true" >
       <div class="carousel-inner">
-        <!-- SLIDE 1 - PRIMERAS 3 TARJETAS -->
+        <!-- SLIDE 1 - PRIMERAS 4 TARJETAS -->
         <div class="carousel-item active">
           <div class="row g-4 px-md-5">
             <!-- TARJETA 1 -->
@@ -67,8 +67,8 @@
               <button onclick="mostrarnoticia('noticia1')" class="btn p-0 w-100 h-100 d-flex"> 
                 <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
                     <img src="img/Noticia-1.webp" class="card-img-top noticia-card-img" alt="Noticia 1">
-                    <div class="card-body d-flex justify-content-center align-items-center noticia-card-body">
-                      <span class="fw-bold text-center">Identificar el contexto antes de buscar alivio</span>
+                    <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2">
+                      <span class="fw-bold text-start">¿Cómo evaluar la congestión nasal en adultos?</span>
                     </div>
                   </div>
                 </button>
@@ -78,8 +78,8 @@
               <button onclick="mostrarnoticia('noticia2')" class="btn p-0 w-100 h-100 d-flex"> 
                 <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
                   <img src="img/Noticia-2.webp" class="card-img-top noticia-card-img" alt="Noticia 2">
-                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body">
-                    <span class="fw-bold text-center">Una técnica sencilla para usarlas con higiene y precisión</span>
+                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2">
+                    <span class="fw-bold text-start">¿Cómo aplicar correctamente las gotas nasales?</span>
                   </div>
                 </div>
               </button>
@@ -89,8 +89,8 @@
               <button onclick="mostrarnoticia('noticia3')" class="btn p-0 w-100 h-100 d-flex"> 
                 <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
                   <img src="img/Noticia-3.webp" class="card-img-top noticia-card-img img-fluid" alt="Noticia 3">
-                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body">
-                    <span class="fw-bold text-center">Por qué prolongar un descongestionante puede empeorar el problema</span>
+                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2">
+                    <span class="fw-bold text-start">¿Qué causa la congestión de rebote?</span>
                   </div>
                 </div>
               </button>
@@ -100,15 +100,15 @@
               <button onclick="mostrarnoticia('noticia4')" class="btn p-0 w-100 h-100 d-flex"> 
                 <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
                   <img src="img/Noticia-4.webp" class="card-img-top noticia-card-img img-fluid" alt="Noticia 4">
-                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body ">
-                    <span class="fw-bold text-center">Condiciones y medicamentos que conviene mencionar</span>
+                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2 ">
+                    <span class="fw-bold text-start">¿Qué revisar antes de usar un descongestionante?</span>
                   </div>
                 </div>
               </button>
             </div>
           </div>
         </div>
-        <!-- SLIDE 2 - SIGUIENTES 3 TARJETAS -->
+        <!-- SLIDE 2 - SIGUIENTES 4 TARJETAS -->
         <div class="carousel-item">
           <div class="row g-4 px-md-5">
             <!-- TARJETA 5 -->
@@ -116,8 +116,8 @@
               <button onclick="mostrarnoticia('noticia5')" class="btn p-0 w-100 h-100 d-flex"> 
                 <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
                   <img src="img/Noticia-4.webp" class="card-img-top noticia-card-img" alt="Noticia 5">
-                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body p-0">
-                    <span class="fw-bold text-center">La edad y la presentación importan</span>
+                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2">
+                    <span class="fw-bold text-start">¿Cómo abordar la congestión nasal en niños?</span>
                   </div>
                 </div>
               </button>
@@ -127,52 +127,187 @@
               <button onclick="mostrarnoticia('noticia6')" class="btn p-0 w-100 h-100 d-flex"> 
                 <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
                   <img src="img/Noticia-5.webp" class="card-img-top noticia-card-img" alt="Noticia 6">
-                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body p-0">
-                    <span class="fw-bold text-center">Cinco verificaciones antes de orientar NAS en el mostrador</span>
+                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2 ">
+                    <span class="fw-bold text-start">¿Qué 5 puntos verificar en el mostrador para NAS?</span>
                   </div>
                 </div>
               </button>
             </div>
            <!-- TARJETA 7 -->
             <div class="col-6 col-lg-3 d-flex">
-                <!-- <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
-                    <img src="img/Noticia-1.webp" class="card-img-top noticia-card-img" alt="Noticia 7">
-                    <button onclick="mostrarnoticia('noticia7')" class="btn p-0 w-100 h-100 d-flex"> 
-                    <div class="card-body d-flex justify-content-center align-items-center noticia-card-body p-0">
-                        <span class="fw-bold text-center">Cada vez que tengas el malestar de congestión</span>
-                        <i class="bi bi-arrow-right"></i>
-                      </div>
-                    </button>
-                </div> -->
+              <!-- <button onclick="mostrarnoticia('noticia7')" class="btn p-0 w-100 h-100 d-flex"> 
+                <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+                  <img src="img/Noticia-1.webp" class="card-img-top noticia-card-img" alt="Noticia 7">
+                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2 ">
+                    <span class="fw-bold text-start">Cada vez que tengas el malestar de congestión</span>
+                  </div>
+                </div>
+              </button> -->
             </div>
            <!-- TARJETA 8 -->
             <div class="col-6 col-lg-3 d-flex">
-                <!-- <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
-                    <img src="img/Noticia-1.webp" class="card-img-top noticia-card-img" alt="Noticia 8">
-                    <button onclick="mostrarnoticia('noticia8')" class="btn p-0 w-100 h-100 d-flex"> 
-                    <div class="card-body d-flex justify-content-center align-items-center noticia-card-body p-0">
-                        <span class="fw-bold text-center">Cada vez que tengas el malestar de congestión</span>
-                        <i class="bi bi-arrow-right"></i>
-                      </div>
-                    </button>
-                </div> -->
+              <!-- <button onclick="mostrarnoticia('noticia8')" class="btn p-0 w-100 h-100 d-flex"> 
+              <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+                <img src="img/Noticia-1.webp" class="card-img-top noticia-card-img" alt="Noticia 8">
+                <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2 ">
+                  <span class="fw-bold text-start">Cada vez que tengas el malestar de congestión</span>
+                </div>
+              </div>
+              </button> -->
             </div>
           </div>
         </div>
       </div>
       <!-- FLECHA IZQUIERDA BOOTSTRAP -->
-      <button class="carousel-control-prev relief-control-prev" type="button" data-bs-target="#reliefCarousel" data-bs-slide="prev" aria-label="Anterior" >
+      <button class="carousel-control-prev relief-control-prev" type="button" data-bs-target="#reliefCarouselDesktop" data-bs-slide="prev" aria-label="Anterior" >
         <span class="relief-carousel-arrow">
           <i class="bi bi-chevron-left"></i>
         </span>
       </button>
       <!-- FLECHA DERECHA BOOTSTRAP -->
-      <button class="carousel-control-next relief-control-next" type="button" data-bs-target="#reliefCarousel" data-bs-slide="next" aria-label="Siguiente" >
+      <button class="carousel-control-next relief-control-next" type="button" data-bs-target="#reliefCarouselDesktop" data-bs-slide="next" aria-label="Siguiente" >
         <span class="relief-carousel-arrow">
           <i class="bi bi-chevron-right"></i>
         </span>
       </button>
     </div>
+    <!-- ============================================
+     CAROUSEL MOVIL - 2 TARJETAS POR SLIDE
+============================================ -->
+<div id="reliefCarouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel" data-bs-interval="5000" data-bs-wrap="true" >
+  <div class="carousel-inner">
+    <!-- ============================= -->
+    <!-- SLIDE 1 - NOTICIAS 1 Y 2 -->
+    <!-- ============================= -->
+    <div class="carousel-item active">
+      <div class="row g-3 px-4">
+        <!-- TARJETA 1 -->
+        <div class="col-6 d-flex ps-0 pe-1">
+          <button onclick="mostrarnoticia('noticia1')" class="btn p-0 w-100 h-100 d-flex">
+            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+              <img src="img/Noticia-1.webp" class="card-img-top noticia-card-img1" alt="Noticia 1">
+              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+                <span class="fw-bold text-start">¿Cómo evaluar la congestión nasal en adultos?</span>
+              </div>
+            </div>
+          </button>
+        </div>
+        <!-- TARJETA 2 -->
+        <div class="col-6 d-flex pe-0 ps-1">
+          <button onclick="mostrarnoticia('noticia2')" class="btn p-0 w-100 h-100 d-flex" >
+            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+              <img src="img/Noticia-2.webp" class="card-img-top noticia-card-img1" alt="Noticia 2">
+              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+                <span class="fw-bold text-start"> ¿Cómo aplicar correctamente las gotas nasales? </span>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ============================= -->
+    <!-- SLIDE 2 - NOTICIAS 3 Y 4 -->
+    <!-- ============================= -->
+    <div class="carousel-item">
+      <div class="row g-3 px-4">
+        <!-- TARJETA 3 -->
+        <div class="col-6 d-flex ps-0 pe-1">
+          <button onclick="mostrarnoticia('noticia3')" class="btn p-0 w-100 h-100 d-flex" >
+            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+              <img src="img/Noticia-3.webp" class="card-img-top noticia-card-img1" alt="Noticia 3" >
+              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+                <span class="fw-bold text-start">¿Qué causa la congestión de rebote?</span>
+              </div>
+            </div>
+          </button>
+        </div>
+        <!-- TARJETA 4 -->
+        <div class="col-6 d-flex pe-0 ps-1">
+          <button onclick="mostrarnoticia('noticia4')" class="btn p-0 w-100 h-100 d-flex">
+            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+              <img src="img/Noticia-4.webp" class="card-img-top noticia-card-img1" alt="Noticia 4">
+              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+                <span class="fw-bold text-start"> ¿Qué revisar antes de usar un descongestionante? </span>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ============================= -->
+    <!-- SLIDE 3 - NOTICIAS 5 Y 6 -->
+    <!-- ============================= -->
+    <div class="carousel-item">
+      <div class="row g-3 px-4">
+        <!-- TARJETA 5 -->
+        <div class="col-6 d-flex ps-0 pe-1">
+          <button onclick="mostrarnoticia('noticia5')" class="btn p-0 w-100 h-100 d-flex">
+            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+              <img src="img/Noticia-4.webp" class="card-img-top noticia-card-img1" alt="Noticia 5">
+              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+                <span class="fw-bold text-start">¿Cómo abordar la congestión nasal en niños?</span>
+              </div>
+            </div>
+          </button>
+        </div>
+        <!-- TARJETA 6 -->
+        <div class="col-6 d-flex pe-0 ps-1">
+          <button onclick="mostrarnoticia('noticia6')" class="btn p-0 w-100 h-100 d-flex" >
+            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+              <img src="img/Noticia-5.webp" class="card-img-top noticia-card-img1" alt="Noticia 6" >
+              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+                <span class="fw-bold text-start"> ¿Qué 5 puntos verificar en el mostrador para NAS?</span>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ============================= -->
+    <!-- SLIDE 4 - NOTICIAS 7 Y 8 -->
+    <!-- ============================= -->
+    <!-- <div class="carousel-item">
+      <div class="row g-3 px-4"> -->
+        <!-- TARJETA 7 -->
+        <!-- <div class="col-6 d-flex ps-0 pe-1">
+          <button onclick="mostrarnoticia('noticia7')" class="btn p-0 w-100 h-100 d-flex" >
+            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+              <img src="img/Noticia-1.webp" class="card-img-top noticia-card-img1" alt="Noticia 7" >
+              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+                <span class="fw-bold text-start">
+                  Cada vez que tengas el malestar de congestión
+                </span>
+              </div>
+            </div>
+          </button>
+        </div> -->
+        <!-- TARJETA 8 -->
+        <!-- <div class="col-6 d-flex pe-0 ps-1">
+          <button onclick="mostrarnoticia('noticia8')" class="btn p-0 w-100 h-100 d-flex">
+            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+              <img src="img/Noticia-1.webp" class="card-img-top noticia-card-img1" alt="Noticia 8" >
+              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+                <span class="fw-bold text-start">Cada vez que tengas el malestar de congestión</span>
+              </div>
+            </div>
+          </button>
+        </div> -->
+      <!-- </div>
+    </div> -->
+  </div>
+  <!-- FLECHA IZQUIERDA -->
+  <button class="carousel-control-prev relief-control-prev" type="button" data-bs-target="#reliefCarouselMobile"  data-bs-slide="prev">
+    <span class="relief-carousel-arrow">
+      <i class="bi bi-chevron-left"></i>
+    </span>
+  </button>
+  <!-- FLECHA DERECHA -->
+  <button class="carousel-control-next relief-control-next" type="button" data-bs-target="#reliefCarouselMobile" data-bs-slide="next" >
+    <span class="relief-carousel-arrow">
+      <i class="bi bi-chevron-right"></i>
+    </span>
+  </button>
+</div>
   </div>
 </section>
 <!------------------------------------------- NOTICIAS ------------------------------------------------------>
@@ -360,10 +495,6 @@
               <a href="https://www.oftalmi.com/productos/" target="_blank"> https://www.oftalmi.com/productos/ </a>
             </li>
             <li class="list-group-item px-0">
-              <strong>Afrin · Sitio oficial y arquitectura de contenidos</strong><br>
-              <a href="https://www.afrin.com/" target="_blank"> https://www.afrin.com/ </a>
-            </li>
-            <li class="list-group-item px-0">
               <strong>DailyMed · Nafazolina 0,05% solución nasal</strong><br>
               <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=30cade3d-208f-8594-e063-6394a90ad2a0&version=2" target="_blank"> DailyMed </a>
             </li>
@@ -439,7 +570,6 @@
               <p class="small"> Las fuentes internacionales respaldan educación y criterios de seguridad; no sustituyen el prospecto venezolano de NAS. </p>
               <div class="d-grid gap-3">
                 <a href="https://www.oftalmi.com/productos/" target="_blank" class="text-decoration-none"> LabOftalmi · Catálogo de productos: NAS</a>
-                <a href="https://www.afrin.com/" target="_blank" class="text-decoration-none"> Afrin · Sitio oficial</a>
                 <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=30cade3d-208f-8594-e063-6394a90ad2a0&version=2" target="_blank" class="text-decoration-none">  DailyMed · Nafazolina 0,05% </a>
                 <a href="https://www.nhs.uk/medicines/decongestants/" target="_blank" class="text-decoration-none"> NHS · Decongestants </a>
                 <a href="https://www.nhs.uk/conditions/allergic-rhinitis/" target="_blank"  class="text-decoration-none">  NHS · Allergic rhinitis </a>
@@ -499,10 +629,6 @@
             <li class="list-group-item px-0">
               <strong>LabOftalmi · Catálogo de productos: NAS</strong><br>
               <a href="https://www.oftalmi.com/productos/" target="_blank"> https://www.oftalmi.com/productos/ </a>
-            </li>
-            <li class="list-group-item px-0">
-              <strong>Afrin · Sitio oficial y arquitectura de contenidos</strong><br>
-              <a href="https://www.afrin.com/" target="_blank"> https://www.afrin.com/ </a>
             </li>
             <li class="list-group-item px-0">
               <strong>DailyMed · Nafazolina 0,05% solución nasal</strong><br>
@@ -593,7 +719,6 @@
                 <a href="https://www.nhs.uk/medicines/decongestants/" target="_blank" class="text-decoration-none" > NHS · Decongestants </a> 
                 <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=30cade3d-208f-8594-e063-6394a90ad2a0&version=2" target="_blank" class="text-decoration-none" > DailyMed · Etiqueta de nafazolina nasal </a>
                 <div>
-                  Literatura NAS adulto y pediátrico suministrada
                 </div>
               </div>
             </div>
@@ -859,7 +984,7 @@
 </div>
 </section>
 <!---------------------------------------- TECNOLOGIA BFS ---------------------------------------------->
-<section class="fondo-amarillo py-5" id="BFS">
+<!-- <section class="fondo-amarillo py-5" id="BFS">
   <div class="container">
           <div class="row align-items-center g-4">
             <div class="col-md-3 col-6 text-center order-md-1 order-2">
@@ -879,6 +1004,624 @@
                 <img class="p-img" src="img/BFS-Tapa.webp" alt="BFS Tapa">
             </div>
           </div>
+  </div>
+</section> -->
+<section class="fondo-amarillo py-5" id="BFS">
+  <div class="container">
+    <!-- BLOQUE 1: Contenido Existente (BFS) -->
+    <div class="row align-items-center g-4">
+      <div class="col-md-3 col-6 text-center order-md-1 order-2">
+        <img class="p-img1" src="img/BFS-Espiral.webp" alt="BFS Espiral">
+      </div>
+      <div class="col-md-6 col-12 order-md-2 order-1">
+        <h2 class="fw-bold display-6 mb-2 text-md-start text-center">Tecnología BFS</h2>
+        <p class="mb-3 fw-bold text-md-start text-center">Formado, llenado y sellado en un proceso continuo.</p>
+        <p class="mb-4 mx-auto mx-md-0 text-md-start text-center" style="max-width:560px; opacity:.95;">
+          El frasco NAS se forma, se llena y se sella mediante un proceso automatizado. Permanece totalmente sellado hasta su primera apertura.
+        </p>
+        <div class="row text-center g-3">
+          <div class="col-4">
+            <div class="feature-icon"><i class="bi bi-droplet"></i></div>
+            <p class="text-min fw-bold">Gotas</p>
+          </div>
+          <div class="col-4">
+            <div class="feature-icon"><i class="bi bi-lungs"></i></div>
+            <p class="text-min fw-bold">Descongestionante</p>
+          </div>
+          <div class="col-4">
+            <div class="feature-icon"><i class="bi bi-clock-history"></i></div>
+            <p class="text-min fw-bold">Rápida acción</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 align-items-center text-center order-md-3 order-3">
+        <img class="p-img" src="img/BFS-Tapa.webp" alt="BFS Tapa">
+      </div>
+    </div>
+    <!-- SEPARADOR VISUAL -->
+    <hr class="my-5 custom-divider">
+    <!-- BLOQUE 2: Ampliación BSF (Nuevo Contenido) -->
+    <div class="row g-4 mt-2 align-items-stretch">
+      <!-- Encabezado y Mensaje Promocional BSF -->
+      <div class="col-12 text-center mb-2">
+        <span class="badge bg-danger fs-6 px-3 py-2 mb-2 rounded-pill">Innovación NAS</span>
+        <h3 class="fw-bold display-6 text-dark">¿Cómo actúa la Tecnología BSF?</h3>
+        <p class="lead fw-semibold text-dark max-w-700 mx-auto">
+          Tecnología BSF: ayuda a que cada aplicación aproveche mejor el producto, brindando una experiencia cómoda y eficaz.
+        </p>
+      </div>
+      <!-- Grid de Beneficios (6 Puntos) -->
+      <div class="col-lg-7 col-12">
+        <div class="bsf-card h-100 p-4 rounded-4 shadow-sm">
+          <h4 class="fw-bold mb-4 text-dark d-flex align-items-center gap-2">
+            <i class="bi bi-check-circle-fill text-danger"></i> Beneficios para el usuario
+          </h4>
+          <div class="row g-3">
+            <div class="col-md-6 col-12">
+              <div class="bsf-item d-flex align-items-start gap-2">
+                <i class="bi bi-arrow-right-short text-danger fs-4 lh-1"></i>
+                <span>Mejor absorción de los ingredientes activos.</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="bsf-item d-flex align-items-start gap-2">
+                <i class="bi bi-arrow-right-short text-danger fs-4 lh-1"></i>
+                <span>Acción más rápida en la zona afectada.</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="bsf-item d-flex align-items-start gap-2">
+                <i class="bi bi-arrow-right-short text-danger fs-4 lh-1"></i>
+                <span>Mayor efectividad general del producto.</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="bsf-item d-flex align-items-start gap-2">
+                <i class="bi bi-arrow-right-short text-danger fs-4 lh-1"></i>
+                <span>Experiencia de uso más cómoda y práctica.</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="bsf-item d-flex align-items-start gap-2">
+                <i class="bi bi-arrow-right-short text-danger fs-4 lh-1"></i>
+                <span>Rendimiento del producto optimizado.</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="bsf-item d-flex align-items-start gap-2">
+                <i class="bi bi-arrow-right-short text-danger fs-4 lh-1"></i>
+                <span>Distribución uniforme en la mucosa nasal.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Caso Práctico y Analogía del Jardín -->
+      <div class="col-lg-5 col-12">
+        <div class="bsf-card h-100 p-4 rounded-4 shadow-sm d-flex flex-column justify-content-between">
+          <div>
+            <h4 class="fw-bold mb-3 text-dark d-flex align-items-center gap-2">
+              <i class="bi bi-person-heart text-danger"></i> Ejemplo práctico
+            </h4>
+            <p class="small text-muted mb-2"><strong>Situación:</strong> María tiene la nariz congestionada por alergias y le cuesta respirar.</p>
+            <p class="mb-3">
+              Al aplicar <strong>NAS</strong>, la tecnología BSF distribuye el producto uniformemente en la mucosa nasal, logrando que los ingredientes activos actúen con la máxima eficiencia.
+            </p>
+          </div>
+          <!-- Box de Analogía destacada -->
+          <div class="analogia-box p-3 rounded-3 mt-3">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <i class="bi bi-flower1 text-danger fs-5"></i>
+              <strong class="text-dark">Entiéndelo de forma sencilla:</strong>
+            </div>
+            <p class="small mb-0 text-dark">
+              <em>"Imagina regar un jardín: si el agua se distribuye mejor, todas las plantas reciben el beneficio. De forma similar, la Tecnología BSF ayuda a distribuir mejor el producto en la nariz para optimizar su acción."</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="fondo-amarillo py-5" id="BFS">
+  <div class="container">
+
+    <!-- ======================================================
+         PARTE SUPERIOR - TU DISEÑO ACTUAL
+    ======================================================= -->
+    <div class="row align-items-center g-4">
+
+      <div class="col-md-3 col-6 text-center order-md-1 order-2">
+        <img
+          class="p-img1"
+          src="img/BFS-Espiral.webp"
+          alt="BFS Espiral"
+        >
+      </div>
+
+      <div class="col-md-6 col-12 order-md-2 order-1">
+
+        <h2 class="fw-bold display-6 mb-2 ms-md-5">
+          Tecnología BFS
+        </h2>
+
+        <p class="mb-4 fw-bold ms-md-5">
+          Formado, llenado y sellado en un proceso continuo.
+        </p>
+
+        <p
+          class="mb-4 ms-md-5"
+          style="max-width:560px; opacity:.95;"
+        >
+          El frasco NAS se forma, se llena y se sella mediante
+          un proceso automatizado. Permanece totalmente sellado
+          hasta su primera apertura.
+        </p>
+
+
+        <div class="row text-center g-3">
+
+          <div class="col-4">
+            <div class="feature-icon">
+              <i class="bi bi-droplet"></i>
+            </div>
+
+            <p class="text-min fw-bold">
+              Gotas
+            </p>
+          </div>
+
+
+          <div class="col-4">
+            <div class="feature-icon">
+              <i class="bi bi-lungs"></i>
+            </div>
+
+            <p class="text-min fw-bold">
+              Descongestionante
+            </p>
+          </div>
+
+
+          <div class="col-4">
+            <div class="feature-icon">
+              <i class="bi bi-clock-history"></i>
+            </div>
+
+            <p class="text-min fw-bold">
+              Rápida acción
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-3 col-6 text-center order-md-3 order-3">
+
+        <img
+          class="p-img"
+          src="img/BFS-Tapa.webp"
+          alt="BFS Tapa"
+        >
+
+      </div>
+
+    </div>
+
+
+
+    <!-- ======================================================
+         SEPARADOR
+    ======================================================= -->
+
+    <div class="row justify-content-center my-5">
+      <div class="col-11">
+        <hr class="border-dark opacity-25">
+      </div>
+    </div>
+
+
+
+    <!-- ======================================================
+         ¿QUE ES LA TECNOLOGIA BFS?
+    ======================================================= -->
+
+    <div class="row justify-content-center mb-5">
+
+      <div class="col-12 col-lg-10">
+
+        <div class="row align-items-center g-4">
+
+          <!-- NUMERO / ICONO -->
+          <div class="col-12 col-md-3 text-center">
+
+            <div class="bfs-big-icon mx-auto">
+              <i class="bi bi-stars"></i>
+            </div>
+
+          </div>
+
+
+          <!-- TEXTO -->
+          <div class="col-12 col-md-9">
+
+            <span class="fw-bold text-uppercase small">
+              Conoce la tecnología
+            </span>
+
+            <h3 class="fw-bold display-6 mt-2 mb-3">
+              ¿Qué es la Tecnología BFS?
+            </h3>
+
+            <p class="fs-5 mb-0">
+              La Tecnología BFS es un sistema innovador diseñado para
+              mejorar la eficacia del producto mediante una mejor
+              distribución y aprovechamiento de sus componentes activos,
+              ayudando a que actúen de forma más rápida y eficiente.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- ======================================================
+         BENEFICIOS
+    ======================================================= -->
+
+    <div class="row justify-content-center mb-5">
+
+      <div class="col-12 col-lg-10">
+
+        <div class="text-center mb-4">
+
+          <h3 class="fw-bold">
+            Beneficios para el usuario
+          </h3>
+
+          <p class="mb-0">
+            Una tecnología desarrollada para optimizar la experiencia
+            y el rendimiento del producto.
+          </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+          <!-- BENEFICIO 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 border-0 rounded-4 bfs-benefit-card">
+
+              <div class="card-body p-4">
+
+                <div class="bfs-benefit-icon mb-3">
+                  <i class="bi bi-droplet-half"></i>
+                </div>
+
+                <h4 class="h5 fw-bold">
+                  Mejor distribución
+                </h4>
+
+                <p class="mb-0">
+                  Ayuda a una mejor absorción de los ingredientes activos.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- BENEFICIO 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 border-0 rounded-4 bfs-benefit-card">
+
+              <div class="card-body p-4">
+
+                <div class="bfs-benefit-icon mb-3">
+                  <i class="bi bi-lightning-charge"></i>
+                </div>
+
+                <h4 class="h5 fw-bold">
+                  Acción donde se necesita
+                </h4>
+
+                <p class="mb-0">
+                  Favorece una acción más rápida donde se necesita.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- BENEFICIO 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 border-0 rounded-4 bfs-benefit-card">
+
+              <div class="card-body p-4">
+
+                <div class="bfs-benefit-icon mb-3">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+
+                <h4 class="h5 fw-bold">
+                  Rendimiento
+                </h4>
+
+                <p class="mb-0">
+                  Contribuye a una mayor efectividad del producto.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- BENEFICIO 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 border-0 rounded-4 bfs-benefit-card">
+
+              <div class="card-body p-4">
+
+                <div class="bfs-benefit-icon mb-3">
+                  <i class="bi bi-hand-index-thumb"></i>
+                </div>
+
+                <h4 class="h5 fw-bold">
+                  Uso práctico
+                </h4>
+
+                <p class="mb-0">
+                  Ofrece una experiencia de uso más cómoda y práctica.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- BENEFICIO 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 border-0 rounded-4 bfs-benefit-card">
+
+              <div class="card-body p-4">
+
+                <div class="bfs-benefit-icon mb-3">
+                  <i class="bi bi-bullseye"></i>
+                </div>
+
+                <h4 class="h5 fw-bold">
+                  Optimización
+                </h4>
+
+                <p class="mb-0">
+                  Está desarrollada para optimizar el rendimiento
+                  del producto.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- BENEFICIO 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 border-0 rounded-4 bfs-benefit-card">
+
+              <div class="card-body p-4">
+
+                <div class="bfs-benefit-icon mb-3">
+                  <i class="bi bi-check2-circle"></i>
+                </div>
+
+                <h4 class="h5 fw-bold">
+                  Aplicación nasal
+                </h4>
+
+                <p class="mb-0">
+                  Diseñada para acompañar la aplicación nasal
+                  siguiendo las indicaciones correspondientes.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- ======================================================
+         EJEMPLO PRACTICO
+    ======================================================= -->
+
+    <div class="row justify-content-center mb-5">
+
+      <div class="col-12 col-lg-10">
+
+        <div class="card border-0 rounded-4 overflow-hidden bfs-example">
+
+          <div class="row g-0">
+
+            <!-- IZQUIERDA -->
+            <div class="col-12 col-lg-4 d-flex align-items-center">
+
+              <div class="p-4 p-md-5">
+
+                <span class="badge text-bg-danger rounded-pill mb-3">
+                  Ejemplo práctico
+                </span>
+
+                <h3 class="fw-bold mb-0">
+                  ¿Cómo puede funcionar en una situación cotidiana?
+                </h3>
+
+              </div>
+
+            </div>
+
+
+            <!-- DERECHA -->
+            <div class="col-12 col-lg-8 bg-white">
+
+              <div class="p-4 p-md-5">
+
+                <div class="mb-4">
+
+                  <div class="d-flex gap-3">
+
+                    <div class="bfs-step-number flex-shrink-0">
+                      1
+                    </div>
+
+                    <div>
+
+                      <h4 class="h5 fw-bold">
+                        Situación
+                      </h4>
+
+                      <p class="mb-0">
+                        María tiene la nariz congestionada por alergias
+                        y le cuesta respirar con comodidad.
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <div class="mb-4">
+
+                  <div class="d-flex gap-3">
+
+                    <div class="bfs-step-number flex-shrink-0">
+                      2
+                    </div>
+
+                    <div>
+
+                      <h4 class="h5 fw-bold">
+                        ¿Cómo ayuda la Tecnología BFS?
+                      </h4>
+
+                      <p class="mb-0">
+                        Cuando María aplica NAS siguiendo las indicaciones,
+                        la Tecnología BFS ayuda a que el producto se distribuya
+                        de manera uniforme en la mucosa nasal, favoreciendo
+                        que sus ingredientes activos lleguen donde se necesitan
+                        y actúen de forma eficiente.
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <div>
+
+                  <div class="d-flex gap-3">
+
+                    <div class="bfs-step-number flex-shrink-0">
+                      3
+                    </div>
+
+                    <div>
+
+                      <h4 class="h5 fw-bold">
+                        Resultado esperado
+                      </h4>
+
+                      <p class="mb-0">
+                        María siente una mejor experiencia de aplicación
+                        y el producto puede ejercer su acción de manera más
+                        efectiva para ayudar a aliviar sus síntomas.
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- ======================================================
+         EXPLICACION SIMPLE
+    ======================================================= -->
+
+    <div class="row justify-content-center">
+
+      <div class="col-12 col-lg-10">
+
+        <div class="bfs-quote text-center">
+
+          <i class="bi bi-quote display-5"></i>
+
+          <h3 class="fw-bold mb-3">
+            Una forma sencilla de entenderlo
+          </h3>
+
+          <p class="fs-4 mb-4">
+            “Imagina regar un jardín: si el agua se distribuye mejor,
+            todas las plantas reciben el beneficio. De forma similar,
+            la Tecnología BFS ayuda a distribuir mejor el producto en
+            la nariz para optimizar su acción.”
+          </p>
+
+          <p class="fw-bold fs-5 mb-0">
+            Tecnología BFS: ayuda a que cada aplicación aproveche mejor
+            el producto, brindando una experiencia cómoda y eficaz.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <!-------------------------------------- IMAGEN DIVISORA -------------------------------------------------->
@@ -953,6 +1696,192 @@
       </div>
     </div>
   </div>
+</section>
+<!----------------------------------------- PREGUNTAS Y RESPUESTAS ---------------------------------------------->
+<section class="container py-4">
+  <h2>Preguntas y Respuestas</h2>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        ¿Por qué sentimos la nariz congestionada?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>La congestión nasal ocurre cuando los tejidos y vasos sanguíneos de la mucosa nasal se inflaman. Esta inflamación puede reducir el espacio disponible para el paso del aire y producir la conocida sensación de “nariz tapada”.<br>Además de dificultar la respiración por la nariz, puede interferir con actividades cotidianas como descansar, conversar, trabajar o estudiar.<br> Nas contiene nafazolina clorhidrato, un principio activo de uso tópico nasal que produce vasoconstricción localizada. Este efecto ayuda a disminuir la inflamación de la mucosa y a aliviar temporalmente la congestión nasal.<br> Su acción comienza aproximadamente entre 5 y 10 minutos después de la aplicación. La respuesta puede variar entre personas. </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        ¿Cómo se utiliza Nas Adultos?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p><strong>Adultos y mayores de 12 años:</strong><br> Aplique 1–2 gotas en cada fosa nasal cada 8 horas, durante un período máximo de 3–5 días.<br> No aumente la cantidad de gotas, no reduzca el intervalo entre aplicaciones y no prolongue el tratamiento. Utilizar una cantidad mayor o aplicarlo con más frecuencia no produce beneficios terapéuticos adicionales y puede aumentar el riesgo de reacciones adversas.<br><br> <strong>Uso responsable</strong><br> Nas proporciona alivio temporal de la congestión nasal, pero no sustituye la evaluación médica cuando los síntomas son persistentes, recurrentes, intensos o están acompañados de otras manifestaciones.<br> Si no observa mejoría después de 2–3 días, suspenda su uso y consulte al médico.<br><br> <strong> Cómo aplicar correctamente las gotas nasales</strong><br> 1.	Lávese las manos. <br> 2.	Incline suavemente la cabeza hacia atrás. <br> 3.	Aplique 1–2 gotas en cada fosa nasal. <br> 4.	Repita la aplicación en la otra fosa nasal. <br> 5.	Inhale suavemente después de la aplicación. <br> 6.	Evite que la punta del gotero toque el interior de la nariz.<br> 7.	Limpie el gotero siguiendo las instrucciones del prospecto. <br> 8.	Cierre correctamente el envase y manténgalo fuera del alcance de los niños. <br><br> El frasco es de uso personal. No lo comparta con otras personas, aunque presenten síntomas similares. </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Lo que debes saber antes de usar Nas
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p> <strong>Respeta la dosis y el tiempo de tratamiento</strong><br> El uso excesivo, demasiado frecuente o prolongado de descongestionantes nasales puede irritar la mucosa y ocasionar congestión de rebote. Esto significa que la nariz puede volver a sentirse congestionada cuando pasa el efecto del medicamento. <br><br> <strong>Para reducir este riesgo:</strong> <br> •	Utilice únicamente la dosis recomendada. <br> •	Respete el intervalo de 8 horas. <br> •	No prolongue el tratamiento más de 3–5 días. <br> •	Suspenda el producto y consulte al médico si los síntomas no mejoran. <br><br> <strong>Consulte antes de utilizarlo</strong> <br> Hable con un médico o farmacéutico antes de usar Nas si presenta o ha presentado: <br> •	Hipertensión arterial. <br> •	Diabetes. <br> •	Angina de pecho. <br> •	Enfermedades cardíacas o coronarias. <br> •	Alteraciones de la tiroides. <br> •	Feocromocitoma. <br> •	Hipertrofia prostática. <br> •	Glaucoma. <br> También debe informar al profesional de la salud sobre otros medicamentos que esté utilizando, especialmente tratamientos antidepresivos del grupo de los inhibidores de la monoaminooxidasa o IMAO. <br><br> <strong>Embarazo y lactancia </strong> <br> Si está embarazada, sospecha que puede estarlo o se encuentra en período de lactancia, consulte al médico antes de utilizar Nas. <br><br> <strong>Conducción y manejo de maquinaria</strong><br> Algunas personas pueden experimentar mareos o somnolencia. Si esto ocurre, evite conducir vehículos o manejar maquinaria. </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        ¿Qué es la Tecnología BSF?
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>La Tecnología BSF es un sistema innovador diseñado para mejorar la eficacia del producto mediante una mejor distribución y aprovechamiento de sus componentes activos, ayudando a que actúen de forma más rápida y eficiente. <br><br> <strong>Beneficios para el usuario</strong> <br> •	Ayuda a una mejor absorción de los ingredientes activos. <br> •	Favorece una acción más rápida donde se necesita. <br> •	Contribuye a una mayor efectividad del producto. <br> •	Ofrece una experiencia de uso más cómoda y práctica. <br> •	Está desarrollada para optimizar el rendimiento del producto. <br> •	NAS es de uso nasal <br> </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        ¿Cuándo debe suspenderse?
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p> <strong>Suspenda el medicamento y busque orientación médica si:</strong> <br> •	La congestión no mejora después de 2–3 días. <br> •	Los síntomas empeoran durante el tratamiento. <br> •	Aparece irritación nasal persistente. <br> •	Se presentan palpitaciones, mareos, somnolencia, nerviosismo, náuseas, debilidad o sudoración. <br> •	La congestión reaparece o se intensifica después de cada aplicación. <br> •	Se produce cualquier reacción inesperada. <br> En caso de una reacción intensa, ingestión accidental o aplicación de una cantidad superior a la recomendada, solicite atención médica. <br><br> <strong>Importante</strong> <br> •	Nas se administra únicamente por vía nasal. <br> •	Nunca debe ser ingerido. <br> •	No exceda la dosis recomendada. <br> •	No utilice el producto durante más de 3–5 días. <br> •	No utilizar en menores de 6 años. <br> •	No utilizar si existe alergia a la nafazolina o a otro componente de la fórmula. <br> •	No utilizar en caso de glaucoma. <br> •	Manténgase fuera del alcance de los niños. <br> •	Lea completamente el prospecto antes de usarlo. <br> </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+        ¿Para qué sirve Nas?
+      </button>
+    </h2>
+    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>Nas está indicado para el tratamiento y alivio temporal de la congestión de la mucosa nasal.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+        ¿Cuál es el principio activo?
+      </button>
+    </h2>
+    <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>Nas contiene nafazolina clorhidrato, un descongestionante de aplicación tópica nasal. <br><br> La concentración exacta de cada presentación debe mostrarse en la landing tal como aparece en su registro sanitario y empaque autorizado.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+        ¿Cuánto tarda en actuar?
+      </button>
+    </h2>
+    <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>De acuerdo con la ficha farmacológica del INHRR, la vasoconstricción nasal producida por la nafazolina puede comenzar aproximadamente entre 5 y 10 minutos después de la aplicación. La respuesta individual puede variar.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+        ¿Cuántas gotas debo aplicar?
+      </button>
+    </h2>
+    <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>La dosis indicada es de 1–2 gotas en cada fosa nasal cada 8 horas. No exceda esta cantidad.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+        ¿Durante cuántos días puedo utilizarlo?
+      </button>
+    </h2>
+    <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>El período recomendado es de 3–5 días. No debe prolongar el tratamiento.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+        ¿Qué debo hacer si no mejora la congestión?
+      </button>
+    </h2>
+    <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>Si no observa mejoría después de 2–3 días, suspenda el uso y consulte al médico.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+        ¿Nas Pediátrico puede utilizarse en menores de 6 años?
+      </button>
+    </h2>
+    <div id="flush-collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>No. La nafazolina nasal descrita por el INHRR está contraindicada en menores de 6 años.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
+        ¿Puede utilizarse durante el embarazo?
+      </button>
+    </h2>
+    <div id="flush-collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>Durante el embarazo o la lactancia solamente debe utilizarse después de consultar al médico.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+        ¿Puedo compartir el gotero?
+      </button>
+    </h2>
+    <div id="flush-collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>No. Compartirlo puede contaminar el producto y facilitar la transmisión de microorganismos.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item fondo-blanco1">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFifteen" aria-expanded="false" aria-controls="flush-collapseFifteen">
+        ¿Más gotas producen mayor alivio?
+      </button>
+    </h2>
+    <div id="flush-collapseFifteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>No. Aplicar más cantidad o utilizarlo con mayor frecuencia no ofrece beneficios terapéuticos adicionales y puede aumentar el riesgo de efectos adversos.</p>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 <!------------------------------------------------ FOOTER ---------------------------------------------->
 <footer class="fondo-rojo">
