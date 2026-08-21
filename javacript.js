@@ -98,45 +98,75 @@ function initBackToTop() {
       block: 'start'
     });
   }
-  
-  
-  
+ 
+// Mostrar una sección y ocultar las demás
+function mostrarnoticia(idnoticia) {
+  // Lista de secciones desplegables
+  const secciones = document.querySelectorAll(
+    '#noticia1, #noticia2, #noticia3, #noticia4, #noticia5, #noticia6, #noticia7, #noticia8'
+  );
+  // Ocultar todas
+  secciones.forEach(seccion => {
+    seccion.classList.add('oculto');
+  });
+  // Mostrar solamente la seleccionada
+  const seccionSeleccionada =
+    document.getElementById(idnoticia);
+  seccionSeleccionada.classList.remove('oculto');
+  // Llevar la pantalla hacia la sección seleccionada
+  seccionSeleccionada.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+}
+// Ocultar sección y volver a las tarjetas
+function ocultarnoticia(idnoticia) {
+  const seccion =
+    document.getElementById(idnoticia);
+  const destino =
+    document.getElementById('noticias');
+  // Ocultar inmediatamente
+  seccion.classList.add('oculto');
+  // Volver a las tarjetas
+  destino.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+}
+
+// Mostrar una sección y ocultar las demás
+function mostrarbfs(idbfs) {
+  // Lista de secciones desplegables
+  const secciones = document.querySelectorAll(
+    '#bfs1'
+  );
+  // Ocultar todas
+  secciones.forEach(seccion => {
+    seccion.classList.add('oculto');
+  });
+  // Mostrar solamente la seleccionada
+  const seccionSeleccionada =
+    document.getElementById(idbfs);
+  seccionSeleccionada.classList.remove('oculto');
+  // Llevar la pantalla hacia la sección seleccionada
+  seccionSeleccionada.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+}
+// Ocultar sección y volver a las tarjetas
+function ocultarbfs(idbfs) {
+  const seccion =
+    document.getElementById(idbfs);
+  const destino =
+    document.getElementById('bfs');
+  // Ocultar inmediatamente
+  seccion.classList.add('oculto');
+  // Volver a las tarjetas
+  destino.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+}
 
 
-
-
-    // Mostrar una sección y ocultar las demás
-    function mostrarnoticia(idnoticia) {
-      // Lista de secciones desplegables
-      const secciones = document.querySelectorAll(
-        '#noticia1, #noticia2, #noticia3, #noticia4, #noticia5, #noticia6, #noticia7, #noticia8'
-      );
-      // Ocultar todas
-      secciones.forEach(seccion => {
-        seccion.classList.add('oculto');
-      });
-      // Mostrar solamente la seleccionada
-      const seccionSeleccionada =
-        document.getElementById(idnoticia);
-      seccionSeleccionada.classList.remove('oculto');
-      // Llevar la pantalla hacia la sección seleccionada
-      seccionSeleccionada.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-    // Ocultar sección y volver a las tarjetas
-    function ocultarnoticia(idnoticia) {
-      const seccion =
-        document.getElementById(idnoticia);
-      const destino =
-        document.getElementById('noticias');
-      // Ocultar inmediatamente
-      seccion.classList.add('oculto');
-      // Volver a las tarjetas
-      destino.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  
