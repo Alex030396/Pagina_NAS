@@ -595,6 +595,10 @@ footer a:hover{
   border-right: 7.5px solid transparent;
   border-bottom: 15px solid var(--azul_nas); 
 }
+.section-close-btn1 {
+  background-color: var(--blanco);
+  border-radius: 50%;
+}
 .section-close-btn1 i {
   font-size: 2.3rem;
   color: var(--rojo_nas);
@@ -698,8 +702,13 @@ footer a:hover{
 @media (max-width: 576px){
   .navbar-brand img{ height: 50px; }
   .hero-btn {
-  left: 7%;
-  bottom: 30.5%;
-  font-size: .8rem;
+  left: 5%;
+  bottom: 34.5%;
+  font-size: .5rem;
 }
+  .card-btn {
+    left: 51%;
+    bottom: 2%;
+    font-size: .8rem;
+  }
 }
