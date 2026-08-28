@@ -17,10 +17,10 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-site" data-bs-offset="75">
 <!------------------------------------------------------ NAVEGADOR -------------------------------------->
-<nav class="navbar navbar-expand-lg sticky-top nav-gris py-3" id="navbar-site">
+<nav class="navbar navbar-expand-lg sticky-top py-3" id="navbar-site">
   <div class="container">
     <!-- LOGO_NAS -->
-    <a class="navbar-brand navbar-brand-centered d-flex align-items-center order-2 order-lg-0" title="NAS Nafazolina Nitrato" href="#">
+    <a class="navbar-brand d-flex align-items-center order-2 order-lg-0" title="NAS Nafazolina Nitrato" href="#">
       <img src="img/LOGO_NAS.png" alt="Logo de nas nafazolina nitrato">
     </a>
     <!-- BOTON DE HAMBURGUESA PARA MOVIL -->
@@ -58,7 +58,7 @@
       <h2>¿Qué necesitas aliviar?</h2>
     </div>
     <!-- CAROUSEL BOOTSTRAP -->
-    <div id="reliefCarouselDesktop" class="carousel slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="5000" data-bs-wrap="true" >
+    <div id="reliefCarouselDesktop" class="carousel slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="5000" data-bs-wrap="true" data-bs-pause="false">
       <div class="carousel-inner">
         <!-- SLIDE 1 - PRIMERAS 4 TARJETAS -->
         <div class="carousel-item active">
@@ -66,9 +66,9 @@
             <!-- TARJETA 1 -->
             <div class="col-6 col-lg-3 d-flex px-1">
               <button onclick="mostrarnoticia('noticia1')" class="btn p-0 w-100 h-100 d-flex"> 
-                <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+                <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
                     <img src="img/Noticia_1.webp" class="card-img-top noticia-card-img" alt="Noticia 1">
-                    <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2">
+                    <div class="card-body d-flex noticia-card-body py-3 px-2">
                       <span class="fw-bold text-start">¿Cómo evaluar la congestión nasal en adultos?</span>
                     </div>
                   </div>
@@ -77,9 +77,9 @@
             <!-- TARJETA 2 -->
             <div class="col-6 col-lg-3 d-flex px-1">
               <button onclick="mostrarnoticia('noticia2')" class="btn p-0 w-100 h-100 d-flex"> 
-                <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+                <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
                   <img src="img/Noticia_2.webp" class="card-img-top noticia-card-img" alt="Noticia 2">
-                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2">
+                  <div class="card-body d-flex noticia-card-body pt-3 px-2">
                     <span class="fw-bold text-start">¿Cómo aplicar correctamente las gotas nasales?</span>
                   </div>
                 </div>
@@ -88,9 +88,9 @@
             <!-- TARJETA 3 -->
             <div class="col-6 col-lg-3 d-flex px-1">
               <button onclick="mostrarnoticia('noticia3')" class="btn p-0 w-100 h-100 d-flex"> 
-                <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+                <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
                   <img src="img/Noticia_3.webp" class="card-img-top noticia-card-img img-fluid" alt="Noticia 3">
-                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2">
+                  <div class="card-body d-flex noticia-card-body pt-3 px-2">
                     <span class="fw-bold text-start">¿Qué causa la congestión de rebote?</span>
                   </div>
                 </div>
@@ -99,9 +99,9 @@
             <!-- TARJETA 4 -->
             <div class="col-6 col-lg-3 d-flex px-1">
               <button onclick="mostrarnoticia('noticia4')" class="btn p-0 w-100 h-100 d-flex"> 
-                <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+                <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
                   <img src="img/Noticia_4.webp" class="card-img-top noticia-card-img img-fluid" alt="Noticia 4">
-                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2 ">
+                  <div class="card-body d-flex noticia-card-body pt-3 px-2 ">
                     <span class="fw-bold text-start">¿Qué revisar antes de usar un descongestionante?</span>
                   </div>
                 </div>
@@ -115,9 +115,9 @@
             <!-- TARJETA 5 -->
             <div class="col-6 col-lg-3 d-flex px-1">
               <button onclick="mostrarnoticia('noticia5')" class="btn p-0 w-100 h-100 d-flex"> 
-                <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+                <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
                   <img src="img/Noticia_4.webp" class="card-img-top noticia-card-img" alt="Noticia 5">
-                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2">
+                  <div class="card-body d-flex noticia-card-body pt-3 px-2">
                     <span class="fw-bold text-start">¿Cómo abordar la congestión nasal en niños?</span>
                   </div>
                 </div>
@@ -126,9 +126,9 @@
            <!-- TARJETA 6 -->
             <div class="col-6 col-lg-3 d-flex px-1">
               <button onclick="mostrarnoticia('noticia6')" class="btn p-0 w-100 h-100 d-flex"> 
-                <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+                <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
                   <img src="img/Noticia_5.webp" class="card-img-top noticia-card-img" alt="Noticia 6">
-                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2 ">
+                  <div class="card-body d-flex noticia-card-body pt-3 px-2 ">
                     <span class="fw-bold text-start">¿Qué 5 puntos verificar en el mostrador para NAS?</span>
                   </div>
                 </div>
@@ -137,9 +137,9 @@
            <!-- TARJETA 7 -->
             <div class="col-6 col-lg-3 d-flex px-1">
               <!-- <button onclick="mostrarnoticia('noticia7')" class="btn p-0 w-100 h-100 d-flex"> 
-                <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+                <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
                   <img src="img/Noticia_1.webp" class="card-img-top noticia-card-img" alt="Noticia 7">
-                  <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2 ">
+                  <div class="card-body d-flex noticia-card-body pt-3 px-2 ">
                     <span class="fw-bold text-start">Cada vez que tengas el malestar de congestión</span>
                   </div>
                 </div>
@@ -148,9 +148,9 @@
            <!-- TARJETA 8 -->
             <div class="col-6 col-lg-3 d-flex px-1">
               <!-- <button onclick="mostrarnoticia('noticia8')" class="btn p-0 w-100 h-100 d-flex"> 
-              <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+              <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
                 <img src="img/Noticia_1.webp" class="card-img-top noticia-card-img" alt="Noticia 8">
-                <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-2 ">
+                <div class="card-body d-flex noticia-card-body pt-3 px-2 ">
                   <span class="fw-bold text-start">Cada vez que tengas el malestar de congestión</span>
                 </div>
               </div>
@@ -175,7 +175,7 @@
     <!-- ============================================
      CAROUSEL MOVIL - 2 TARJETAS POR SLIDE
 ============================================ -->
-<div id="reliefCarouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel" data-bs-interval="5000" data-bs-wrap="true" >
+<div id="reliefCarouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel" data-bs-interval="5000" data-bs-wrap="true" data-bs-pause="false">
   <div class="carousel-inner">
     <!-- ============================= -->
     <!-- SLIDE 1 - NOTICIAS 1 Y 2 -->
@@ -185,9 +185,9 @@
         <!-- TARJETA 1 -->
         <div class="col-6 d-flex ps-0 pe-1">
           <button onclick="mostrarnoticia('noticia1')" class="btn p-0 w-100 h-100 d-flex">
-            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+            <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
               <img src="img/Noticia_1.webp" class="card-img-top noticia-card-img1" alt="Noticia 1">
-              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+              <div class="card-body d-flex noticia-card-body pt-3 px-1">
                 <span class="fw-bold text-start">¿Cómo evaluar la congestión nasal en adultos?</span>
               </div>
             </div>
@@ -196,9 +196,9 @@
         <!-- TARJETA 2 -->
         <div class="col-6 d-flex pe-0 ps-1">
           <button onclick="mostrarnoticia('noticia2')" class="btn p-0 w-100 h-100 d-flex" >
-            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+            <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
               <img src="img/Noticia_2.webp" class="card-img-top noticia-card-img1" alt="Noticia 2">
-              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+              <div class="card-body d-flex noticia-card-body pt-3 px-1">
                 <span class="fw-bold text-start"> ¿Cómo aplicar correctamente las gotas nasales? </span>
               </div>
             </div>
@@ -214,9 +214,9 @@
         <!-- TARJETA 3 -->
         <div class="col-6 d-flex ps-0 pe-1">
           <button onclick="mostrarnoticia('noticia3')" class="btn p-0 w-100 h-100 d-flex" >
-            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+            <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
               <img src="img/Noticia_3.webp" class="card-img-top noticia-card-img1" alt="Noticia 3" >
-              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+              <div class="card-body d-flex noticia-card-body pt-3 px-1">
                 <span class="fw-bold text-start">¿Qué causa la congestión de rebote?</span>
               </div>
             </div>
@@ -225,9 +225,9 @@
         <!-- TARJETA 4 -->
         <div class="col-6 d-flex pe-0 ps-1">
           <button onclick="mostrarnoticia('noticia4')" class="btn p-0 w-100 h-100 d-flex">
-            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+            <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
               <img src="img/Noticia_4.webp" class="card-img-top noticia-card-img1" alt="Noticia 4">
-              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+              <div class="card-body d-flex noticia-card-body pt-3 px-1">
                 <span class="fw-bold text-start"> ¿Qué revisar antes de usar un descongestionante? </span>
               </div>
             </div>
@@ -243,9 +243,9 @@
         <!-- TARJETA 5 -->
         <div class="col-6 d-flex ps-0 pe-1">
           <button onclick="mostrarnoticia('noticia5')" class="btn p-0 w-100 h-100 d-flex">
-            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+            <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
               <img src="img/Noticia_4.webp" class="card-img-top noticia-card-img1" alt="Noticia 5">
-              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+              <div class="card-body d-flex noticia-card-body pt-3 px-1">
                 <span class="fw-bold text-start">¿Cómo abordar la congestión nasal en niños?</span>
               </div>
             </div>
@@ -254,9 +254,9 @@
         <!-- TARJETA 6 -->
         <div class="col-6 d-flex pe-0 ps-1">
           <button onclick="mostrarnoticia('noticia6')" class="btn p-0 w-100 h-100 d-flex" >
-            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+            <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
               <img src="img/Noticia_5.webp" class="card-img-top noticia-card-img1" alt="Noticia 6" >
-              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+              <div class="card-body d-flex noticia-card-body pt-3 px-1">
                 <span class="fw-bold text-start"> ¿Qué 5 puntos verificar en el mostrador para NAS?</span>
               </div>
             </div>
@@ -272,9 +272,9 @@
         <!-- TARJETA 7 -->
         <!-- <div class="col-6 d-flex ps-0 pe-1">
           <button onclick="mostrarnoticia('noticia7')" class="btn p-0 w-100 h-100 d-flex" >
-            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+            <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
               <img src="img/Noticia_1.webp" class="card-img-top noticia-card-img1" alt="Noticia 7" >
-              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+              <div class="card-body d-flex noticia-card-body pt-3 px-1">
                 <span class="fw-bold text-start">
                   Cada vez que tengas el malestar de congestión
                 </span>
@@ -285,9 +285,9 @@
         <!-- TARJETA 8 -->
         <!-- <div class="col-6 d-flex pe-0 ps-1">
           <button onclick="mostrarnoticia('noticia8')" class="btn p-0 w-100 h-100 d-flex">
-            <div class="card w-100 h-100 border border-dark border-1 rounded-4 overflow-hidden">
+            <div class="card w-100 h-100 border rounded-4 overflow-hidden news-card">
               <img src="img/Noticia_1.webp" class="card-img-top noticia-card-img1" alt="Noticia 8" >
-              <div class="card-body d-flex justify-content-center align-items-center noticia-card-body py-0 px-1">
+              <div class="card-body d-flex noticia-card-body pt-3 px-1">
                 <span class="fw-bold text-start">Cada vez que tengas el malestar de congestión</span>
               </div>
             </div>
@@ -1009,7 +1009,7 @@
         <p class="mb-3 fw-bold text-md-start text-center">Formado, llenado y sellado en un proceso continuo.</p>
         <p class="mb-4 mx-auto mx-md-0 text-md-start text-center" style="max-width:560px; opacity:.95;">
           El frasco NAS se forma, se llena y se sella mediante un proceso automatizado. Permanece totalmente sellado hasta su primera apertura.
-          <button class="btn btn-danger fw-bold" onclick="mostrarbfs('bfs1')">¿Cómo actúa la Tecnología BSF?</button>
+          <button class="btn btn-danger fw-bold mt-3" onclick="mostrarbfs('bfs1')">¿Cómo actúa la Tecnología BSF?</button>
         </p>
         <div class="row text-center g-3">
           <div class="col-4">
@@ -1155,7 +1155,7 @@
     <picture class="w-100 d-block">
       <source media="(min-width: 1200px)" srcset="img/Banner_Secundario.webp">
       <source media="(min-width: 576px)" srcset="img/Banner_Pediatrico_Nas.webp">
-      <img src="img/Banner_secundario_Movil.webp" class="img-fluid w-100 d-block" alt="Banner Pediátrico NAS">
+      <img src="img/Banner_secundario_Movil.webp" class="img-fluid w-100 d-block" alt="Banner Apiret">
     </picture>
   </div>
 </section>

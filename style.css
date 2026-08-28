@@ -47,11 +47,7 @@ html {
 .fondo-amarillo {
   background-color: var(--amarillo_nas);
 }
-/* ===== NAVBAR ===== */
-/* COLOR DE FONDO DE LA BARRA DE NAVEGACION */
-.nav-gris {
-  background: var(--gris);
-}
+/* ------------------------------------------------------------ NAVEGADOR -------------------------------------------------------------------------- */
 /* HAMBURGER ICON */
 .icon-rojo {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(237, 50, 55,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -67,8 +63,8 @@ html {
 /* NAVBAR SIEMPRE POR ENCIMA */
 #navbar-site {
   z-index: 2000;
+  background-color: var(--gris);
 }
-/* ------------------------------------LOS LINKS DE NAVEGACION-------------------------------- */
 .nav-item{
   font-size: 19px;
 }
@@ -177,6 +173,10 @@ html {
   top: 100px;
   z-index: 10;
 }
+.news-card:hover {
+transform: translateY(-3px) translateX(-3px);
+box-shadow: 0 12px 28px rgba(0, 0, 0, .10);
+}
 /*------------------------------------ SECTION DE OCULTACION Y MUESTRA --------------------------------------*/
 /* BOTON PARA OCULTAR SECCION*/
 .section-close-wrap {
@@ -284,21 +284,6 @@ html {
 .pd-control:hover .pd-arrow-icon {
   opacity: 0.7;
 }
-.carousel-indicators {
-  position: relative;
-  margin-top: 20px;
-}
-.carousel-indicators [data-bs-target] {
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  background-color: transparent;
-  border: 2px solid var(--azul_nas);
-  opacity: 1;
-}
-.carousel-indicators .active {
-  background-color: var(--azul_nas);
-}
 /* TITULO DE PRODUCTO DESTACADO */
 .pd-title {
   color: var(--azul_nas);
@@ -313,21 +298,6 @@ html {
   font-size: clamp(1.2rem, 1.8vw, 2.2rem);
   line-height: 1.12;
   margin: 0 0 10px 0;
-}
-/* ICONO DE PRODUCTO DESTACADO */
-.pd-iconbox {
-  width: 66px;
-  height: 66px;
-  border-radius: 16px;
-  border: 2px solid rgba(23, 63, 116, 0.35);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pd-icon {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
 }
 .pd-dose {
   color: var(--azul_nas);
@@ -662,7 +632,6 @@ footer a:hover{
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;                 /* fondo rojo de borde a borde */
-    background: var(--rojo-nas);   /* tu rojo */
     padding: 12px 16px;
     z-index: 1;
   }
@@ -710,5 +679,8 @@ footer a:hover{
     left: 51%;
     bottom: 2%;
     font-size: .8rem;
+  }
+  .text-min{
+    font-size: .9rem;
   }
 }
